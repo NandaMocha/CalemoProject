@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043DD51022D85C20003EF0D2 /* BarStoryBoard.storyboard */; };
+		043DD51522D8688C003EF0D2 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DD51422D8688C003EF0D2 /* BarChartViewController.swift */; };
+		043DD51A22D89B51003EF0D2 /* CalemoData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043DD51822D89B51003EF0D2 /* CalemoData.xcdatamodeld */; };
 		0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80822CA1114002C4AC5 /* AppDelegate.swift */; };
 		0477A80B22CA1114002C4AC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ViewController.swift */; };
 		0477A80E22CA1114002C4AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80C22CA1114002C4AC5 /* Main.storyboard */; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
 		0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */; };
+		04E3A1AA22D83735008D99FF /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3A1A922D83735008D99FF /* GraphViewController.swift */; };
+		04E3A1AF22D83775008D99FF /* GraphStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E3A1AE22D83775008D99FF /* GraphStoryBoard.storyboard */; };
+		694C2F8BB60DCA12EE48C196 /* Pods_CalemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC373D9418D86D08B02A745 /* Pods_CalemoProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043DD51022D85C20003EF0D2 /* BarStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarStoryBoard.storyboard; sourceTree = "<group>"; };
+		043DD51422D8688C003EF0D2 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		043DD51922D89B51003EF0D2 /* CalemoData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalemoData.xcdatamodel; sourceTree = "<group>"; };
 		0477A80522CA1114002C4AC5 /* CalemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0477A80822CA1114002C4AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0477A80A22CA1114002C4AC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,11 @@
 		0477A80F22CA1117002C4AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0477A81222CA1117002C4AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0477A81422CA1117002C4AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E3A1A922D83735008D99FF /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		04E3A1AE22D83775008D99FF /* GraphStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GraphStoryBoard.storyboard; sourceTree = "<group>"; };
+		08D7CC9B36F25520F8A648B7 /* Pods-CalemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.release.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.release.xcconfig"; sourceTree = "<group>"; };
+		8CC373D9418D86D08B02A745 /* Pods_CalemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C963EE84D267DB01C470058B /* Pods-CalemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.debug.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694C2F8BB60DCA12EE48C196 /* Pods_CalemoProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				0477A80722CA1114002C4AC5 /* CalemoProject */,
 				0477A80622CA1114002C4AC5 /* Products */,
+				B37650E2B740710449DF5138 /* Pods */,
+				1558F69F34EE5C82BB409187 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,68 @@
 		0477A80722CA1114002C4AC5 /* CalemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				04E3A1A822D8370D008D99FF /* GraphController */,
 				0477A80822CA1114002C4AC5 /* AppDelegate.swift */,
 				0477A80A22CA1114002C4AC5 /* ViewController.swift */,
 				0477A80C22CA1114002C4AC5 /* Main.storyboard */,
 				0477A80F22CA1117002C4AC5 /* Assets.xcassets */,
 				0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */,
 				0477A81422CA1117002C4AC5 /* Info.plist */,
+				043DD51822D89B51003EF0D2 /* CalemoData.xcdatamodeld */,
 			);
 			path = CalemoProject;
+			sourceTree = "<group>";
+		};
+		04E3A1A822D8370D008D99FF /* GraphController */ = {
+			isa = PBXGroup;
+			children = (
+				04E3A1AC22D8374B008D99FF /* Model */,
+				04E3A1AD22D83751008D99FF /* View */,
+				04E3A1AB22D83743008D99FF /* Controller */,
+			);
+			path = GraphController;
+			sourceTree = "<group>";
+		};
+		04E3A1AB22D83743008D99FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04E3A1A922D83735008D99FF /* GraphViewController.swift */,
+				043DD51422D8688C003EF0D2 /* BarChartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04E3A1AC22D8374B008D99FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E3A1AD22D83751008D99FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04E3A1AE22D83775008D99FF /* GraphStoryBoard.storyboard */,
+				043DD51022D85C20003EF0D2 /* BarStoryBoard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1558F69F34EE5C82BB409187 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CC373D9418D86D08B02A745 /* Pods_CalemoProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B37650E2B740710449DF5138 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C963EE84D267DB01C470058B /* Pods-CalemoProject.debug.xcconfig */,
+				08D7CC9B36F25520F8A648B7 /* Pods-CalemoProject.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0477A81722CA1117002C4AC5 /* Build configuration list for PBXNativeTarget "CalemoProject" */;
 			buildPhases = (
+				1BAB288118E446627BE2C5CE /* [CP] Check Pods Manifest.lock */,
 				0477A80122CA1114002C4AC5 /* Sources */,
 				0477A80222CA1114002C4AC5 /* Frameworks */,
 				0477A80322CA1114002C4AC5 /* Resources */,
+				5921BB05EE86DB300B493AA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +195,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E3A1AF22D83775008D99FF /* GraphStoryBoard.storyboard in Resources */,
+				043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */,
 				0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */,
 				0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */,
 				0477A80E22CA1114002C4AC5 /* Main.storyboard in Resources */,
@@ -130,13 +205,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BAB288118E446627BE2C5CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalemoProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5921BB05EE86DB300B493AA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalemoProject/Pods-CalemoProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalemoProject/Pods-CalemoProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalemoProject/Pods-CalemoProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0477A80122CA1114002C4AC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E3A1AA22D83735008D99FF /* GraphViewController.swift in Sources */,
+				043DD51A22D89B51003EF0D2 /* CalemoData.xcdatamodeld in Sources */,
 				0477A80B22CA1114002C4AC5 /* ViewController.swift in Sources */,
 				0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */,
+				043DD51522D8688C003EF0D2 /* BarChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +400,7 @@
 		};
 		0477A81822CA1117002C4AC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C963EE84D267DB01C470058B /* Pods-CalemoProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +419,7 @@
 		};
 		0477A81922CA1117002C4AC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08D7CC9B36F25520F8A648B7 /* Pods-CalemoProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +458,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		043DD51822D89B51003EF0D2 /* CalemoData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				043DD51922D89B51003EF0D2 /* CalemoData.xcdatamodel */,
+			);
+			currentVersion = 043DD51922D89B51003EF0D2 /* CalemoData.xcdatamodel */;
+			path = CalemoData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0477A7FD22CA1114002C4AC5 /* Project object */;
 }

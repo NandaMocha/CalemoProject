@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cJp-eP-3Lb">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,79 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-wF-a3O">
+                                <rect key="frame" x="174" y="530" width="66" height="30"/>
+                                <state key="normal" title="Bar Chart"/>
+                                <connections>
+                                    <action selector="barTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CEL-3n-4DC"/>
+                                    <segue destination="eEI-m7-gLS" kind="show" id="BrI-Yi-1kC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrK-7e-eQV">
+                                <rect key="frame" x="172" y="366" width="71" height="30"/>
+                                <state key="normal" title="Line Chart"/>
+                                <connections>
+                                    <action selector="lineTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUM-8b-veH"/>
+                                    <segue destination="BtN-RC-JhX" kind="show" id="Nxt-wz-D1I"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bDf-wF-a3O" secondAttribute="bottom" constant="302" id="3qn-mi-k3c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bDf-wF-a3O" secondAttribute="trailing" constant="174" id="TfE-Cx-jBc"/>
+                            <constraint firstItem="bDf-wF-a3O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="WZS-Hh-SkU"/>
+                            <constraint firstItem="UrK-7e-eQV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="278" id="ZZc-1X-Jb1"/>
+                            <constraint firstItem="bDf-wF-a3O" firstAttribute="top" secondItem="UrK-7e-eQV" secondAttribute="bottom" constant="134" id="bxH-d2-oYR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UrK-7e-eQV" secondAttribute="trailing" constant="171" id="h5d-ce-pgu"/>
+                            <constraint firstItem="UrK-7e-eQV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="nfi-dm-QSf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kLD-94-A26"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="796" y="20"/>
+        </scene>
+        <!--GraphStoryBoard-->
+        <scene sceneID="KbH-P4-gce">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="GraphStoryBoard" storyboardName="GraphStoryBoard" id="BtN-RC-JhX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4aX-bI-qOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="-147"/>
+        </scene>
+        <!--BarStoryBoard-->
+        <scene sceneID="f5H-uA-gxX">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="BarStoryBoard" storyboardName="BarStoryBoard" id="eEI-m7-gLS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVC-Li-rYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="38"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GW1-zK-T5X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cJp-eP-3Lb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pEk-zH-r4f">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qy6-2d-81I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxn-Yp-tiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="19"/>
         </scene>
     </scenes>
 </document>

@@ -15,6 +15,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func lineTapped(_ sender: Any) {
+        print("Line Tapped")
+    }
+    
+    @IBAction func barTapped(_ sender: Any) {
+        print("Bar Tapped")
+    }
+    
+    
 }
 

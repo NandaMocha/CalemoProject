@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UZh-oP-TKD">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Graph View Controller-->
+        <scene sceneID="8dm-0W-gQ2">
+            <objects>
+                <viewController storyboardIdentifier="GraphViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UZh-oP-TKD" customClass="GraphViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Sc-4P-EsV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fz-cC-UpW" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.84145797659817334" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0fz-cC-UpW" firstAttribute="top" secondItem="dwf-Z6-x33" secondAttribute="top" id="Xhn-lZ-SgK"/>
+                            <constraint firstItem="0fz-cC-UpW" firstAttribute="leading" secondItem="dwf-Z6-x33" secondAttribute="leading" id="YgQ-0m-VGo"/>
+                            <constraint firstItem="dwf-Z6-x33" firstAttribute="trailing" secondItem="0fz-cC-UpW" secondAttribute="trailing" id="ZBU-OJ-wRS"/>
+                            <constraint firstItem="dwf-Z6-x33" firstAttribute="bottom" secondItem="0fz-cC-UpW" secondAttribute="bottom" id="wJz-Ia-HbE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dwf-Z6-x33"/>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="0fz-cC-UpW" id="3Q2-xM-nfk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpx-MJ-EAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="152"/>
+        </scene>
+    </scenes>
+</document>
