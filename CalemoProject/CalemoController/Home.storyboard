@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="164-Cw-4rf">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calemo-->
+        <scene sceneID="mTx-z9-QNI">
+            <objects>
+                <viewController id="3LR-SK-Qro" customClass="HomeViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FT0-LS-IOV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ET6-EE-YD6">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSC-ox-vCw">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjU-2Q-KAH">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESC-2U-l30">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qJ-vh-bnq">
+                                                                <rect key="frame" x="23" y="8" width="42" height="21"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="HjU-2Q-KAH" secondAttribute="trailing" id="1MT-Ug-iDz"/>
+                                            <constraint firstItem="HjU-2Q-KAH" firstAttribute="top" secondItem="GSC-ox-vCw" secondAttribute="top" id="Fqs-HW-2qP"/>
+                                            <constraint firstAttribute="bottom" secondItem="HjU-2Q-KAH" secondAttribute="bottom" id="UcV-6T-4ez"/>
+                                            <constraint firstItem="HjU-2Q-KAH" firstAttribute="leading" secondItem="GSC-ox-vCw" secondAttribute="leading" id="niu-8f-Piz"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="GSC-ox-vCw" firstAttribute="top" secondItem="ET6-EE-YD6" secondAttribute="top" id="5ie-IT-6hi"/>
+                                    <constraint firstAttribute="bottom" secondItem="GSC-ox-vCw" secondAttribute="bottom" id="OuU-yZ-FOJ"/>
+                                    <constraint firstItem="GSC-ox-vCw" firstAttribute="leading" secondItem="ET6-EE-YD6" secondAttribute="leading" id="tqT-SA-atM"/>
+                                    <constraint firstAttribute="trailing" secondItem="GSC-ox-vCw" secondAttribute="trailing" id="w1a-nY-hsJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HjU-2Q-KAH" firstAttribute="width" secondItem="FT0-LS-IOV" secondAttribute="width" id="6ga-Fe-MTM"/>
+                            <constraint firstItem="ET6-EE-YD6" firstAttribute="leading" secondItem="gaP-8p-Qe8" secondAttribute="leading" id="Ey2-Jf-BvE"/>
+                            <constraint firstItem="HjU-2Q-KAH" firstAttribute="height" secondItem="FT0-LS-IOV" secondAttribute="height" priority="250" id="NOn-5D-GLU"/>
+                            <constraint firstItem="gaP-8p-Qe8" firstAttribute="bottom" secondItem="ET6-EE-YD6" secondAttribute="bottom" id="ZbV-QL-mBT"/>
+                            <constraint firstItem="gaP-8p-Qe8" firstAttribute="trailing" secondItem="ET6-EE-YD6" secondAttribute="trailing" id="d5Y-f2-8MN"/>
+                            <constraint firstItem="ET6-EE-YD6" firstAttribute="top" secondItem="gaP-8p-Qe8" secondAttribute="top" id="hID-6e-00C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gaP-8p-Qe8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calemo" id="j7E-tb-tqb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zdo-DU-VFz"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navigationBar" destination="j7E-tb-tqb" id="hvI-s0-Wj8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Axj-Ax-Gft" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195.6521739130435" y="-183.48214285714286"/>
+        </scene>
+        <!--Calemo-->
+        <scene sceneID="Mi4-Ef-CGD">
+            <objects>
+                <navigationController title="Calemo" automaticallyAdjustsScrollViewInsets="NO" id="164-Cw-4rf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="VZu-r9-ezv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3LR-SK-Qro" kind="relationship" relationship="rootViewController" id="c31-8D-QZp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekk-ag-dL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarItem title="Item" id="ixg-pt-EYN"/>
+            </objects>
+            <point key="canvasLocation" x="-714.49275362318849" y="-183.48214285714286"/>
+        </scene>
+    </scenes>
+</document>

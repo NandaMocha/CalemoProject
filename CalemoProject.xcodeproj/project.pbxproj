@@ -10,6 +10,8 @@
 		043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043DD51022D85C20003EF0D2 /* BarStoryBoard.storyboard */; };
 		043DD51522D8688C003EF0D2 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DD51422D8688C003EF0D2 /* BarChartViewController.swift */; };
 		043DD51A22D89B51003EF0D2 /* CalemoData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043DD51822D89B51003EF0D2 /* CalemoData.xcdatamodeld */; };
+		045F3FF322DC3D8C00615168 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3FF222DC3D8C00615168 /* HomeViewController.swift */; };
+		045F3FF522DC3DAC00615168 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F3FF422DC3DAC00615168 /* Home.storyboard */; };
 		0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80822CA1114002C4AC5 /* AppDelegate.swift */; };
 		0477A80B22CA1114002C4AC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ViewController.swift */; };
 		0477A80E22CA1114002C4AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80C22CA1114002C4AC5 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		043DD51022D85C20003EF0D2 /* BarStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarStoryBoard.storyboard; sourceTree = "<group>"; };
 		043DD51422D8688C003EF0D2 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		043DD51922D89B51003EF0D2 /* CalemoData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalemoData.xcdatamodel; sourceTree = "<group>"; };
+		045F3FF222DC3D8C00615168 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		045F3FF422DC3DAC00615168 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		0477A80522CA1114002C4AC5 /* CalemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0477A80822CA1114002C4AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0477A80A22CA1114002C4AC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045F3FF622DC47D500615168 /* CalemoController */ = {
+			isa = PBXGroup;
+			children = (
+				045F3FF222DC3D8C00615168 /* HomeViewController.swift */,
+				045F3FF422DC3DAC00615168 /* Home.storyboard */,
+			);
+			path = CalemoController;
+			sourceTree = "<group>";
+		};
 		0477A7FC22CA1114002C4AC5 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +92,7 @@
 				0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */,
 				0477A81422CA1117002C4AC5 /* Info.plist */,
 				043DD51822D89B51003EF0D2 /* CalemoData.xcdatamodeld */,
+				045F3FF622DC47D500615168 /* CalemoController */,
 			);
 			path = CalemoProject;
 			sourceTree = "<group>";
@@ -198,6 +212,7 @@
 				04E3A1AF22D83775008D99FF /* GraphStoryBoard.storyboard in Resources */,
 				043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */,
 				0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */,
+				045F3FF522DC3DAC00615168 /* Home.storyboard in Resources */,
 				0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */,
 				0477A80E22CA1114002C4AC5 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +272,7 @@
 				0477A80B22CA1114002C4AC5 /* ViewController.swift in Sources */,
 				0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */,
 				043DD51522D8688C003EF0D2 /* BarChartViewController.swift in Sources */,
+				045F3FF322DC3D8C00615168 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
