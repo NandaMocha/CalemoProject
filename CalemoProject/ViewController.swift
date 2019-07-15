@@ -51,11 +51,8 @@ class ViewController: UIViewController {
         q4Answer.frame = CGRect(x: self.q4Answer.frame.origin.x, y: self.q4Answer.frame.origin.y, width: q4Answer.intrinsicContentSize.width, height: q4Answer.intrinsicContentSize.height)
         q4Answer.lineBreakMode = .byWordWrapping
         q4Answer.numberOfLines = 0
-        futureAnswer.text = ""
+        futureAnswer.text = "Don’t forget to get some snacks before we get together!"
         
         // Do any additional setup after loading the view.
     }
-    
-
-
 }
