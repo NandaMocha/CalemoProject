@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,18 +21,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-wF-a3O">
                                 <rect key="frame" x="174" y="530" width="66" height="30"/>
                                 <state key="normal" title="Bar Chart"/>
-                                <connections>
-                                    <action selector="barTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CEL-3n-4DC"/>
-                                    <segue destination="eEI-m7-gLS" kind="show" id="BrI-Yi-1kC"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrK-7e-eQV">
                                 <rect key="frame" x="172" y="366" width="71" height="30"/>
-                                <state key="normal" title="Line Chart"/>
-                                <connections>
-                                    <action selector="lineTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUM-8b-veH"/>
-                                    <segue destination="BtN-RC-JhX" kind="show" id="Nxt-wz-D1I"/>
-                                </connections>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Line Chart">
+                                    <color key="titleColor" red="0.96862167119999998" green="0.96077686549999997" blue="0.96077650790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

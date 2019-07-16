@@ -10,7 +10,7 @@
         <attribute name="answerOneJournal" attributeType="String" syncable="YES"/>
         <attribute name="answerThreeJournal" attributeType="String" syncable="YES"/>
         <attribute name="answerTwoJournal" attributeType="String" syncable="YES"/>
-        <attribute name="dateJournal" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateJournal" attributeType="String" syncable="YES"/>
         <attribute name="feelsJournal" attributeType="String" syncable="YES"/>
         <attribute name="imageJournal" attributeType="Binary" syncable="YES"/>
         <attribute name="notesJournal" attributeType="String" syncable="YES"/>
@@ -25,8 +25,8 @@
         <attribute name="reasonQuestion" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Achievement" positionX="-36" positionY="81" width="128" height="105"/>
         <element name="Journal" positionX="-63" positionY="-18" width="128" height="210"/>
         <element name="Question" positionX="-54" positionY="72" width="128" height="90"/>
-        <element name="Achievement" positionX="-36" positionY="81" width="128" height="105"/>
     </elements>
 </model>
