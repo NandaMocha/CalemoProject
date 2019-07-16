@@ -28,6 +28,10 @@
 		04E3A1AA22D83735008D99FF /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3A1A922D83735008D99FF /* GraphViewController.swift */; };
 		04E3A1AF22D83775008D99FF /* GraphStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E3A1AE22D83775008D99FF /* GraphStoryBoard.storyboard */; };
 		694C2F8BB60DCA12EE48C196 /* Pods_CalemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC373D9418D86D08B02A745 /* Pods_CalemoProject.framework */; };
+		D580E53122DCA96E003FC12D /* slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580E53022DCA96E003FC12D /* slide.swift */; };
+		D580E53722DCB411003FC12D /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580E53622DCB411003FC12D /* homeViewController.swift */; };
+		D580E53922DDAF4A003FC12D /* slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = D580E53822DDAF4A003FC12D /* slide.xib */; };
+		D580E53B22DDC201003FC12D /* userNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580E53A22DDC201003FC12D /* userNameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		08D7CC9B36F25520F8A648B7 /* Pods-CalemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.release.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.release.xcconfig"; sourceTree = "<group>"; };
 		8CC373D9418D86D08B02A745 /* Pods_CalemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C963EE84D267DB01C470058B /* Pods-CalemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.debug.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D580E53022DCA96E003FC12D /* slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slide.swift; sourceTree = "<group>"; };
+		D580E53622DCB411003FC12D /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		D580E53822DDAF4A003FC12D /* slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = slide.xib; sourceTree = "<group>"; };
+		D580E53A22DDC201003FC12D /* userNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userNameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,12 @@
 				04E3A1A822D8370D008D99FF /* GraphController */,
 				0477A80822CA1114002C4AC5 /* AppDelegate.swift */,
 				0477A80A22CA1114002C4AC5 /* ExtensionClass.swift */,
+				D580E53022DCA96E003FC12D /* slide.swift */,
+				D580E53822DDAF4A003FC12D /* slide.xib */,
+				0477A80A22CA1114002C4AC5 /* ViewController.swift */,
+				D580E53622DCB411003FC12D /* homeViewController.swift */,
+				D580E53A22DDC201003FC12D /* userNameController.swift */,
+				0477A80C22CA1114002C4AC5 /* Main.storyboard */,
 				0477A80F22CA1117002C4AC5 /* Assets.xcassets */,
 				0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */,
 				0477A81422CA1117002C4AC5 /* Info.plist */,
@@ -256,6 +270,8 @@
 				045F400C22DD8B0200615168 /* Journal.storyboard in Resources */,
 				0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */,
 				045F400722DD855600615168 /* Me.storyboard in Resources */,
+				0477A80E22CA1114002C4AC5 /* Main.storyboard in Resources */,
+				D580E53922DDAF4A003FC12D /* slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +337,11 @@
 				0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */,
 				043DD51522D8688C003EF0D2 /* BarChartViewController.swift in Sources */,
 				045F3FF322DC3D8C00615168 /* HomeViewController.swift in Sources */,
+				0477A80B22CA1114002C4AC5 /* ViewController.swift in Sources */,
+				D580E53122DCA96E003FC12D /* slide.swift in Sources */,
+				0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */,
+				D580E53B22DDC201003FC12D /* userNameController.swift in Sources */,
+				D580E53722DCB411003FC12D /* homeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
