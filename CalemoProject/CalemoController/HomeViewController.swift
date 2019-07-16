@@ -56,25 +56,33 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataArray.count
+        return dataArray.count+1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
         
-        cell.dateJournal.text = "June 15, 2019"
-        cell.dayJournal.text = dataArray[indexPath.row]
-        cell.feelsJournal.image = UIImage(named: "user")
-        cell.layer.cornerRadius = 20
-        cell.backgroundColor = #colorLiteral(red: 0.7337953448, green: 0.8345138431, blue: 0.7939261794, alpha: 1)
-//        cell.viewShadow()
+        if indexPath.row < dataArray.count{
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
+            
+            cell.dateJournal.text = "June 15, 2019"
+            cell.dayJournal.text = dataArray[indexPath.row]
+            cell.feelsJournal.image = UIImage(named: "user")
+            cell.layer.cornerRadius = 20
+            cell.backgroundColor = #colorLiteral(red: 0.7337953448, green: 0.8345138431, blue: 0.7939261794, alpha: 1)
+            
+            return cell
+        }else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AddNewCell", for: indexPath) as! AddNewCell
+            return cell
+        }
         
-        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "goToDetail", sender: self)
+        let detailJournal = UIStoryboard(name: "Journal", bundle: nil).instantiateViewController(withIdentifier: "DetailJournalViewController") as! DetailJournalViewController
+        
+        navigationController?.show(detailJournal, sender: self)
         
     }
 }
