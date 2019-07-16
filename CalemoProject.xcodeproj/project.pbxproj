@@ -18,9 +18,11 @@
 		045F400722DD855600615168 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F400622DD855600615168 /* Me.storyboard */; };
 		045F400A22DD8AF700615168 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F400922DD8AF700615168 /* JournalViewController.swift */; };
 		045F400C22DD8B0200615168 /* Journal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F400B22DD8B0200615168 /* Journal.storyboard */; };
-		045F400E22DD8D9B00615168 /* DetailJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F400D22DD8D9B00615168 /* DetailJournalViewController.swift */; };
+		045F400E22DD8D9B00615168 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F400D22DD8D9B00615168 /* OnBoardingViewController.swift */; };
 		045F401022DD8DC500615168 /* EditJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F400F22DD8DC500615168 /* EditJournalViewController.swift */; };
 		045F401222DDF70E00615168 /* AddNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F401122DDF70E00615168 /* AddNewCell.swift */; };
+		045F401622DE0A5B00615168 /* DetailJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F401522DE0A5B00615168 /* DetailJournalViewController.swift */; };
+		045F401922DE0B0700615168 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F401822DE0B0700615168 /* OnBoarding.storyboard */; };
 		0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80822CA1114002C4AC5 /* AppDelegate.swift */; };
 		0477A80B22CA1114002C4AC5 /* ExtensionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ExtensionClass.swift */; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
@@ -46,9 +48,11 @@
 		045F400622DD855600615168 /* Me.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
 		045F400922DD8AF700615168 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		045F400B22DD8B0200615168 /* Journal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Journal.storyboard; sourceTree = "<group>"; };
-		045F400D22DD8D9B00615168 /* DetailJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailJournalViewController.swift; sourceTree = "<group>"; };
+		045F400D22DD8D9B00615168 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		045F400F22DD8DC500615168 /* EditJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditJournalViewController.swift; sourceTree = "<group>"; };
 		045F401122DDF70E00615168 /* AddNewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCell.swift; sourceTree = "<group>"; };
+		045F401522DE0A5B00615168 /* DetailJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailJournalViewController.swift; sourceTree = "<group>"; };
+		045F401822DE0B0700615168 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		0477A80522CA1114002C4AC5 /* CalemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0477A80822CA1114002C4AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0477A80A22CA1114002C4AC5 /* ExtensionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionClass.swift; sourceTree = "<group>"; };
@@ -102,11 +106,24 @@
 			isa = PBXGroup;
 			children = (
 				045F400922DD8AF700615168 /* JournalViewController.swift */,
-				045F400D22DD8D9B00615168 /* DetailJournalViewController.swift */,
 				045F400F22DD8DC500615168 /* EditJournalViewController.swift */,
 				045F400B22DD8B0200615168 /* Journal.storyboard */,
+				045F401522DE0A5B00615168 /* DetailJournalViewController.swift */,
 			);
 			path = JournalController;
+			sourceTree = "<group>";
+		};
+		045F401722DE0ABF00615168 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				D580E53022DCA96E003FC12D /* slide.swift */,
+				D580E53822DDAF4A003FC12D /* slide.xib */,
+				045F400D22DD8D9B00615168 /* OnBoardingViewController.swift */,
+				D580E53622DCB411003FC12D /* homeViewController.swift */,
+				D580E53A22DDC201003FC12D /* userNameController.swift */,
+				045F401822DE0B0700615168 /* OnBoarding.storyboard */,
+			);
+			path = OnBoarding;
 			sourceTree = "<group>";
 		};
 		0477A7FC22CA1114002C4AC5 = {
@@ -131,18 +148,13 @@
 			isa = PBXGroup;
 			children = (
 				045F3FF722DC6BCE00615168 /* DataManager.swift */,
+				0477A80A22CA1114002C4AC5 /* ExtensionClass.swift */,
 				045F400822DD8AE300615168 /* JournalController */,
 				045F400122DD852500615168 /* MeController */,
 				045F3FF622DC47D500615168 /* CalemoController */,
 				04E3A1A822D8370D008D99FF /* GraphController */,
+				045F401722DE0ABF00615168 /* OnBoarding */,
 				0477A80822CA1114002C4AC5 /* AppDelegate.swift */,
-				0477A80A22CA1114002C4AC5 /* ExtensionClass.swift */,
-				D580E53022DCA96E003FC12D /* slide.swift */,
-				D580E53822DDAF4A003FC12D /* slide.xib */,
-				0477A80A22CA1114002C4AC5 /* ViewController.swift */,
-				D580E53622DCB411003FC12D /* homeViewController.swift */,
-				D580E53A22DDC201003FC12D /* userNameController.swift */,
-				0477A80C22CA1114002C4AC5 /* Main.storyboard */,
 				0477A80F22CA1117002C4AC5 /* Assets.xcassets */,
 				0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */,
 				0477A81422CA1117002C4AC5 /* Info.plist */,
@@ -270,8 +282,8 @@
 				045F400C22DD8B0200615168 /* Journal.storyboard in Resources */,
 				0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */,
 				045F400722DD855600615168 /* Me.storyboard in Resources */,
-				0477A80E22CA1114002C4AC5 /* Main.storyboard in Resources */,
 				D580E53922DDAF4A003FC12D /* slide.xib in Resources */,
+				045F401922DE0B0700615168 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +336,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045F400E22DD8D9B00615168 /* DetailJournalViewController.swift in Sources */,
+				045F400E22DD8D9B00615168 /* OnBoardingViewController.swift in Sources */,
 				045F401222DDF70E00615168 /* AddNewCell.swift in Sources */,
 				045F400422DD854200615168 /* MeViewController.swift in Sources */,
 				04E3A1AA22D83735008D99FF /* GraphViewController.swift in Sources */,
+				045F401622DE0A5B00615168 /* DetailJournalViewController.swift in Sources */,
 				043DD51A22D89B51003EF0D2 /* CalemoData.xcdatamodeld in Sources */,
 				045F3FFF22DC6E8800615168 /* HomeCell.swift in Sources */,
 				045F400A22DD8AF700615168 /* JournalViewController.swift in Sources */,
@@ -337,7 +350,7 @@
 				0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */,
 				043DD51522D8688C003EF0D2 /* BarChartViewController.swift in Sources */,
 				045F3FF322DC3D8C00615168 /* HomeViewController.swift in Sources */,
-				0477A80B22CA1114002C4AC5 /* ViewController.swift in Sources */,
+				0477A80B22CA1114002C4AC5 /* ExtensionClass.swift in Sources */,
 				D580E53122DCA96E003FC12D /* slide.swift in Sources */,
 				0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */,
 				D580E53B22DDC201003FC12D /* userNameController.swift in Sources */,
