@@ -12,10 +12,10 @@
 		0477A80E22CA1114002C4AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80C22CA1114002C4AC5 /* Main.storyboard */; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
 		0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */; };
-		D580E52922DC92C4003FC12D /* onBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D580E52822DC92C4003FC12D /* onBoarding.storyboard */; };
 		D580E53122DCA96E003FC12D /* slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580E53022DCA96E003FC12D /* slide.swift */; };
 		D580E53722DCB411003FC12D /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580E53622DCB411003FC12D /* homeViewController.swift */; };
 		D580E53922DDAF4A003FC12D /* slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = D580E53822DDAF4A003FC12D /* slide.xib */; };
+		D580E53B22DDC201003FC12D /* userNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580E53A22DDC201003FC12D /* userNameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,10 @@
 		0477A80F22CA1117002C4AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0477A81222CA1117002C4AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0477A81422CA1117002C4AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D580E52822DC92C4003FC12D /* onBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = onBoarding.storyboard; sourceTree = "<group>"; };
 		D580E53022DCA96E003FC12D /* slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slide.swift; sourceTree = "<group>"; };
 		D580E53622DCB411003FC12D /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		D580E53822DDAF4A003FC12D /* slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = slide.xib; sourceTree = "<group>"; };
+		D580E53A22DDC201003FC12D /* userNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userNameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +64,11 @@
 			children = (
 				0477A80822CA1114002C4AC5 /* AppDelegate.swift */,
 				D580E53022DCA96E003FC12D /* slide.swift */,
+				D580E53822DDAF4A003FC12D /* slide.xib */,
 				0477A80A22CA1114002C4AC5 /* ViewController.swift */,
 				D580E53622DCB411003FC12D /* homeViewController.swift */,
-				D580E53822DDAF4A003FC12D /* slide.xib */,
+				D580E53A22DDC201003FC12D /* userNameController.swift */,
 				0477A80C22CA1114002C4AC5 /* Main.storyboard */,
-				D580E52822DC92C4003FC12D /* onBoarding.storyboard */,
 				0477A80F22CA1117002C4AC5 /* Assets.xcassets */,
 				0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */,
 				0477A81422CA1117002C4AC5 /* Info.plist */,
@@ -138,7 +138,6 @@
 				0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */,
 				0477A80E22CA1114002C4AC5 /* Main.storyboard in Resources */,
 				D580E53922DDAF4A003FC12D /* slide.xib in Resources */,
-				D580E52922DC92C4003FC12D /* onBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +151,7 @@
 				0477A80B22CA1114002C4AC5 /* ViewController.swift in Sources */,
 				D580E53122DCA96E003FC12D /* slide.swift in Sources */,
 				0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */,
+				D580E53B22DDC201003FC12D /* userNameController.swift in Sources */,
 				D580E53722DCB411003FC12D /* homeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
