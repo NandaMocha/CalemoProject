@@ -13,7 +13,7 @@
         <!--Journal View Controller-->
         <scene sceneID="3Qw-0L-Aa0">
             <objects>
-                <viewController id="D7b-fP-OTr" customClass="JournalViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="allJournal" id="D7b-fP-OTr" customClass="JournalViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5xY-lE-2jV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,10 +29,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="w3c-Ye-93G"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kSh-cq-wDl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIr-nn-oEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200.00000000000003" y="78.348214285714278"/>
+            <point key="canvasLocation" x="1110.144927536232" y="78.348214285714278"/>
         </scene>
         <!--Detail Journal View Controller-->
         <scene sceneID="vnq-RV-7Zv">
@@ -61,10 +62,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="crb-Kn-TEp"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1F3-Cx-0MZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VR3-h0-t3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200" y="767"/>
+            <point key="canvasLocation" x="1110.144927536232" y="766.74107142857144"/>
         </scene>
         <!--Edit Journal View Controller-->
         <scene sceneID="Boz-uj-lkG">
@@ -88,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeS-cb-l8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="767"/>
+            <point key="canvasLocation" x="1944.9275362318842" y="766.74107142857144"/>
         </scene>
     </scenes>
 </document>

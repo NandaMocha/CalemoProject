@@ -9,11 +9,14 @@
 import UIKit
 
 class JournalViewController: UIViewController {
+    
+    var test: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
     }
     
 

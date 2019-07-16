@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
     
     //Variable Declaration
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     var flag = false
     
     override func viewDidLoad() {
@@ -42,13 +43,14 @@ class HomeViewController: UIViewController {
     
     func setQuotes(){
         bgQOTDView.image = UIImage(named: "BGQuotes_sample")
-        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        let indexToScrollTo = IndexPath(item: dataArray.count-1, section: 0)
-        self.collectionView.scrollToItem(at: indexToScrollTo, at: .left, animated: false)
+    @IBAction func allJournalTapped(_ sender: Any) {
+        let journalSB = UIStoryboard(name: "Journal", bundle: nil).instantiateViewController(withIdentifier: "allJournal") as! JournalViewController
+        
+        navigationController?.show(journalSB, sender: self)
     }
+    
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
@@ -75,6 +77,19 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         performSegue(withIdentifier: "goToDetail", sender: self)
         
     }
+}
+
+//MARK:- Set Life Cycle
+extension HomeViewController{
+    override func viewWillAppear(_ animated: Bool) {
+        let indexToScrollTo = IndexPath(item: dataArray.count-1, section: 0)
+        self.collectionView.scrollToItem(at: indexToScrollTo, at: .left, animated: false)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+    }
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+        
+    }
 }
