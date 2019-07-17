@@ -131,7 +131,7 @@
                                                                     <color key="titleColor" red="0.65834885835647583" green="0.38073873519897461" blue="0.27054518461227417" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <action selector="allJournalTapped:" destination="3LR-SK-Qro" eventType="touchUpInside" id="22N-Tc-YEw"/>
+                                                                    <action selector="buttonTapped:" destination="3LR-SK-Qro" eventType="touchUpInside" id="bWY-gh-HPp"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -157,7 +157,7 @@
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </imageView>
-                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4l-51-3Lf">
+                                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4l-51-3Lf">
                                                                         <rect key="frame" x="24" y="98" width="120" height="15"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -165,7 +165,7 @@
                                                                             <color key="titleColor" red="0.68235294120000001" green="0.32549019610000002" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         </state>
                                                                         <connections>
-                                                                            <segue destination="7p9-h1-nZR" kind="modal" id="T5H-DS-fo7"/>
+                                                                            <action selector="buttonTapped:" destination="3LR-SK-Qro" eventType="touchUpInside" id="Vwt-VO-F3g"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -283,7 +283,6 @@
                         <outlet property="scrollView" destination="GSC-ox-vCw" id="PrI-Ls-8hb"/>
                         <outlet property="wsImageView" destination="UiQ-Gs-fwv" id="Qht-Lo-ang"/>
                         <outlet property="wsView" destination="Rpd-zI-GTv" id="AZB-Cy-y6f"/>
-                        <segue destination="3w0-Yw-qRb" kind="show" id="GEU-GF-bUj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Axj-Ax-Gft" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -306,36 +305,13 @@
             </objects>
             <point key="canvasLocation" x="1110" y="511"/>
         </scene>
-        <!--BarStoryBoard-->
-        <scene sceneID="JYd-Oq-pwG">
-            <objects>
-                <viewControllerPlaceholder storyboardName="BarStoryBoard" id="7p9-h1-nZR" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sfv-JH-oVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2707.2463768115945" y="-165.40178571428569"/>
-        </scene>
-        <!--DetailJournalViewController-->
-        <scene sceneID="88Z-gd-APM">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Journal" referencedIdentifier="DetailJournalViewController" id="3w0-Yw-qRb" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bMl-si-SIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2766" y="-232"/>
-        </scene>
-        <!--Me-->
-        <scene sceneID="peM-Xf-Mok">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Me" id="XHu-ch-iOt" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PoP-Nv-C52" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2655.7971014492755" y="-200.22321428571428"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Y58-ID-rXP">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ICO-Sc-Jvr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xDs-tz-vKZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

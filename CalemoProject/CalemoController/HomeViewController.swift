@@ -37,18 +37,28 @@ class HomeViewController: UIViewController {
 
     }
     
-    func setWeeklySummary(){
-        wsImageView.image = UIImage(named: "smile")
-    }
-    
     func setQuotes(){
         bgQOTDView.image = UIImage(named: "BGQuotes_sample")
     }
     
-    @IBAction func allJournalTapped(_ sender: Any) {
-        let journalSB = UIStoryboard(name: "Journal", bundle: nil).instantiateViewController(withIdentifier: "allJournal") as! JournalViewController
+    func setWeeklySummary(){
+        wsImageView.image = UIImage(named: "smile")
+    }
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        switch sender.tag {
+        case 0:
+            let journalSB = UIStoryboard(name: "Journal", bundle: nil).instantiateViewController(withIdentifier: "allJournal") as! JournalViewController
+            
+            navigationController?.show(journalSB, sender: self)
+        case 1:
+            let allSummary = UIStoryboard(name: "BarStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "BarChartViewController") as! BarChartViewController
+            
+            navigationController?.show(allSummary, sender: self)
+        default:
+            print("Not Tapped")
+        }
         
-        navigationController?.show(journalSB, sender: self)
     }
     
 }
@@ -80,10 +90,16 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let detailJournal = UIStoryboard(name: "Journal", bundle: nil).instantiateViewController(withIdentifier: "DetailJournalViewController") as! DetailJournalViewController
-        
-        navigationController?.show(detailJournal, sender: self)
-        
+        if indexPath.row < dataArray.count{
+            let detailJournal = UIStoryboard(name: "Journal", bundle: nil).instantiateViewController(withIdentifier: "DetailJournalViewController") as! DetailJournalViewController
+            
+            navigationController?.show(detailJournal, sender: self)
+        }else{
+            let alert = UIAlertController(title: "Sorry", message: "Go To Create New Journal", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            
+            present(alert, animated: true)
+        }
     }
 }
 
