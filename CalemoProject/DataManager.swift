@@ -17,13 +17,18 @@ final class DataManager {
 
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    //Mark:- Declare Variable
+    //Mark:- Declare Variable Entity
     var dataJournal : [Journal] = [Journal]()
     
     
-    func saveCoreData(date: String, feels: String, reason: String, question1: String, answer1: String, question2: String, answer2: String, question3: String, answer3: String, notes: String, image: Data){
+    //MARK:- Declare Variable Global
+    var isOnBoardingDone = false
+    
+    func saveJournalWith(date: String, feels: String, reason: String, question1: String, answer1: String, question2: String, answer2: String, question3: String, answer3: String, notes: String, image: Data){
         
-        let journal = Journal.init(context: self.context)
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        
+        let journal = Journal(context: self.context)
         
         journal.dateJournal = date
         journal.feelsJournal = feels
@@ -37,7 +42,7 @@ final class DataManager {
         journal.notesJournal = notes
         journal.imageJournal = image
         
-        dataJournal.append = journal
+        dataJournal.append(journal)
         
         do {
             try context.save()
@@ -46,8 +51,14 @@ final class DataManager {
         }
     }
     
-    func getJournal(){
+    func loadJournal(){
+        let request : NSFetchRequest = Journal.fetchRequest()
         
+        do {
+            dataJournal = try context.fetch(request)
+        } catch  {
+            print("Error Appeared When Fetch Journal")
+        }
     }
     
 }
