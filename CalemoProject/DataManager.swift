@@ -8,10 +8,12 @@
 
 import UIKit
 import CoreData
+import Foundation
 
 class DataManager{
     
     let shared = DataManager()
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     private init(){}
     

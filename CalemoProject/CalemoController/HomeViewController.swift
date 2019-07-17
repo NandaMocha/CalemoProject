@@ -76,7 +76,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
             cell.dateJournal.text = "June 15, 2019"
             cell.dayJournal.text = dataArray[indexPath.row]
-            cell.feelsJournal.image = UIImage(named: "user")
+            cell.feelsJournal.image = UIImage(named: "0\(indexPath.row+1)")
             cell.layer.cornerRadius = 20
             cell.backgroundColor = #colorLiteral(red: 0.7337953448, green: 0.8345138431, blue: 0.7939261794, alpha: 1)
             
