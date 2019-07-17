@@ -23,6 +23,7 @@
 		0444F62F22DEDCFD00C2F845 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3FFD22DC6E8800615168 /* HomeCell.swift */; };
 		0444F63022DEDCFD00C2F845 /* AddNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F401122DDF70E00615168 /* AddNewCell.swift */; };
 		0444F63322DEFA5F00C2F845 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DD51422D8688C003EF0D2 /* BarChartViewController.swift */; };
+		0459E02322DF4504002FB383 /* IntroJournalingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */; };
 		0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80822CA1114002C4AC5 /* AppDelegate.swift */; };
 		0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ListJournal.swift */; };
 		0477A80E22CA1114002C4AC5 /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -44,7 +45,6 @@
 		B126184522DDE1300055D357 /* WhatImprove.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184422DDE1300055D357 /* WhatImprove.swift */; };
 		B126184722DDE1610055D357 /* FutureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184622DDE1610055D357 /* FutureNote.swift */; };
 		B126184922DDE3970055D357 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B126184822DDE3970055D357 /* Rectangle.png */; };
-		B1DACCC722DF1860002DF203 /* IntroJournalingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -386,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0459E02322DF4504002FB383 /* IntroJournalingViewController.swift in Sources */,
 				0444F63322DEFA5F00C2F845 /* BarChartViewController.swift in Sources */,
 				0444F62D22DEDCFD00C2F845 /* JournalViewController.swift in Sources */,
 				0444F62E22DEDCFD00C2F845 /* DetailJournalViewController.swift in Sources */,
@@ -408,7 +409,6 @@
 				B126183F22DDDFD40055D357 /* Cause.swift in Sources */,
 				048757CD22DF055F000BC333 /* CalemoData.xcdatamodeld in Sources */,
 				0444F62322DEDBD100C2F845 /* userNameController.swift in Sources */,
-				B1DACCC722DF1860002DF203 /* IntroJournalingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

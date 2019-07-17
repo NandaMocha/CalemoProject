@@ -38,13 +38,13 @@
         <!--[Date]-->
         <scene sceneID="4IM-VM-eKk">
             <objects>
-                <viewController id="QXt-Pq-12x" customClass="ViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailJournalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QXt-Pq-12x" customClass="DetailJournalViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EMa-zG-ogc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YP0-E6-xg6">
-                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBq-0s-tdP">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -240,24 +240,6 @@
             </objects>
             <point key="canvasLocation" x="3917" y="100"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="8EV-1M-4kG">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VKN-Uj-5Zb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g20-h4-Lbv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GDf-kA-lm3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="QXt-Pq-12x" kind="relationship" relationship="rootViewController" id="ljW-zv-gA8"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="3017" y="100"/>
-        </scene>
         <!--Edit Journal-->
         <scene sceneID="sgx-Mb-i6J">
             <objects>
@@ -267,7 +249,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qir-xc-csq">
-                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrV-KH-jJB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>

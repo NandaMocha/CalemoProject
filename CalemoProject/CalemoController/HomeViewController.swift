@@ -37,24 +37,6 @@ class HomeViewController: UIViewController {
 
     }
     
-    func setCoreData(date: String, feels: String, reason: String, question1: String, answer1: String, question2: String, answer2: String, question3: String, answer3: String, notes: String, image: Data){
-        let journal = Journal.init(context: self.context)
-        
-        journal.dateJournal = date
-        journal.feelsJournal = feels
-        journal.reasonJournal = reason
-        journal.questionOneJournal = question1
-        journal.answerOneJournal = answer1
-        journal.questionTwoJournal = question2
-        journal.answerTwoJournal = answer2
-        journal.questionThreeJournal = question3
-        journal.answerThreeJournal = answer3
-        journal.notesJournal = notes
-        journal.imageJournal = image
-        
-        
-    }
-    
     func setQuotes(){
         bgQOTDView.image = UIImage(named: "BGQuotes_sample")
     }
@@ -67,7 +49,7 @@ class HomeViewController: UIViewController {
         switch sender.tag {
         case 0:
             print("See All Journal Tapped")
-            let journalSB = UIStoryboard(name: "Journaling", bundle: nil).instantiateViewController(withIdentifier: "IntroJournalingViewController") as! IntroJournalingViewController
+            let journalSB = UIStoryboard(name: "Journaling", bundle: nil).instantiateViewController(withIdentifier: "ListJournal") as! ListJournal
             
             navigationController?.show(journalSB, sender: self)
         case 1:
@@ -115,10 +97,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
             navigationController?.show(detailJournal, sender: self)
         }else{
-            let alert = UIAlertController(title: "Sorry", message: "Go To Create New Journal", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            let detailJournal = UIStoryboard(name: "Journaling", bundle: nil).instantiateViewController(withIdentifier: "IntroJournalingViewController") as! IntroJournalingViewController
             
-            present(alert, animated: true)
+            navigationController?.show(detailJournal, sender: self)
         }
     }
 }
