@@ -18,18 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2S-d5-leb" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="44" width="414" height="436"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2S-d5-leb" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="115" width="414" height="436"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5CT-oA-lNZ">
+                                <rect key="frame" x="20" y="64" width="374" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="This Week"/>
+                                    <segment title="This Month"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="J2S-d5-leb" firstAttribute="leading" secondItem="XWh-dp-9QQ" secondAttribute="leading" id="3t1-Zy-lgS"/>
-                            <constraint firstItem="XWh-dp-9QQ" firstAttribute="trailing" secondItem="J2S-d5-leb" secondAttribute="trailing" id="6Xr-BK-lRJ"/>
-                            <constraint firstItem="J2S-d5-leb" firstAttribute="top" secondItem="XWh-dp-9QQ" secondAttribute="top" id="m24-l9-FgN"/>
-                            <constraint firstItem="XWh-dp-9QQ" firstAttribute="bottom" secondItem="J2S-d5-leb" secondAttribute="bottom" constant="382" id="w1c-GD-Hii"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XWh-dp-9QQ"/>
                     </view>
                     <connections>
