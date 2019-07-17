@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0430147922DF2F08003B3A66 /* Journaling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048757CA22DF04AE000BC333 /* Journaling.storyboard */; };
 		043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043DD51022D85C20003EF0D2 /* BarStoryBoard.storyboard */; };
 		0444F62222DEDBD100C2F845 /* slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0444F61E22DEDBD100C2F845 /* slide.xib */; };
 		0444F62322DEDBD100C2F845 /* userNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444F61F22DEDBD100C2F845 /* userNameController.swift */; };
@@ -319,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0430147922DF2F08003B3A66 /* Journaling.storyboard in Resources */,
 				0444F62A22DEDC5700C2F845 /* Me.storyboard in Resources */,
 				0444F62822DEDC4F00C2F845 /* Home.storyboard in Resources */,
 				043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */,
