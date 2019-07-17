@@ -15,7 +15,7 @@ class Feeling: UIViewController {
     @IBOutlet weak var EmotionButton: UIButton!
     
     override func viewDidLoad() {
-        Emotion.image = UIImage(named: "emotion")
+        Emotion.image = UIImage(named: "awful")
         
         super.viewDidLoad()
         
@@ -27,11 +27,11 @@ class Feeling: UIViewController {
         
         switch value {
         case 0...0.5:
-            Emotion.image = UIImage(named: "emotion")
+            Emotion.image = UIImage(named: "awful")
         case 0.6...1:
             Emotion.image = UIImage(named: "ayam")
         default:
-            Emotion.image = UIImage(named: "emotion")
+            Emotion.image = UIImage(named: "awful")
         }
     
 }

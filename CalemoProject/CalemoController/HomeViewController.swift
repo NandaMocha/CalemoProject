@@ -48,7 +48,7 @@ class HomeViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: UIButton) {
         switch sender.tag {
         case 0:
-            let journalSB = UIStoryboard(name: "Journal", bundle: nil).instantiateViewController(withIdentifier: "allJournal") as! JournalViewController
+            let journalSB = UIStoryboard(name: "Journaling", bundle: nil).instantiateViewController(withIdentifier: "IntroJournalingViewController") as! IntroJournalingViewController
             
             navigationController?.show(journalSB, sender: self)
         case 1:

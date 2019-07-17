@@ -6,7 +6,6 @@ target 'CalemoProject' do
   use_frameworks!
 
   # Pods for CalemoProject
-
-  pod 'Charts'
+pod 'Charts'
 
 end

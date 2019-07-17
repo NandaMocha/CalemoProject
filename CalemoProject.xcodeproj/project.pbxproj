@@ -44,6 +44,7 @@
 		B126184522DDE1300055D357 /* WhatImprove.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184422DDE1300055D357 /* WhatImprove.swift */; };
 		B126184722DDE1610055D357 /* FutureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184622DDE1610055D357 /* FutureNote.swift */; };
 		B126184922DDE3970055D357 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B126184822DDE3970055D357 /* Rectangle.png */; };
+		B1DACCC722DF1860002DF203 /* IntroJournalingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		B126184422DDE1300055D357 /* WhatImprove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatImprove.swift; sourceTree = "<group>"; };
 		B126184622DDE1610055D357 /* FutureNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureNote.swift; sourceTree = "<group>"; };
 		B126184822DDE3970055D357 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
+		B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroJournalingViewController.swift; sourceTree = "<group>"; };
 		F9BF7CDC19A3EB93D8F4C008 /* Pods-CalemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.debug.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0477A80A22CA1114002C4AC5 /* ListJournal.swift */,
+				B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */,
 				B126180C22DB76270055D357 /* CalemoCollectionViewCell.swift */,
 				B126183E22DDDFD40055D357 /* Cause.swift */,
 				B126184022DDE0C40055D357 /* WhatDid.swift */,
@@ -405,6 +408,7 @@
 				B126183F22DDDFD40055D357 /* Cause.swift in Sources */,
 				048757CD22DF055F000BC333 /* CalemoData.xcdatamodeld in Sources */,
 				0444F62322DEDBD100C2F845 /* userNameController.swift in Sources */,
+				B1DACCC722DF1860002DF203 /* IntroJournalingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
