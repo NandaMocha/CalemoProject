@@ -22,11 +22,19 @@ class CreateJournal: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        progressView.transform = progressView.transform.scaledBy(x: 333, y: 12)
+        progressView.progressTintColor = #colorLiteral(red: 0.9244551063, green: 0.7166977525, blue: 0.4467653632, alpha: 1)
+            progressView.trackTintColor = #colorLiteral(red: 0.5921100378, green: 0.5921833515, blue: 0.5920851827, alpha: 1)
+        
         x = Centering.center.x
         y = Centering.center.y
         
     Centering.layer.cornerRadius = Centering.frame.height / 2
-    centeringBorder.layer.cornerRadius = centeringBorder.frame.height / 2
+   
+        Centering.backgroundColor = UIColor(patternImage: (UIImage(named: "CC")!))
+        centeringBorder.backgroundColor = UIColor(patternImage: (UIImage(named: "CCBg")!))
+        
+        centeringBorder.layer.cornerRadius = centeringBorder.frame.height / 2
         
     }
     @IBAction func centeringStart(_ sender: UIButton) {
