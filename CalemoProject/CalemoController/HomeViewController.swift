@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         scrollView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
         
@@ -48,10 +48,12 @@ class HomeViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: UIButton) {
         switch sender.tag {
         case 0:
-            let journalSB = UIStoryboard(name: "Journaling", bundle: nil).instantiateViewController(withIdentifier: "IntroJournalingViewController") as! IntroJournalingViewController
+            print("See All Journal Tapped")
+            let journalSB = UIStoryboard(name: "Journaling", bundle: nil).instantiateViewController(withIdentifier: "ListJournal") as! ListJournal
             
             navigationController?.show(journalSB, sender: self)
         case 1:
+            print("See All Summary Tapped")
             let allSummary = UIStoryboard(name: "BarStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "BarChartViewController") as! BarChartViewController
             
             navigationController?.show(allSummary, sender: self)
@@ -76,7 +78,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
             cell.dateJournal.text = "June 15, 2019"
             cell.dayJournal.text = dataArray[indexPath.row]
-            cell.feelsJournal.image = UIImage(named: "user")
+            cell.feelsJournal.image = UIImage(named: "0\(indexPath.row+1)")
             cell.layer.cornerRadius = 20
             cell.backgroundColor = #colorLiteral(red: 0.7337953448, green: 0.8345138431, blue: 0.7939261794, alpha: 1)
             
@@ -95,10 +97,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
             navigationController?.show(detailJournal, sender: self)
         }else{
-            let alert = UIAlertController(title: "Sorry", message: "Go To Create New Journal", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            let detailJournal = UIStoryboard(name: "Journaling", bundle: nil).instantiateViewController(withIdentifier: "IntroJournalingViewController") as! IntroJournalingViewController
             
-            present(alert, animated: true)
+            navigationController?.show(detailJournal, sender: self)
         }
     }
 }
