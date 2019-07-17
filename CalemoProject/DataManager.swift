@@ -6,7 +6,7 @@
 //  Copyright © 2019 nandamochammad. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 class DataManager{
