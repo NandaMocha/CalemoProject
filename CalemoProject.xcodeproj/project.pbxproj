@@ -3,25 +3,93 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043DD51022D85C20003EF0D2 /* BarStoryBoard.storyboard */; };
+		0444F62222DEDBD100C2F845 /* slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0444F61E22DEDBD100C2F845 /* slide.xib */; };
+		0444F62322DEDBD100C2F845 /* userNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444F61F22DEDBD100C2F845 /* userNameController.swift */; };
+		0444F62422DEDBD100C2F845 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444F62022DEDBD100C2F845 /* homeViewController.swift */; };
+		0444F62522DEDBD100C2F845 /* slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444F62122DEDBD100C2F845 /* slide.swift */; };
+		0444F62722DEDC1500C2F845 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0444F62622DEDC1500C2F845 /* OnBoarding.storyboard */; };
+		0444F62822DEDC4F00C2F845 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F3FF422DC3DAC00615168 /* Home.storyboard */; };
+		0444F62922DEDC5300C2F845 /* Journal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F400B22DD8B0200615168 /* Journal.storyboard */; };
+		0444F62A22DEDC5700C2F845 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F400622DD855600615168 /* Me.storyboard */; };
+		0444F62B22DEDC9100C2F845 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F400D22DD8D9B00615168 /* OnBoardingViewController.swift */; };
+		0444F62C22DEDCD400C2F845 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3FF222DC3D8C00615168 /* HomeViewController.swift */; };
+		0444F62D22DEDCFD00C2F845 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F400922DD8AF700615168 /* JournalViewController.swift */; };
+		0444F62E22DEDCFD00C2F845 /* DetailJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F401522DE0A5B00615168 /* DetailJournalViewController.swift */; };
+		0444F62F22DEDCFD00C2F845 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3FFD22DC6E8800615168 /* HomeCell.swift */; };
+		0444F63022DEDCFD00C2F845 /* AddNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F401122DDF70E00615168 /* AddNewCell.swift */; };
+		0444F63322DEFA5F00C2F845 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DD51422D8688C003EF0D2 /* BarChartViewController.swift */; };
 		0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80822CA1114002C4AC5 /* AppDelegate.swift */; };
-		0477A80B22CA1114002C4AC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ViewController.swift */; };
-		0477A80E22CA1114002C4AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80C22CA1114002C4AC5 /* Main.storyboard */; };
+		0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ListJournal.swift */; };
+		0477A80E22CA1114002C4AC5 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
 		0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */; };
+		048757CC22DF04AE000BC333 /* Journaling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048757CA22DF04AE000BC333 /* Journaling.storyboard */; };
+		048757CD22DF055F000BC333 /* CalemoData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043DD51822D89B51003EF0D2 /* CalemoData.xcdatamodeld */; };
+		04EDAEB722DE18E000C17387 /* ExtensionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDAEB622DE18E000C17387 /* ExtensionClass.swift */; };
+		2CBFE4D3C5A4F11DEEB51639 /* Pods_CalemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606E10EC295B1BC8C653DA86 /* Pods_CalemoProject.framework */; };
+		B126180D22DB76270055D357 /* CalemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126180C22DB76270055D357 /* CalemoCollectionViewCell.swift */; };
+		B126182F22DC856E0055D357 /* CreateJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126182E22DC856E0055D357 /* CreateJournal.swift */; };
+		B126183122DCB8B30055D357 /* Feeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126183022DCB8B30055D357 /* Feeling.swift */; };
+		B126183522DDC50B0055D357 /* ayam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B126183422DDC50B0055D357 /* ayam.jpg */; };
+		B126183B22DDCE8F0055D357 /* CJ - Centering (First).png in Resources */ = {isa = PBXBuildFile; fileRef = B126183A22DDCE8F0055D357 /* CJ - Centering (First).png */; };
+		B126183D22DDD2280055D357 /* Button Next.png in Resources */ = {isa = PBXBuildFile; fileRef = B126183C22DDD2280055D357 /* Button Next.png */; };
+		B126183F22DDDFD40055D357 /* Cause.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126183E22DDDFD40055D357 /* Cause.swift */; };
+		B126184122DDE0C40055D357 /* WhatDid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184022DDE0C40055D357 /* WhatDid.swift */; };
+		B126184322DDE10B0055D357 /* WhatMistake.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184222DDE10B0055D357 /* WhatMistake.swift */; };
+		B126184522DDE1300055D357 /* WhatImprove.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184422DDE1300055D357 /* WhatImprove.swift */; };
+		B126184722DDE1610055D357 /* FutureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184622DDE1610055D357 /* FutureNote.swift */; };
+		B126184922DDE3970055D357 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B126184822DDE3970055D357 /* Rectangle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043DD51022D85C20003EF0D2 /* BarStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarStoryBoard.storyboard; sourceTree = "<group>"; };
+		043DD51422D8688C003EF0D2 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		043DD51922D89B51003EF0D2 /* CalemoData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalemoData.xcdatamodel; sourceTree = "<group>"; };
+		0444F61E22DEDBD100C2F845 /* slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = slide.xib; sourceTree = "<group>"; };
+		0444F61F22DEDBD100C2F845 /* userNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userNameController.swift; sourceTree = "<group>"; };
+		0444F62022DEDBD100C2F845 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		0444F62122DEDBD100C2F845 /* slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slide.swift; sourceTree = "<group>"; };
+		0444F62622DEDC1500C2F845 /* OnBoarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		045F3FF222DC3D8C00615168 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		045F3FF422DC3DAC00615168 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		045F3FF722DC6BCE00615168 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		045F3FFD22DC6E8800615168 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		045F400222DD854200615168 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		045F400622DD855600615168 /* Me.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		045F400922DD8AF700615168 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		045F400B22DD8B0200615168 /* Journal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Journal.storyboard; sourceTree = "<group>"; };
+		045F400D22DD8D9B00615168 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		045F400F22DD8DC500615168 /* EditJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditJournalViewController.swift; sourceTree = "<group>"; };
+		045F401122DDF70E00615168 /* AddNewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCell.swift; sourceTree = "<group>"; };
+		045F401522DE0A5B00615168 /* DetailJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailJournalViewController.swift; sourceTree = "<group>"; };
 		0477A80522CA1114002C4AC5 /* CalemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0477A80822CA1114002C4AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0477A80A22CA1114002C4AC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0477A80D22CA1114002C4AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0477A80A22CA1114002C4AC5 /* ListJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJournal.swift; sourceTree = "<group>"; };
 		0477A80F22CA1117002C4AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0477A81222CA1117002C4AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0477A81422CA1117002C4AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048757CB22DF04AE000BC333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CalemoProject/Base.lproj/Journaling.storyboard; sourceTree = SOURCE_ROOT; };
+		04EDAEB622DE18E000C17387 /* ExtensionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionClass.swift; sourceTree = "<group>"; };
+		606E10EC295B1BC8C653DA86 /* Pods_CalemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8234BACDD4F52FE862BD90D /* Pods-CalemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.release.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.release.xcconfig"; sourceTree = "<group>"; };
+		B126180C22DB76270055D357 /* CalemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		B126182E22DC856E0055D357 /* CreateJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJournal.swift; sourceTree = "<group>"; };
+		B126183022DCB8B30055D357 /* Feeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeling.swift; sourceTree = "<group>"; };
+		B126183422DDC50B0055D357 /* ayam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ayam.jpg; sourceTree = "<group>"; };
+		B126183A22DDCE8F0055D357 /* CJ - Centering (First).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CJ - Centering (First).png"; sourceTree = "<group>"; };
+		B126183C22DDD2280055D357 /* Button Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button Next.png"; sourceTree = "<group>"; };
+		B126183E22DDDFD40055D357 /* Cause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cause.swift; sourceTree = "<group>"; };
+		B126184022DDE0C40055D357 /* WhatDid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatDid.swift; sourceTree = "<group>"; };
+		B126184222DDE10B0055D357 /* WhatMistake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatMistake.swift; sourceTree = "<group>"; };
+		B126184422DDE1300055D357 /* WhatImprove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatImprove.swift; sourceTree = "<group>"; };
+		B126184622DDE1610055D357 /* FutureNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureNote.swift; sourceTree = "<group>"; };
+		B126184822DDE3970055D357 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
+		F9BF7CDC19A3EB93D8F4C008 /* Pods-CalemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.debug.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +97,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBFE4D3C5A4F11DEEB51639 /* Pods_CalemoProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0444F63222DEDF8500C2F845 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				0477A80A22CA1114002C4AC5 /* ListJournal.swift */,
+				B126180C22DB76270055D357 /* CalemoCollectionViewCell.swift */,
+				B126183E22DDDFD40055D357 /* Cause.swift */,
+				B126184022DDE0C40055D357 /* WhatDid.swift */,
+				B126184222DDE10B0055D357 /* WhatMistake.swift */,
+				B126184422DDE1300055D357 /* WhatImprove.swift */,
+				B126184622DDE1610055D357 /* FutureNote.swift */,
+				B126183022DCB8B30055D357 /* Feeling.swift */,
+				B126182E22DC856E0055D357 /* CreateJournal.swift */,
+				B126184822DDE3970055D357 /* Rectangle.png */,
+				B126183C22DDD2280055D357 /* Button Next.png */,
+				B126183A22DDCE8F0055D357 /* CJ - Centering (First).png */,
+				048757CA22DF04AE000BC333 /* Journaling.storyboard */,
+				B126183422DDC50B0055D357 /* ayam.jpg */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		045F3FF622DC47D500615168 /* CalemoController */ = {
+			isa = PBXGroup;
+			children = (
+				045F3FF222DC3D8C00615168 /* HomeViewController.swift */,
+				045F3FF422DC3DAC00615168 /* Home.storyboard */,
+				045F3FFD22DC6E8800615168 /* HomeCell.swift */,
+				045F401122DDF70E00615168 /* AddNewCell.swift */,
+			);
+			path = CalemoController;
+			sourceTree = "<group>";
+		};
+		045F400122DD852500615168 /* MeController */ = {
+			isa = PBXGroup;
+			children = (
+				045F400222DD854200615168 /* MeViewController.swift */,
+				045F400622DD855600615168 /* Me.storyboard */,
+			);
+			path = MeController;
+			sourceTree = "<group>";
+		};
+		045F400822DD8AE300615168 /* JournalController */ = {
+			isa = PBXGroup;
+			children = (
+				045F400922DD8AF700615168 /* JournalViewController.swift */,
+				045F400F22DD8DC500615168 /* EditJournalViewController.swift */,
+				045F400B22DD8B0200615168 /* Journal.storyboard */,
+				045F401522DE0A5B00615168 /* DetailJournalViewController.swift */,
+			);
+			path = JournalController;
+			sourceTree = "<group>";
+		};
+		045F401722DE0ABF00615168 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				0444F62622DEDC1500C2F845 /* OnBoarding.storyboard */,
+				0444F62022DEDBD100C2F845 /* homeViewController.swift */,
+				0444F62122DEDBD100C2F845 /* slide.swift */,
+				0444F61E22DEDBD100C2F845 /* slide.xib */,
+				0444F61F22DEDBD100C2F845 /* userNameController.swift */,
+				045F400D22DD8D9B00615168 /* OnBoardingViewController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
 		0477A7FC22CA1114002C4AC5 = {
 			isa = PBXGroup;
 			children = (
 				0477A80722CA1114002C4AC5 /* CalemoProject */,
 				0477A80622CA1114002C4AC5 /* Products */,
+				B37650E2B740710449DF5138 /* Pods */,
+				1558F69F34EE5C82BB409187 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +191,70 @@
 			isa = PBXGroup;
 			children = (
 				0477A80822CA1114002C4AC5 /* AppDelegate.swift */,
-				0477A80A22CA1114002C4AC5 /* ViewController.swift */,
-				0477A80C22CA1114002C4AC5 /* Main.storyboard */,
+				045F3FF722DC6BCE00615168 /* DataManager.swift */,
+				04EDAEB622DE18E000C17387 /* ExtensionClass.swift */,
+				045F400822DD8AE300615168 /* JournalController */,
+				045F400122DD852500615168 /* MeController */,
+				045F3FF622DC47D500615168 /* CalemoController */,
+				04E3A1A822D8370D008D99FF /* GraphController */,
+				045F401722DE0ABF00615168 /* OnBoarding */,
+				0444F63222DEDF8500C2F845 /* Journal */,
 				0477A80F22CA1117002C4AC5 /* Assets.xcassets */,
 				0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */,
 				0477A81422CA1117002C4AC5 /* Info.plist */,
+				043DD51822D89B51003EF0D2 /* CalemoData.xcdatamodeld */,
 			);
 			path = CalemoProject;
+			sourceTree = "<group>";
+		};
+		04E3A1A822D8370D008D99FF /* GraphController */ = {
+			isa = PBXGroup;
+			children = (
+				04E3A1AC22D8374B008D99FF /* Model */,
+				04E3A1AD22D83751008D99FF /* View */,
+				04E3A1AB22D83743008D99FF /* Controller */,
+			);
+			path = GraphController;
+			sourceTree = "<group>";
+		};
+		04E3A1AB22D83743008D99FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				043DD51422D8688C003EF0D2 /* BarChartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04E3A1AC22D8374B008D99FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04E3A1AD22D83751008D99FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043DD51022D85C20003EF0D2 /* BarStoryBoard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1558F69F34EE5C82BB409187 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				606E10EC295B1BC8C653DA86 /* Pods_CalemoProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B37650E2B740710449DF5138 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9BF7CDC19A3EB93D8F4C008 /* Pods-CalemoProject.debug.xcconfig */,
+				A8234BACDD4F52FE862BD90D /* Pods-CalemoProject.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0477A81722CA1117002C4AC5 /* Build configuration list for PBXNativeTarget "CalemoProject" */;
 			buildPhases = (
+				1BAB288118E446627BE2C5CE /* [CP] Check Pods Manifest.lock */,
 				0477A80122CA1114002C4AC5 /* Sources */,
 				0477A80222CA1114002C4AC5 /* Frameworks */,
 				0477A80322CA1114002C4AC5 /* Resources */,
+				5921BB05EE86DB300B493AA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,41 +317,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0444F62A22DEDC5700C2F845 /* Me.storyboard in Resources */,
+				0444F62922DEDC5300C2F845 /* Journal.storyboard in Resources */,
+				0444F62822DEDC4F00C2F845 /* Home.storyboard in Resources */,
+				043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */,
+				0444F62222DEDBD100C2F845 /* slide.xib in Resources */,
 				0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */,
+				B126183D22DDD2280055D357 /* Button Next.png in Resources */,
+				048757CC22DF04AE000BC333 /* Journaling.storyboard in Resources */,
+				B126183B22DDCE8F0055D357 /* CJ - Centering (First).png in Resources */,
 				0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */,
-				0477A80E22CA1114002C4AC5 /* Main.storyboard in Resources */,
+				0477A80E22CA1114002C4AC5 /* (null) in Resources */,
+				B126183522DDC50B0055D357 /* ayam.jpg in Resources */,
+				B126184922DDE3970055D357 /* Rectangle.png in Resources */,
+				0444F62722DEDC1500C2F845 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BAB288118E446627BE2C5CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalemoProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5921BB05EE86DB300B493AA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalemoProject/Pods-CalemoProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalemoProject/Pods-CalemoProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalemoProject/Pods-CalemoProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0477A80122CA1114002C4AC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0477A80B22CA1114002C4AC5 /* ViewController.swift in Sources */,
+				0444F63322DEFA5F00C2F845 /* BarChartViewController.swift in Sources */,
+				0444F62D22DEDCFD00C2F845 /* JournalViewController.swift in Sources */,
+				0444F62E22DEDCFD00C2F845 /* DetailJournalViewController.swift in Sources */,
+				0444F62F22DEDCFD00C2F845 /* HomeCell.swift in Sources */,
+				0444F63022DEDCFD00C2F845 /* AddNewCell.swift in Sources */,
+				0444F62C22DEDCD400C2F845 /* HomeViewController.swift in Sources */,
+				0444F62B22DEDC9100C2F845 /* OnBoardingViewController.swift in Sources */,
+				B126184522DDE1300055D357 /* WhatImprove.swift in Sources */,
+				04EDAEB722DE18E000C17387 /* ExtensionClass.swift in Sources */,
+				B126180D22DB76270055D357 /* CalemoCollectionViewCell.swift in Sources */,
+				0444F62422DEDBD100C2F845 /* homeViewController.swift in Sources */,
+				B126182F22DC856E0055D357 /* CreateJournal.swift in Sources */,
+				0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */,
 				0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */,
+				B126184122DDE0C40055D357 /* WhatDid.swift in Sources */,
+				B126183122DCB8B30055D357 /* Feeling.swift in Sources */,
+				0444F62522DEDBD100C2F845 /* slide.swift in Sources */,
+				B126184322DDE10B0055D357 /* WhatMistake.swift in Sources */,
+				B126184722DDE1610055D357 /* FutureNote.swift in Sources */,
+				B126183F22DDDFD40055D357 /* Cause.swift in Sources */,
+				048757CD22DF055F000BC333 /* CalemoData.xcdatamodeld in Sources */,
+				0444F62322DEDBD100C2F845 /* userNameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0477A80C22CA1114002C4AC5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0477A80D22CA1114002C4AC5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0477A81222CA1117002C4AC5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		048757CA22DF04AE000BC333 /* Journaling.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				048757CB22DF04AE000BC333 /* Base */,
+			);
+			name = Journaling.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -280,6 +548,7 @@
 		};
 		0477A81822CA1117002C4AC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9BF7CDC19A3EB93D8F4C008 /* Pods-CalemoProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +567,7 @@
 		};
 		0477A81922CA1117002C4AC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8234BACDD4F52FE862BD90D /* Pods-CalemoProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +606,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		043DD51822D89B51003EF0D2 /* CalemoData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				043DD51922D89B51003EF0D2 /* CalemoData.xcdatamodel */,
+			);
+			currentVersion = 043DD51922D89B51003EF0D2 /* CalemoData.xcdatamodel */;
+			path = CalemoData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0477A7FD22CA1114002C4AC5 /* Project object */;
 }
