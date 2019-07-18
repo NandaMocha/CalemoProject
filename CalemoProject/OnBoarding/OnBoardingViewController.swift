@@ -19,6 +19,8 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
+    let manager = DataManager.shared
+    
     var Slide:[slide] = []
     
     override func viewDidLoad() {
@@ -32,6 +34,13 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = 0
         
         view.bringSubviewToFront(pageControl)
+        
+        manager.loadFromUserDefaults()
+        
+        if manager.isLoadDummyDone == false{
+            manager.saveDummyJournal()
+        }
+        manager.loadDummyJournal()
         
     }
     
@@ -74,6 +83,7 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
     func setupSlideScrollView(slides : [slide]) {
         scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
+        
         scrollView.isPagingEnabled = true
       
         
@@ -89,6 +99,7 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
         super.didReceiveMemoryWarning()
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
         

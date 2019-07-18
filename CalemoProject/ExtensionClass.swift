@@ -31,4 +31,56 @@ extension UIButton{
     }
 }
 
-
+extension String{
+    func getDate() -> String{
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        
+        let resultDate = formatter.string(from: date)
+        
+        return resultDate
+    }
+    
+    func getDay(date: String) -> String{
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        
+        let date = formatter.date(from: date)
+        
+        let myCalendar = Calendar(identifier: .gregorian)
+        let weekDay = myCalendar.component(.weekday, from: date!)
+        
+        var day = ""
+        switch weekDay {
+        case 1:
+            day = "Sunday"
+        case 2:
+            day = "Monday"
+        case 3:
+            day = "Tuesday"
+        case 4:
+            day = "Wednesday"
+        case 5:
+            day = "Thursday"
+        case 6:
+            day = "Friday"
+        case 7:
+            day = "Saturday"
+        default:
+            print("Date is not available")
+        }
+        print("\(String(describing: date)) is \(day)")
+        
+        return day
+    }
+    
+    func theDate(dateString: String) -> Date{
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        
+        let date = formatter.date(from: dateString)
+        
+        return date!
+    }
+}
