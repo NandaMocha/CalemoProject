@@ -49,7 +49,7 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
         let slide1:slide = Bundle.main.loadNibNamed("slide", owner: self, options: nil)?.first as! slide
         slide1.onboardingImage.image = UIImage(named: "image onBoard1")
         slide1.headline.text = "Guided Journal"
-        slide1.caption.text = "xxx"
+        slide1.caption.text = "I’m here to help you have a better and easier way in journaling"
         
         let slide2:slide = Bundle.main.loadNibNamed("slide", owner: self, options: nil)?.first as! slide
        slide2.onboardingImage.image = UIImage(named: "image inBoard2")

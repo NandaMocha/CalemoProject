@@ -27,15 +27,29 @@ class userNameController: UIViewController, UITextFieldDelegate, UIScrollViewDel
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        DataManager.shared.isLoggedIn = true
+        DataManager.shared.nameUser = nameField.text!
+        DataManager.shared.saveToUserDefaults()
         return true
     }
     
     @IBAction func createJournalButton(_ sender: Any) {
-        namaUser = nameField.text
-        defaults.set(namaUser, forKey: "namaUser")
+        if nameField.text == "" {
+            let alert = UIAlertController(title: "ouchh!", message: "Tell me your name please", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Click", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else{
+            performSegue(withIdentifier: "toJournaling", sender: nil)
+        }
     }
     @IBAction func tryLaterButton(_ sender: Any) {
-        
+        if nameField.text == "" {
+            let alert = UIAlertController(title: "ouchh!", message: "Tell me your name please", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Click", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else{
+            performSegue(withIdentifier: "toHome", sender: nil)
+        }
     }
     
     

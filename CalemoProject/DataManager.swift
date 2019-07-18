@@ -24,19 +24,24 @@ final class DataManager {
     //MARK:- Declare Variable Global
     var isOnBoardingDone = false
     var isLoadDummyDone = false
+    var isLoggedIn = false
+    var nameUser = ""
     
     //MARK:- Save and Load User Defaults
     let defaults = UserDefaults.standard
     
     func saveToUserDefaults() {
         defaults.set(isLoadDummyDone, forKey: "isLoadDummyDone")
-        
+        defaults.set(isLoggedIn, forKey: "isLoggedIn")
+        defaults.set(nameUser, forKey: "alreadyLogIn")
         print("New Data has been Saved")
     }
     
     func loadFromUserDefaults() {
         isLoadDummyDone = defaults.bool(forKey: "isLoadDummyDone")
         print("Load Data Dummy is ", isLoadDummyDone)
+        isLoggedIn = defaults.bool(forKey: "isLoggedIn")
+        defaults.string(forKey: "alreadyLogIn")
     }
     
     //MARK:- Load and Fetch Journal

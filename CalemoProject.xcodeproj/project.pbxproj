@@ -48,6 +48,7 @@
 		B126184522DDE1300055D357 /* WhatImprove.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184422DDE1300055D357 /* WhatImprove.swift */; };
 		B126184722DDE1610055D357 /* FutureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184622DDE1610055D357 /* FutureNote.swift */; };
 		B126184922DDE3970055D357 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B126184822DDE3970055D357 /* Rectangle.png */; };
+		D5BACF9722E0A9FA00F6FDE5 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BACF9622E0A9F900F6FDE5 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		B126184622DDE1610055D357 /* FutureNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureNote.swift; sourceTree = "<group>"; };
 		B126184822DDE3970055D357 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
 		B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroJournalingViewController.swift; sourceTree = "<group>"; };
+		D5BACF9622E0A9F900F6FDE5 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		F9BF7CDC19A3EB93D8F4C008 /* Pods-CalemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.debug.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,6 +243,7 @@
 				0459E02922E01D07002FB383 /* RawFile */,
 				0477A80F22CA1117002C4AC5 /* Assets.xcassets */,
 				0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */,
+				D5BACF9622E0A9F900F6FDE5 /* LaunchScreen.swift */,
 				0477A81422CA1117002C4AC5 /* Info.plist */,
 				043DD51822D89B51003EF0D2 /* CalemoData.xcdatamodeld */,
 			);
@@ -424,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5BACF9722E0A9FA00F6FDE5 /* LaunchScreen.swift in Sources */,
 				0459E02C22E02897002FB383 /* AppDelegate.swift in Sources */,
 				0459E02522E014AE002FB383 /* MeViewController.swift in Sources */,
 				0459E02422DF510F002FB383 /* DataManager.swift in Sources */,
@@ -596,7 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9NAU7R3577;
+				DEVELOPMENT_TEAM = WUTTU7SXU9;
 				INFOPLIST_FILE = CalemoProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -615,7 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9NAU7R3577;
+				DEVELOPMENT_TEAM = WUTTU7SXU9;
 				INFOPLIST_FILE = CalemoProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
