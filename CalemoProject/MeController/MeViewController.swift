@@ -26,11 +26,7 @@ extension MeViewController{
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-//        self.tabBarController?.tabBar.isHidden = true
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        self.tabBarController?.tabBar.isHidden = true
-    }
+
 }

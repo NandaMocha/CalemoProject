@@ -12,7 +12,7 @@
         <attribute name="answerTwoJournal" attributeType="String" syncable="YES"/>
         <attribute name="dateJournal" attributeType="String" syncable="YES"/>
         <attribute name="feelsJournal" attributeType="String" syncable="YES"/>
-        <attribute name="imageJournal" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageJournal" attributeType="String" syncable="YES"/>
         <attribute name="notesJournal" attributeType="String" syncable="YES"/>
         <attribute name="questionOneJournal" attributeType="String" syncable="YES"/>
         <attribute name="questionThreeJournal" attributeType="String" syncable="YES"/>
