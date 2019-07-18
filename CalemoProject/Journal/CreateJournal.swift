@@ -28,13 +28,9 @@ class CreateJournal: UIViewController {
         
         x = Centering.center.x
         y = Centering.center.y
-        
-    Centering.layer.cornerRadius = Centering.frame.height / 2
    
         Centering.backgroundColor = UIColor(patternImage: (UIImage(named: "CC")!))
         centeringBorder.backgroundColor = UIColor(patternImage: (UIImage(named: "CCBg")!))
-        
-        centeringBorder.layer.cornerRadius = centeringBorder.frame.height / 2
         
     }
     @IBAction func centeringStart(_ sender: UIButton) {
