@@ -29,6 +29,7 @@ class userNameController: UIViewController, UITextFieldDelegate, UIScrollViewDel
         textField.resignFirstResponder()
         return true
     }
+    
     @IBAction func createJournalButton(_ sender: Any) {
         namaUser = nameField.text
         defaults.set(namaUser, forKey: "namaUser")

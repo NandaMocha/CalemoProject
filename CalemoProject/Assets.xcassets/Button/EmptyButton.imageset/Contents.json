@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "emotion.jpg",
+      "filename" : "EmptyButton.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "EmptyButton@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "EmptyButton@3x.png",
       "scale" : "3x"
     }
   ],

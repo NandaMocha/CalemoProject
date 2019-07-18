@@ -48,6 +48,13 @@
 		B126184522DDE1300055D357 /* WhatImprove.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184422DDE1300055D357 /* WhatImprove.swift */; };
 		B126184722DDE1610055D357 /* FutureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184622DDE1610055D357 /* FutureNote.swift */; };
 		B126184922DDE3970055D357 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B126184822DDE3970055D357 /* Rectangle.png */; };
+		B1DACCCA22E07CFF002DF203 /* Emotion.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DACCC922E07CFF002DF203 /* Emotion.xib */; };
+		B1DACCCC22E07D11002DF203 /* Reason.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DACCCB22E07D11002DF203 /* Reason.xib */; };
+		B1DACCCE22E07D1F002DF203 /* Question.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1DACCCD22E07D1F002DF203 /* Question.xib */; };
+		B1DACCD022E07DE8002DF203 /* EmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DACCCF22E07DE8002DF203 /* EmotionCell.swift */; };
+		B1DACCD222E084A9002DF203 /* ReasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DACCD122E084A9002DF203 /* ReasonCell.swift */; };
+		B1DACCD422E0873A002DF203 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DACCD322E0873A002DF203 /* QuestionView.swift */; };
+		B1DACCD622E09DBD002DF203 /* Journaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DACCD522E09DBD002DF203 /* Journaling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +102,13 @@
 		B126184622DDE1610055D357 /* FutureNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureNote.swift; sourceTree = "<group>"; };
 		B126184822DDE3970055D357 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
 		B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroJournalingViewController.swift; sourceTree = "<group>"; };
+		B1DACCC922E07CFF002DF203 /* Emotion.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Emotion.xib; sourceTree = "<group>"; };
+		B1DACCCB22E07D11002DF203 /* Reason.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Reason.xib; sourceTree = "<group>"; };
+		B1DACCCD22E07D1F002DF203 /* Question.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Question.xib; sourceTree = "<group>"; };
+		B1DACCCF22E07DE8002DF203 /* EmotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCell.swift; sourceTree = "<group>"; };
+		B1DACCD122E084A9002DF203 /* ReasonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonCell.swift; sourceTree = "<group>"; };
+		B1DACCD322E0873A002DF203 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		B1DACCD522E09DBD002DF203 /* Journaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journaling.swift; sourceTree = "<group>"; };
 		F9BF7CDC19A3EB93D8F4C008 /* Pods-CalemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.debug.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +127,7 @@
 		0444F63222DEDF8500C2F845 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				B1DACCC822E07CD7002DF203 /* xib class */,
 				0477A80A22CA1114002C4AC5 /* ListJournal.swift */,
 				B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */,
 				B126180C22DB76270055D357 /* CalemoCollectionViewCell.swift */,
@@ -127,6 +142,7 @@
 				B126183C22DDD2280055D357 /* Button Next.png */,
 				B126183A22DDCE8F0055D357 /* CJ - Centering (First).png */,
 				048757CA22DF04AE000BC333 /* Journaling.storyboard */,
+				B1DACCD522E09DBD002DF203 /* Journaling.swift */,
 				B126183422DDC50B0055D357 /* ayam.jpg */,
 			);
 			path = Journal;
@@ -288,6 +304,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B1DACCC822E07CD7002DF203 /* xib class */ = {
+			isa = PBXGroup;
+			children = (
+				B1DACCC922E07CFF002DF203 /* Emotion.xib */,
+				B1DACCCF22E07DE8002DF203 /* EmotionCell.swift */,
+				B1DACCCB22E07D11002DF203 /* Reason.xib */,
+				B1DACCD122E084A9002DF203 /* ReasonCell.swift */,
+				B1DACCCD22E07D1F002DF203 /* Question.xib */,
+				B1DACCD322E0873A002DF203 /* QuestionView.swift */,
+			);
+			path = "xib class";
+			sourceTree = "<group>";
+		};
 		B37650E2B740710449DF5138 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,10 +391,13 @@
 				0444F62822DEDC4F00C2F845 /* Home.storyboard in Resources */,
 				043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */,
 				0444F62222DEDBD100C2F845 /* slide.xib in Resources */,
+				B1DACCCC22E07D11002DF203 /* Reason.xib in Resources */,
 				0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */,
 				B126183D22DDD2280055D357 /* Button Next.png in Resources */,
+				B1DACCCA22E07CFF002DF203 /* Emotion.xib in Resources */,
 				048757D122DF2051000BC333 /* Journal.storyboard in Resources */,
 				B126183B22DDCE8F0055D357 /* CJ - Centering (First).png in Resources */,
+				B1DACCCE22E07D1F002DF203 /* Question.xib in Resources */,
 				0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */,
 				0477A80E22CA1114002C4AC5 /* (null) in Resources */,
 				B126183522DDC50B0055D357 /* ayam.jpg in Resources */,
@@ -431,11 +463,13 @@
 				0444F63322DEFA5F00C2F845 /* BarChartViewController.swift in Sources */,
 				0444F62D22DEDCFD00C2F845 /* JournalViewController.swift in Sources */,
 				0444F62E22DEDCFD00C2F845 /* DetailJournalViewController.swift in Sources */,
+				B1DACCD622E09DBD002DF203 /* Journaling.swift in Sources */,
 				0444F62F22DEDCFD00C2F845 /* HomeCell.swift in Sources */,
 				0444F63022DEDCFD00C2F845 /* AddNewCell.swift in Sources */,
 				0444F62C22DEDCD400C2F845 /* HomeViewController.swift in Sources */,
 				0444F62B22DEDC9100C2F845 /* OnBoardingViewController.swift in Sources */,
 				B126184522DDE1300055D357 /* WhatImprove.swift in Sources */,
+				B1DACCD022E07DE8002DF203 /* EmotionCell.swift in Sources */,
 				04EDAEB722DE18E000C17387 /* ExtensionClass.swift in Sources */,
 				B126180D22DB76270055D357 /* CalemoCollectionViewCell.swift in Sources */,
 				0444F62422DEDBD100C2F845 /* homeViewController.swift in Sources */,
@@ -447,7 +481,9 @@
 				B126184322DDE10B0055D357 /* WhatMistake.swift in Sources */,
 				B126184722DDE1610055D357 /* FutureNote.swift in Sources */,
 				B126183F22DDDFD40055D357 /* Cause.swift in Sources */,
+				B1DACCD422E0873A002DF203 /* QuestionView.swift in Sources */,
 				048757CD22DF055F000BC333 /* CalemoData.xcdatamodeld in Sources */,
+				B1DACCD222E084A9002DF203 /* ReasonCell.swift in Sources */,
 				0444F62322DEDBD100C2F845 /* userNameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

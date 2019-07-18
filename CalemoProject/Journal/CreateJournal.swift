@@ -33,9 +33,7 @@ class CreateJournal: UIViewController {
         centeringBorder.backgroundColor = UIColor(patternImage: (UIImage(named: "CCBg")!))
         
     }
-    @IBAction func centeringStart(_ sender: UIButton) {
-       
-    }
+    
     func centeringStart() {
         UIView.animate(withDuration: 4, delay: 0, options: [.autoreverse, .repeat], animations: {
             self.Centering.transform = CGAffineTransform.identity.scaledBy(x: 1.6, y: 1.6)
