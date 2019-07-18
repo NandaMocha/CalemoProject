@@ -19,7 +19,7 @@ final class DataManager {
     
     //Mark:- Declare Variable Entity
     var dataJournal : [Journal] = [Journal]()
-    
+    var dataJurnalTujuHari : [Journal] = [Journal]()
     
     //MARK:- Declare Variable Global
     var isOnBoardingDone = false
@@ -93,8 +93,7 @@ final class DataManager {
             let json = try JSONSerialization.jsonObject(with: data, options: [])
             
             guard let object = json as? [[String: String]] else { print("json invalid"); return}
-//            print("Data Dummy JSON is, ", object)
-            
+//
             for data in object{
                 print(data)
             
@@ -139,12 +138,25 @@ final class DataManager {
             let sortData = journalDataLoadDummy.sorted(by: {
                 let data1: Date = data.theDate(dateString: ($0.dateJournal)!)
                 let data2: Date = data.theDate(dateString: ($1.dateJournal)!)
+                
+                filterJurnalTujuHari(dataJurnal: journalDataLoadDummy)
+                
                 return data1 < data2
             })
             
             journalDataLoadDummy = sortData
         } catch  {
             print("Error Appeared When Fetch Journal")
+        }
+    }
+    
+    func filterJurnalTujuHari(dataJurnal: [Journal]){
+        var date = ""
+        
+        var dateToday = date.getDate()
+        
+        if dataJurnal[dataJurnal.count-1].dateJournal != dateToday{
+            
         }
     }
     

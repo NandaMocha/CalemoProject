@@ -130,6 +130,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             self.tabBarController?.tabBar.isHidden = true
             
             navigationController?.show(detailJournal, sender: self)
+            
         }else{
             let detailJournal = UIStoryboard(name: "Journaling", bundle: nil).instantiateViewController(withIdentifier: "IntroJournalingViewController") as! IntroJournalingViewController
 
