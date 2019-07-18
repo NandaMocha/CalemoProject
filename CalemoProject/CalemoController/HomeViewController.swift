@@ -110,11 +110,18 @@ extension HomeViewController{
         let indexToScrollTo = IndexPath(item: dataArray.count-1, section: 0)
         self.collectionView.scrollToItem(at: indexToScrollTo, at: .left, animated: false)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.tabBarController?.tabBar.isHidden = false
         
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(false, animated: animated)
+//        self.tabBarController?.tabBar.isHidden = true
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
 }

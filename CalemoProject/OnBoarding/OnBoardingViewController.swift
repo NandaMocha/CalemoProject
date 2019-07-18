@@ -74,6 +74,7 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
     func setupSlideScrollView(slides : [slide]) {
         scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
+        
         scrollView.isPagingEnabled = true
       
         
@@ -89,6 +90,7 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
         super.didReceiveMemoryWarning()
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
         

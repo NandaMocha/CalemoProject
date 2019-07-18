@@ -25,6 +25,7 @@
 		0444F63322DEFA5F00C2F845 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DD51422D8688C003EF0D2 /* BarChartViewController.swift */; };
 		0459E02322DF4504002FB383 /* IntroJournalingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */; };
 		0459E02422DF510F002FB383 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3FF722DC6BCE00615168 /* DataManager.swift */; };
+		0459E02522E014AE002FB383 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F400222DD854200615168 /* MeViewController.swift */; };
 		0477A80922CA1114002C4AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80822CA1114002C4AC5 /* AppDelegate.swift */; };
 		0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ListJournal.swift */; };
 		0477A80E22CA1114002C4AC5 /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -387,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0459E02522E014AE002FB383 /* MeViewController.swift in Sources */,
 				0459E02422DF510F002FB383 /* DataManager.swift in Sources */,
 				0459E02322DF4504002FB383 /* IntroJournalingViewController.swift in Sources */,
 				0444F63322DEFA5F00C2F845 /* BarChartViewController.swift in Sources */,
