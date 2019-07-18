@@ -78,7 +78,6 @@ final class DataManager {
     }
     
     //MARK:- Load and Fetch Dummy Journal
-
     var journalDataLoadDummy: [Journal] = [Journal]()
 
     func saveDummyJournal(){
@@ -86,7 +85,10 @@ final class DataManager {
             print("Saved Dummy Journal into, ")
             print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
             
-            guard let file = Bundle.main.url(forResource: "journalDummy", withExtension: "json") else{print("json raw not found"); return}
+            guard let file = Bundle.main.url(forResource: "journalDummy", withExtension: "json") else {
+                print("json raw not found")
+                return
+            }
             let data = try Data(contentsOf: file)
             let json = try JSONSerialization.jsonObject(with: data, options: [])
             
@@ -126,7 +128,7 @@ final class DataManager {
         }
     }
     
-    func loadDummyJournal(){
+    func loadDummyJournal() {
         print("Load Data Dummy Journal")
         let request : NSFetchRequest = Journal.fetchRequest()
         let data = ""
