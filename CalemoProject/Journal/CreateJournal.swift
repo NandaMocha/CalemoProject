@@ -38,7 +38,7 @@ class CreateJournal: UIViewController {
         UIView.animate(withDuration: 4, delay: 0, options: [.autoreverse, .repeat], animations: {
             self.Centering.transform = CGAffineTransform.identity.scaledBy(x: 1.6, y: 1.6)
         }) { (done) in
-            self.Centering.frame = CGRect(x: 45, y: 45, width: 150, height: 150)
+            self.Centering.frame = CGRect(x: 45, y: 45, width: 154, height: 154)
             
             self.progressView.progress = 0.0
             //            self.progress.completedUnitCount = 0
