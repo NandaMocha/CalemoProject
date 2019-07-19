@@ -98,7 +98,7 @@ final class DataManager {
             let json = try JSONSerialization.jsonObject(with: data, options: [])
             
             guard let object = json as? [[String: String]] else { print("json invalid"); return}
-//
+
             for data in object{
                 print(data)
             
@@ -161,7 +161,14 @@ final class DataManager {
         var dateToday = date.getDate()
         
         if dataJurnal[dataJurnal.count-1].dateJournal != dateToday{
-            
+            if dataJurnal.count > 7{
+                for i in 0 ..< 7{
+//                    dataJurnalTujuHari.append(dataJurnal[i])
+                    print("Contents of Journal -> ",dataJurnal[i])
+                }
+            }else{
+                print("Contents of Jurnal Kurang Dari 7 hari\n -> ", dataJurnal)
+            }
         }
     }
     

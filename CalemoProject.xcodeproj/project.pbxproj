@@ -28,6 +28,8 @@
 		0459E02522E014AE002FB383 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F400222DD854200615168 /* MeViewController.swift */; };
 		0459E02B22E01ED4002FB383 /* journalDummy.json in Resources */ = {isa = PBXBuildFile; fileRef = 0459E02A22E01ED4002FB383 /* journalDummy.json */; };
 		0459E02C22E02897002FB383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80822CA1114002C4AC5 /* AppDelegate.swift */; };
+		0459E02F22E17993002FB383 /* SlashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E02E22E17993002FB383 /* SlashScreenViewController.swift */; };
+		0459E03122E1799F002FB383 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03022E1799F002FB383 /* Splash.storyboard */; };
 		0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ListJournal.swift */; };
 		0477A80E22CA1114002C4AC5 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		0444F62122DEDBD100C2F845 /* slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slide.swift; sourceTree = "<group>"; };
 		0444F62622DEDC1500C2F845 /* OnBoarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		0459E02A22E01ED4002FB383 /* journalDummy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = journalDummy.json; sourceTree = "<group>"; };
+		0459E02E22E17993002FB383 /* SlashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlashScreenViewController.swift; sourceTree = "<group>"; };
+		0459E03022E1799F002FB383 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		045F3FF222DC3D8C00615168 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		045F3FF422DC3DAC00615168 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		045F3FF722DC6BCE00615168 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -167,6 +171,15 @@
 			path = RawFile;
 			sourceTree = "<group>";
 		};
+		0459E02D22E1792A002FB383 /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0459E02E22E17993002FB383 /* SlashScreenViewController.swift */,
+				0459E03022E1799F002FB383 /* Splash.storyboard */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
 		045F3FF622DC47D500615168 /* CalemoController */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,15 +244,16 @@
 		0477A80722CA1114002C4AC5 /* CalemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				0459E02D22E1792A002FB383 /* Splash Screen */,
+				045F401722DE0ABF00615168 /* OnBoarding */,
 				0477A80822CA1114002C4AC5 /* AppDelegate.swift */,
 				045F3FF722DC6BCE00615168 /* DataManager.swift */,
 				04EDAEB622DE18E000C17387 /* ExtensionClass.swift */,
+				045F3FF622DC47D500615168 /* CalemoController */,
+				0444F63222DEDF8500C2F845 /* Journal */,
 				045F400822DD8AE300615168 /* DetailJournalController */,
 				045F400122DD852500615168 /* MeController */,
-				045F3FF622DC47D500615168 /* CalemoController */,
 				04E3A1A822D8370D008D99FF /* GraphController */,
-				045F401722DE0ABF00615168 /* OnBoarding */,
-				0444F63222DEDF8500C2F845 /* Journal */,
 				0459E02922E01D07002FB383 /* RawFile */,
 				0477A80F22CA1117002C4AC5 /* Assets.xcassets */,
 				0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */,
@@ -363,6 +377,7 @@
 				0430147922DF2F08003B3A66 /* Journaling.storyboard in Resources */,
 				0444F62A22DEDC5700C2F845 /* Me.storyboard in Resources */,
 				0444F62822DEDC4F00C2F845 /* Home.storyboard in Resources */,
+				0459E03122E1799F002FB383 /* Splash.storyboard in Resources */,
 				043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */,
 				0444F62222DEDBD100C2F845 /* slide.xib in Resources */,
 				0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */,
@@ -451,6 +466,7 @@
 				B126184322DDE10B0055D357 /* WhatMistake.swift in Sources */,
 				B126184722DDE1610055D357 /* FutureNote.swift in Sources */,
 				B126183F22DDDFD40055D357 /* Cause.swift in Sources */,
+				0459E02F22E17993002FB383 /* SlashScreenViewController.swift in Sources */,
 				048757CD22DF055F000BC333 /* CalemoData.xcdatamodeld in Sources */,
 				0444F62322DEDBD100C2F845 /* userNameController.swift in Sources */,
 			);
