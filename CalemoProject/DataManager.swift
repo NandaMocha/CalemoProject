@@ -20,10 +20,10 @@ final class DataManager {
     //Mark:- Declare Variable Entity
     var dataJournal : [Journal] = [Journal]()
     var dataJurnalTujuHari : [Journal] = [Journal]()
+    var dataQuestionAnswer : [Question] = [Question]()
+    var daraAchievement : [Achievement] = [Achievement]()
     
     //MARK:- Declare Variable Global
-    var isOnBoardingDone = false
-    var isLoadDummyDone = false
     var isLoggedIn = false
     var nameUser = ""
     
@@ -31,14 +31,12 @@ final class DataManager {
     let defaults = UserDefaults.standard
     
     func saveToUserDefaults() {
-        defaults.set(isLoadDummyDone, forKey: "isLoadDummyDone")
         defaults.set(isLoggedIn, forKey: "isLoggedIn")
         defaults.set(nameUser, forKey: "namaUser")
         print("Save DataManager Done")
     }
     
     func loadFromUserDefaults() {
-        isLoadDummyDone = defaults.bool(forKey: "isLoadDummyDone")
         isLoggedIn = defaults.bool(forKey: "isLoggedIn")
         guard let nama = defaults.string(forKey: "namaUser") else{ return}
         if nama != ""{
@@ -77,6 +75,7 @@ final class DataManager {
     }
     
     func loadJournal(){
+        
         let request : NSFetchRequest = Journal.fetchRequest()
         
         do {
@@ -90,6 +89,9 @@ final class DataManager {
     var journalDataLoadDummy: [Journal] = [Journal]()
 
     func saveDummyJournal(){
+        
+        journalDataLoadDummy.removeAll()
+        
         do {
             print("Saved Dummy Journal into, ")
             print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
@@ -104,7 +106,7 @@ final class DataManager {
             guard let object = json as? [[String: String]] else { print("json invalid"); return}
 
             for data in object{
-                print(data)
+                print("Here is Data that Stored",data)
             
                 let journalLoadDummy = Journal(context: self.context)
                 journalLoadDummy.dateJournal = data["date"]
@@ -125,7 +127,6 @@ final class DataManager {
             
             do {
                 try context.save()
-                isLoadDummyDone = true
                 saveToUserDefaults()
             } catch {
                 print("Error Save Data, ", error)
@@ -140,6 +141,8 @@ final class DataManager {
         print("Load Data Dummy Journal")
         let request : NSFetchRequest = Journal.fetchRequest()
         let data = ""
+        
+        journalDataLoadDummy.removeAll()
 
         do {
             journalDataLoadDummy = try context.fetch(request)
@@ -154,6 +157,7 @@ final class DataManager {
             })
             
             journalDataLoadDummy = sortData
+            
         } catch  {
             print("Error Appeared When Fetch Journal")
         }

@@ -85,7 +85,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //Data Jurnal ku 4, Minggu - Rabu
-        if dataJournal[dataJournal.count-1].dateJournal != dateToday{
+        if dataJournal.last!.dateJournal != dateToday{
             totalCard = dataJournal.count+1
             return totalCard
         }else{

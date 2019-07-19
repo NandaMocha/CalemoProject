@@ -10,9 +10,11 @@ import UIKit
 
 class SlashScreenViewController: UIViewController {
 
-    var timer = Timer()
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
+    var timer = Timer()
+    let manager = DataManager.shared
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +34,10 @@ class SlashScreenViewController: UIViewController {
     }
     
     func loadData(){
-        DataManager.shared.loadFromUserDefaults()
+        manager.loadFromUserDefaults()
+        
+        manager.saveDummyJournal()
+        manager.loadDummyJournal()
         
         if  DataManager.shared.isLoggedIn == true{
             performSegue(withIdentifier: "goToHome", sender: self)

@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="-399" y="106"/>
         </scene>
-        <!--HomeViewController-->
+        <!--Home-->
         <scene sceneID="AT6-6l-ftE">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="calemoHomePage" storyboardName="Home" referencedIdentifier="HomeViewController" id="xnS-8N-U1I" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="calemoHomePage" storyboardName="Home" id="xnS-8N-U1I" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loE-us-PF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="380" y="-14"/>

@@ -15,7 +15,6 @@
 		0444F62522DEDBD100C2F845 /* slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444F62122DEDBD100C2F845 /* slide.swift */; };
 		0444F62722DEDC1500C2F845 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0444F62622DEDC1500C2F845 /* OnBoarding.storyboard */; };
 		0444F62822DEDC4F00C2F845 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F3FF422DC3DAC00615168 /* Home.storyboard */; };
-		0444F62A22DEDC5700C2F845 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F400622DD855600615168 /* Me.storyboard */; };
 		0444F62B22DEDC9100C2F845 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F400D22DD8D9B00615168 /* OnBoardingViewController.swift */; };
 		0444F62C22DEDCD400C2F845 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3FF222DC3D8C00615168 /* HomeViewController.swift */; };
 		0444F62D22DEDCFD00C2F845 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F400922DD8AF700615168 /* JournalViewController.swift */; };
@@ -30,6 +29,14 @@
 		0459E02C22E02897002FB383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80822CA1114002C4AC5 /* AppDelegate.swift */; };
 		0459E02F22E17993002FB383 /* SlashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E02E22E17993002FB383 /* SlashScreenViewController.swift */; };
 		0459E03122E1799F002FB383 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03022E1799F002FB383 /* Splash.storyboard */; };
+		0459E03922E1AA5F002FB383 /* EmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E03222E1AA5F002FB383 /* EmotionCell.swift */; };
+		0459E03A22E1AA5F002FB383 /* emotions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03322E1AA5F002FB383 /* emotions.xib */; };
+		0459E03B22E1AA5F002FB383 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E03422E1AA5F002FB383 /* QuestionView.swift */; };
+		0459E03C22E1AA5F002FB383 /* ReasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E03522E1AA5F002FB383 /* ReasonCell.swift */; };
+		0459E03D22E1AA5F002FB383 /* Emotion.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03622E1AA5F002FB383 /* Emotion.xib */; };
+		0459E03E22E1AA5F002FB383 /* Reason.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03722E1AA5F002FB383 /* Reason.xib */; };
+		0459E03F22E1AA5F002FB383 /* Question.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03822E1AA5F002FB383 /* Question.xib */; };
+		0459E04122E1AA7A002FB383 /* Journaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E04022E1AA7A002FB383 /* Journaling.swift */; };
 		0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ListJournal.swift */; };
 		0477A80E22CA1114002C4AC5 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
@@ -50,14 +57,6 @@
 		B126184522DDE1300055D357 /* WhatImprove.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184422DDE1300055D357 /* WhatImprove.swift */; };
 		B126184722DDE1610055D357 /* FutureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184622DDE1610055D357 /* FutureNote.swift */; };
 		B126184922DDE3970055D357 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B126184822DDE3970055D357 /* Rectangle.png */; };
-		B1ED745B22E1A83E00481EA3 /* Emotion.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1ED745422E1A83E00481EA3 /* Emotion.xib */; };
-		B1ED745C22E1A83E00481EA3 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED745522E1A83E00481EA3 /* QuestionView.swift */; };
-		B1ED745D22E1A83E00481EA3 /* emotions.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1ED745622E1A83E00481EA3 /* emotions.xib */; };
-		B1ED745E22E1A83E00481EA3 /* ReasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED745722E1A83E00481EA3 /* ReasonCell.swift */; };
-		B1ED745F22E1A83E00481EA3 /* Question.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1ED745822E1A83E00481EA3 /* Question.xib */; };
-		B1ED746022E1A83E00481EA3 /* EmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED745922E1A83E00481EA3 /* EmotionCell.swift */; };
-		B1ED746122E1A83E00481EA3 /* Reason.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1ED745A22E1A83E00481EA3 /* Reason.xib */; };
-		B1ED746322E1A85300481EA3 /* Journaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED746222E1A85300481EA3 /* Journaling.swift */; };
 		D5BACF9722E0A9FA00F6FDE5 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BACF9622E0A9F900F6FDE5 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,12 +72,19 @@
 		0459E02A22E01ED4002FB383 /* journalDummy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = journalDummy.json; sourceTree = "<group>"; };
 		0459E02E22E17993002FB383 /* SlashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlashScreenViewController.swift; sourceTree = "<group>"; };
 		0459E03022E1799F002FB383 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		0459E03222E1AA5F002FB383 /* EmotionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionCell.swift; sourceTree = "<group>"; };
+		0459E03322E1AA5F002FB383 /* emotions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = emotions.xib; sourceTree = "<group>"; };
+		0459E03422E1AA5F002FB383 /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		0459E03522E1AA5F002FB383 /* ReasonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonCell.swift; sourceTree = "<group>"; };
+		0459E03622E1AA5F002FB383 /* Emotion.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Emotion.xib; sourceTree = "<group>"; };
+		0459E03722E1AA5F002FB383 /* Reason.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Reason.xib; sourceTree = "<group>"; };
+		0459E03822E1AA5F002FB383 /* Question.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Question.xib; sourceTree = "<group>"; };
+		0459E04022E1AA7A002FB383 /* Journaling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journaling.swift; sourceTree = "<group>"; };
 		045F3FF222DC3D8C00615168 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		045F3FF422DC3DAC00615168 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		045F3FF722DC6BCE00615168 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		045F3FFD22DC6E8800615168 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		045F400222DD854200615168 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
-		045F400622DD855600615168 /* Me.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
 		045F400922DD8AF700615168 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		045F400D22DD8D9B00615168 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		045F400F22DD8DC500615168 /* EditJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditJournalViewController.swift; sourceTree = "<group>"; };
@@ -108,14 +114,6 @@
 		B126184622DDE1610055D357 /* FutureNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureNote.swift; sourceTree = "<group>"; };
 		B126184822DDE3970055D357 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
 		B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroJournalingViewController.swift; sourceTree = "<group>"; };
-		B1ED745422E1A83E00481EA3 /* Emotion.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Emotion.xib; path = "../../../../../../Downloads/xib class/Emotion.xib"; sourceTree = "<group>"; };
-		B1ED745522E1A83E00481EA3 /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionView.swift; path = "../../../../../../Downloads/xib class/QuestionView.swift"; sourceTree = "<group>"; };
-		B1ED745622E1A83E00481EA3 /* emotions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = emotions.xib; path = "../../../../../../Downloads/xib class/emotions.xib"; sourceTree = "<group>"; };
-		B1ED745722E1A83E00481EA3 /* ReasonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReasonCell.swift; path = "../../../../../../Downloads/xib class/ReasonCell.swift"; sourceTree = "<group>"; };
-		B1ED745822E1A83E00481EA3 /* Question.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Question.xib; path = "../../../../../../Downloads/xib class/Question.xib"; sourceTree = "<group>"; };
-		B1ED745922E1A83E00481EA3 /* EmotionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmotionCell.swift; path = "../../../../../../Downloads/xib class/EmotionCell.swift"; sourceTree = "<group>"; };
-		B1ED745A22E1A83E00481EA3 /* Reason.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Reason.xib; path = "../../../../../../Downloads/xib class/Reason.xib"; sourceTree = "<group>"; };
-		B1ED746222E1A85300481EA3 /* Journaling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Journaling.swift; path = "../../../../../Downloads/xib class/Journaling.swift"; sourceTree = "<group>"; };
 		D5BACF9622E0A9F900F6FDE5 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		F9BF7CDC19A3EB93D8F4C008 /* Pods-CalemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.debug.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +148,7 @@
 				B126183C22DDD2280055D357 /* Button Next.png */,
 				B126183A22DDCE8F0055D357 /* CJ - Centering (First).png */,
 				048757CA22DF04AE000BC333 /* Journaling.storyboard */,
-				B1ED746222E1A85300481EA3 /* Journaling.swift */,
+				0459E04022E1AA7A002FB383 /* Journaling.swift */,
 				B126183422DDC50B0055D357 /* ayam.jpg */,
 			);
 			path = Journal;
@@ -160,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				045F3FF222DC3D8C00615168 /* HomeViewController.swift */,
+				045F400222DD854200615168 /* MeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,8 +210,6 @@
 		045F400122DD852500615168 /* MeController */ = {
 			isa = PBXGroup;
 			children = (
-				045F400222DD854200615168 /* MeViewController.swift */,
-				045F400622DD855600615168 /* Me.storyboard */,
 			);
 			path = MeController;
 			sourceTree = "<group>";
@@ -262,11 +259,11 @@
 		0477A80722CA1114002C4AC5 /* CalemoProject */ = {
 			isa = PBXGroup;
 			children = (
-				0459E02D22E1792A002FB383 /* Splash Screen */,
-				045F401722DE0ABF00615168 /* OnBoarding */,
 				0477A80822CA1114002C4AC5 /* AppDelegate.swift */,
 				045F3FF722DC6BCE00615168 /* DataManager.swift */,
 				04EDAEB622DE18E000C17387 /* ExtensionClass.swift */,
+				0459E02D22E1792A002FB383 /* Splash Screen */,
+				045F401722DE0ABF00615168 /* OnBoarding */,
 				045F3FF622DC47D500615168 /* CalemoController */,
 				0444F63222DEDF8500C2F845 /* Journal */,
 				045F400822DD8AE300615168 /* DetailJournalController */,
@@ -326,13 +323,13 @@
 		B1DACCC822E07CD7002DF203 /* xib class */ = {
 			isa = PBXGroup;
 			children = (
-				B1ED745422E1A83E00481EA3 /* Emotion.xib */,
-				B1ED745922E1A83E00481EA3 /* EmotionCell.swift */,
-				B1ED745622E1A83E00481EA3 /* emotions.xib */,
-				B1ED745822E1A83E00481EA3 /* Question.xib */,
-				B1ED745522E1A83E00481EA3 /* QuestionView.swift */,
-				B1ED745A22E1A83E00481EA3 /* Reason.xib */,
-				B1ED745722E1A83E00481EA3 /* ReasonCell.swift */,
+				0459E03622E1AA5F002FB383 /* Emotion.xib */,
+				0459E03222E1AA5F002FB383 /* EmotionCell.swift */,
+				0459E03322E1AA5F002FB383 /* emotions.xib */,
+				0459E03822E1AA5F002FB383 /* Question.xib */,
+				0459E03422E1AA5F002FB383 /* QuestionView.swift */,
+				0459E03722E1AA5F002FB383 /* Reason.xib */,
+				0459E03522E1AA5F002FB383 /* ReasonCell.swift */,
 			);
 			path = "xib class";
 			sourceTree = "<group>";
@@ -407,20 +404,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0430147922DF2F08003B3A66 /* Journaling.storyboard in Resources */,
-				0444F62A22DEDC5700C2F845 /* Me.storyboard in Resources */,
 				0444F62822DEDC4F00C2F845 /* Home.storyboard in Resources */,
+				0459E03D22E1AA5F002FB383 /* Emotion.xib in Resources */,
 				0459E03122E1799F002FB383 /* Splash.storyboard in Resources */,
+				0459E03F22E1AA5F002FB383 /* Question.xib in Resources */,
 				043DD51122D85C20003EF0D2 /* BarStoryBoard.storyboard in Resources */,
 				0444F62222DEDBD100C2F845 /* slide.xib in Resources */,
-				B1ED745D22E1A83E00481EA3 /* emotions.xib in Resources */,
 				0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */,
+				0459E03A22E1AA5F002FB383 /* emotions.xib in Resources */,
+				0459E03E22E1AA5F002FB383 /* Reason.xib in Resources */,
 				B126183D22DDD2280055D357 /* Button Next.png in Resources */,
-				B1ED745B22E1A83E00481EA3 /* Emotion.xib in Resources */,
 				048757D122DF2051000BC333 /* Journal.storyboard in Resources */,
 				B126183B22DDCE8F0055D357 /* CJ - Centering (First).png in Resources */,
-				B1ED745F22E1A83E00481EA3 /* Question.xib in Resources */,
 				0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */,
-				B1ED746122E1A83E00481EA3 /* Reason.xib in Resources */,
 				0477A80E22CA1114002C4AC5 /* (null) in Resources */,
 				B126183522DDC50B0055D357 /* ayam.jpg in Resources */,
 				0459E02B22E01ED4002FB383 /* journalDummy.json in Resources */,
@@ -482,12 +478,13 @@
 				0459E02C22E02897002FB383 /* AppDelegate.swift in Sources */,
 				0459E02522E014AE002FB383 /* MeViewController.swift in Sources */,
 				0459E02422DF510F002FB383 /* DataManager.swift in Sources */,
-				B1ED746322E1A85300481EA3 /* Journaling.swift in Sources */,
+				0459E04122E1AA7A002FB383 /* Journaling.swift in Sources */,
 				0459E02322DF4504002FB383 /* IntroJournalingViewController.swift in Sources */,
 				0444F63322DEFA5F00C2F845 /* BarChartViewController.swift in Sources */,
+				0459E03B22E1AA5F002FB383 /* QuestionView.swift in Sources */,
+				0459E03922E1AA5F002FB383 /* EmotionCell.swift in Sources */,
+				0459E03C22E1AA5F002FB383 /* ReasonCell.swift in Sources */,
 				0444F62D22DEDCFD00C2F845 /* JournalViewController.swift in Sources */,
-				B1ED746022E1A83E00481EA3 /* EmotionCell.swift in Sources */,
-				B1ED745C22E1A83E00481EA3 /* QuestionView.swift in Sources */,
 				0444F62E22DEDCFD00C2F845 /* DetailJournalViewController.swift in Sources */,
 				0444F62F22DEDCFD00C2F845 /* HomeCell.swift in Sources */,
 				0444F63022DEDCFD00C2F845 /* AddNewCell.swift in Sources */,
@@ -499,7 +496,6 @@
 				0444F62422DEDBD100C2F845 /* homeViewController.swift in Sources */,
 				B126182F22DC856E0055D357 /* CreateJournal.swift in Sources */,
 				0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */,
-				B1ED745E22E1A83E00481EA3 /* ReasonCell.swift in Sources */,
 				B126184122DDE0C40055D357 /* WhatDid.swift in Sources */,
 				B126183122DCB8B30055D357 /* Feeling.swift in Sources */,
 				0444F62522DEDBD100C2F845 /* slide.swift in Sources */,
