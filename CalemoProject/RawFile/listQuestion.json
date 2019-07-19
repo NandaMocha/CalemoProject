@@ -1,0 +1,650 @@
+[
+{
+"Pertanyaan": "What's this burden you need to carry?",
+"Emotion": "Really Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What are you up against? How did it happen?",
+"Emotion": "Really Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "Is there a way to lighten the load in any way?",
+"Emotion": "Really Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "Anything in particular weighing you down about it?",
+"Emotion": "Really Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "How are you going to tackle this?",
+"Emotion": "Really Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What's the plan to clear the load up?",
+"Emotion": "Really Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What happened earlier?",
+"Emotion": "Really Bad",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What happened between you and your partner?",
+"Emotion": "Really Bad",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What is it about the situation that's making you feel bad?",
+"Emotion": "Really Bad",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "Is there something about your partner that's  bothering you?",
+"Emotion": "Really Bad",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to patch up your relationship?",
+"Emotion": "Really Bad",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What can you do to avoid these relationship problems in the future?",
+"Emotion": "Really Bad",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What's going down around your surroundings?",
+"Emotion": "Really Bad",
+"Cause": "Environment",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What happened in your surroundings?",
+"Emotion": "Really Bad",
+"Cause": "Environment",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What made you feel bad about the situation?",
+"Emotion": "Really Bad",
+"Cause": "Environment",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "Why do you feel bad about the current condition?",
+"Emotion": "Really Bad",
+"Cause": "Environment",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to make the situation better?",
+"Emotion": "Really Bad",
+"Cause": "Environment",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What you can do to better your environment in the near future?",
+"Emotion": "Really Bad",
+"Cause": "Environment",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What happened in your circle earlier?",
+"Emotion": "Really Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What happened between you and your mates?",
+"Emotion": "Really Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What is it about what happened earlier that bothers you?",
+"Emotion": "Really Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What are the things that really bother you after what happened?",
+"Emotion": "Really Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "How can you improve the situation for now?",
+"Emotion": "Really Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What can you do or commit to do to fix the situation?",
+"Emotion": "Really Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What happened earlier?",
+"Emotion": "Really Bad",
+"Cause": "Others",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What happened earlier that made you such in a bad mood?",
+"Emotion": "Really Bad",
+"Cause": "Others",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What is it that particularly bothers you?",
+"Emotion": "Really Bad",
+"Cause": "Others",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What about it that made you feel so bad in particular?",
+"Emotion": "Really Bad",
+"Cause": "Others",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to fix up your mood after what happened today?",
+"Emotion": "Really Bad",
+"Cause": "Others",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "If it ever happens again, what can you do to make it better?",
+"Emotion": "Really Bad",
+"Cause": "Others",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What awesome things happened in your workload today?",
+"Emotion": "Very Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What good things happened about your workload today?",
+"Emotion": "Very Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "what makes you feel good about your workload ?",
+"Emotion": "Very Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What is it that you find exceedingly good about todays load?",
+"Emotion": "Very Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "what can you do to further improve happiness in your workload?",
+"Emotion": "Very Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "How will you keep your work awesome tomorrow?",
+"Emotion": "Very Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What's your favourite thing that happened with your partner today?",
+"Emotion": "Very Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What virtue have you acquired today?  (???)",
+"Emotion": "Very Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What do you think makes your relationship work so well?",
+"Emotion": "Very Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What makes you be in such a good mood about your partner?",
+"Emotion": "Very Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you and your partner do to make each other grow better?",
+"Emotion": "Very Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "How can you share your positive outcome with other people?",
+"Emotion": "Very Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What awesome things happened in your surroundings today?",
+"Emotion": "Very Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What happened that made you be in such a good mood?",
+"Emotion": "Very Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "Why about it that makes you exceedingly happy?",
+"Emotion": "Very Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What makes today so special?",
+"Emotion": "Very Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "what can you to do to further improve your environment?",
+"Emotion": "Very Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "How can you share your positive energy towards others?",
+"Emotion": "Very Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "what good things happened between you and your mates today?",
+"Emotion": "Very Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "what happened today that made you feel happy about your mates today?",
+"Emotion": "Very Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What about it that makes you feel really good?",
+"Emotion": "Very Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "Why does it make you be in a good mood?",
+"Emotion": "Very Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "what can you do to improve good vibes with your mates?",
+"Emotion": "Very Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "what should you do to sustain the good environment with your mates?",
+"Emotion": "Very Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What awesome things happened earlier?",
+"Emotion": "Very Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What great things happened to you today?",
+"Emotion": "Very Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "why does it makes you happy?",
+"Emotion": "Very Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "Why does it make you feel good in particular?",
+"Emotion": "Very Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "what can you do to improve your good feelings about it?",
+"Emotion": "Very Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "what should you do to make it sustain?",
+"Emotion": "Very Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What good things happened about your workload?",
+"Emotion": "Flat to Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What made you optimistic about your workload?",
+"Emotion": "Flat to Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you find enjoyable about your workload?",
+"Emotion": "Flat to Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to make the workload more enjoyable?",
+"Emotion": "Flat to Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "Is there a way to make the workload more fun or interesting?",
+"Emotion": "Flat to Good",
+"Cause": "Workload",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What did you do with your partner earlier?",
+"Emotion": "Flat to Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What did you and your partner do earlier?",
+"Emotion": "Flat to Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "Is there something you or your partner did that made you happy?",
+"Emotion": "Flat to Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "Why did you find what happened earlier to be interesting?",
+"Emotion": "Flat to Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to improve your relationship even further?",
+"Emotion": "Flat to Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What's the next step to bettering your relationship even more?",
+"Emotion": "Flat to Good",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "Did something interesting happen around you earlier?",
+"Emotion": "Flat to Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What interesting thing happened earlier?",
+"Emotion": "Flat to Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "Why did you find it interesting?",
+"Emotion": "Flat to Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to make the environment more interesting?",
+"Emotion": "Flat to Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "Is there anything you can do to make your surroundings better?",
+"Emotion": "Flat to Good",
+"Cause": "Environment",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What did you and your mate do earlier?",
+"Emotion": "Flat to Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What's the nice things that happened earlier?",
+"Emotion": "Flat to Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What things did you find nice in particular that happened earlier?",
+"Emotion": "Flat to Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to make things more fun around your mate?",
+"Emotion": "Flat to Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "How can you make things more fun or comfy around your mate?",
+"Emotion": "Flat to Good",
+"Cause": "Mates",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What interesting thing happened earlier?",
+"Emotion": "Flat to Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What happened earlier that you thought was good?",
+"Emotion": "Flat to Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "Why did it appeal to you?",
+"Emotion": "Flat to Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "Why did you think it was good?",
+"Emotion": "Flat to Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to make it better?",
+"Emotion": "Flat to Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What can you do to make it more interesting?",
+"Emotion": "Flat to Good",
+"Cause": "Others",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "Why did you find the workload less than satisfactory?",
+"Emotion": "Flat to Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "What makes the workload unfavourable to you?",
+"Emotion": "Flat to Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What about the workload did you find unfavourable?",
+"Emotion": "Flat to Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to make the workload more bearable?",
+"Emotion": "Flat to Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "Is there anything you can do to make the workload more bearable?",
+"Emotion": "Flat to Bad",
+"Cause": "Workload",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What happened between you and your partner earlier?",
+"Emotion": "Flat to Bad",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "Why did it make you feel kinda down?",
+"Emotion": "Flat to Bad",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do improve your relationship with your partner?",
+"Emotion": "Flat to Bad",
+"Cause": "Personal Relationship",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What happened earlier that made you feel kinda down?",
+"Emotion": "Flat to Bad",
+"Cause": "Environment",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "Why did it make you feel kinda down?",
+"Emotion": "Flat to Bad",
+"Cause": "Environment",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to improve things in your surroundings?",
+"Emotion": "Flat to Bad",
+"Cause": "Environment",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "In what way can you improve the situation in any way?",
+"Emotion": "Flat to Bad",
+"Cause": "Environment",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What happened between you and your mates eariler?",
+"Emotion": "Flat to Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "Why did it make you feel kinda down?",
+"Emotion": "Flat to Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "Why did it bother you that way?",
+"Emotion": "Flat to Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "Is there something you can do to better the situation?",
+"Emotion": "Flat to Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What can you do to fix things up around you and your mates?",
+"Emotion": "Flat to Bad",
+"Cause": "Mates",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "What happened earlier that made you feel kinda down?",
+"Emotion": "Flat to Bad",
+"Cause": "Others",
+"Tipe Pertanyaan": "1. What happen"
+},
+{
+"Pertanyaan": "Why did it make you feel that way?",
+"Emotion": "Flat to Bad",
+"Cause": "Others",
+"Tipe Pertanyaan": "2. Why you feel so"
+},
+{
+"Pertanyaan": "What can you do to make it better?",
+"Emotion": "Flat to Bad",
+"Cause": "Others",
+"Tipe Pertanyaan": "3. Now what to improve"
+},
+{
+"Pertanyaan": "Is there a way for you to improve it in any way?",
+"Emotion": "Flat to Bad",
+"Cause": "Others",
+"Tipe Pertanyaan": "3. Now what to improve"
+}
+]

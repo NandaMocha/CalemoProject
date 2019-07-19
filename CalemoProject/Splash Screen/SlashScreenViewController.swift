@@ -39,6 +39,12 @@ class SlashScreenViewController: UIViewController {
         if manager.isLoggedIn != true{
             manager.saveDummyJournal()
         }
+        
+        if manager.isLoadEmotion != true || manager.isLoadQuotes != true || manager.isLoadQuestion != true{
+            manager.saveDataFromRAW()
+        }
+        
+        manager.loadDataFromRaw()
         manager.loadDummyJournal()
         
         if  DataManager.shared.isLoggedIn == true{
@@ -46,7 +52,7 @@ class SlashScreenViewController: UIViewController {
         }else{
             performSegue(withIdentifier: "goToOnBoarding", sender: self)
         }
-        
+
         indicator.stopAnimating()
     }
 

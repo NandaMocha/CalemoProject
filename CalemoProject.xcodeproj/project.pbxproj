@@ -37,6 +37,9 @@
 		0459E03E22E1AA5F002FB383 /* Reason.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03722E1AA5F002FB383 /* Reason.xib */; };
 		0459E03F22E1AA5F002FB383 /* Question.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03822E1AA5F002FB383 /* Question.xib */; };
 		0459E04122E1AA7A002FB383 /* Journaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E04022E1AA7A002FB383 /* Journaling.swift */; };
+		0459E04522E1EC80002FB383 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0459E04222E1EC7F002FB383 /* quotes.json */; };
+		0459E04622E1EC80002FB383 /* listQuestion.json in Resources */ = {isa = PBXBuildFile; fileRef = 0459E04322E1EC7F002FB383 /* listQuestion.json */; };
+		0459E04722E1EC80002FB383 /* listEmotion.json in Resources */ = {isa = PBXBuildFile; fileRef = 0459E04422E1EC80002FB383 /* listEmotion.json */; };
 		0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ListJournal.swift */; };
 		0477A80E22CA1114002C4AC5 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
@@ -80,6 +83,9 @@
 		0459E03722E1AA5F002FB383 /* Reason.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Reason.xib; sourceTree = "<group>"; };
 		0459E03822E1AA5F002FB383 /* Question.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Question.xib; sourceTree = "<group>"; };
 		0459E04022E1AA7A002FB383 /* Journaling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journaling.swift; sourceTree = "<group>"; };
+		0459E04222E1EC7F002FB383 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		0459E04322E1EC7F002FB383 /* listQuestion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listQuestion.json; sourceTree = "<group>"; };
+		0459E04422E1EC80002FB383 /* listEmotion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listEmotion.json; sourceTree = "<group>"; };
 		045F3FF222DC3D8C00615168 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		045F3FF422DC3DAC00615168 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		045F3FF722DC6BCE00615168 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -183,6 +189,9 @@
 		0459E02922E01D07002FB383 /* RawFile */ = {
 			isa = PBXGroup;
 			children = (
+				0459E04422E1EC80002FB383 /* listEmotion.json */,
+				0459E04322E1EC7F002FB383 /* listQuestion.json */,
+				0459E04222E1EC7F002FB383 /* quotes.json */,
 				0459E02A22E01ED4002FB383 /* journalDummy.json */,
 			);
 			path = RawFile;
@@ -405,6 +414,7 @@
 			files = (
 				0430147922DF2F08003B3A66 /* Journaling.storyboard in Resources */,
 				0444F62822DEDC4F00C2F845 /* Home.storyboard in Resources */,
+				0459E04722E1EC80002FB383 /* listEmotion.json in Resources */,
 				0459E03D22E1AA5F002FB383 /* Emotion.xib in Resources */,
 				0459E03122E1799F002FB383 /* Splash.storyboard in Resources */,
 				0459E03F22E1AA5F002FB383 /* Question.xib in Resources */,
@@ -418,8 +428,10 @@
 				B126183B22DDCE8F0055D357 /* CJ - Centering (First).png in Resources */,
 				0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */,
 				0477A80E22CA1114002C4AC5 /* (null) in Resources */,
+				0459E04622E1EC80002FB383 /* listQuestion.json in Resources */,
 				B126183522DDC50B0055D357 /* ayam.jpg in Resources */,
 				0459E02B22E01ED4002FB383 /* journalDummy.json in Resources */,
+				0459E04522E1EC80002FB383 /* quotes.json in Resources */,
 				B126184922DDE3970055D357 /* Rectangle.png in Resources */,
 				0444F62722DEDC1500C2F845 /* OnBoarding.storyboard in Resources */,
 			);
