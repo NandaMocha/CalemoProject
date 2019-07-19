@@ -56,7 +56,7 @@
         <!--Home View Controller-->
         <scene sceneID="UZJ-PT-Neh">
             <objects>
-                <viewController id="YWG-HH-ZAf" customClass="homeViewController" customModule="CDTrial3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YWG-HH-ZAf" customClass="homeViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zhx-Ai-vj7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,34 +68,10 @@
             </objects>
             <point key="canvasLocation" x="870" y="21"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="SyV-Pk-ImL">
-            <objects>
-                <viewController id="LQ4-uY-47N" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YZb-gC-twC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="journaling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIt-4v-DWa">
-                                <rect key="frame" x="170" y="438" width="75" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="peM-3J-DsJ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gqD-Nh-vDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2066.666666666667" y="369.64285714285711"/>
-        </scene>
         <!--User Name Controller-->
         <scene sceneID="i3G-bq-Foe">
             <objects>
-                <viewController id="hco-0M-GZw" customClass="userNameController" customModule="CDTrial3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hco-0M-GZw" customClass="userNameController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="au5-BH-nQ9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,11 +104,10 @@
                                 <state key="normal" image="createJournalButton"/>
                                 <connections>
                                     <action selector="createJournalButton:" destination="hco-0M-GZw" eventType="touchUpInside" id="fLQ-GR-RBh"/>
-                                    <segue destination="LQ4-uY-47N" kind="show" id="x6a-8M-BO7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFK-sZ-h5g">
-                                <rect key="frame" x="74" y="774" width="267" height="30"/>
+                                <rect key="frame" x="74" y="774" width="267" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="I will try it later">
@@ -140,7 +115,6 @@
                                 </state>
                                 <connections>
                                     <action selector="tryLaterButton:" destination="hco-0M-GZw" eventType="touchUpInside" id="Q2m-Mz-35U"/>
-                                    <segue destination="RKN-6h-EjD" kind="show" id="wB1-pA-hTP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -150,6 +124,8 @@
                     <connections>
                         <outlet property="background" destination="au5-BH-nQ9" id="918-SQ-gTO"/>
                         <outlet property="nameField" destination="f74-Qf-2Jg" id="uhu-1h-i7r"/>
+                        <segue destination="RKN-6h-EjD" kind="show" identifier="toHome" id="YYR-tS-RHo"/>
+                        <segue destination="hHf-Zh-y1N" kind="show" identifier="toJournaling" id="dAa-hE-4tK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zx0-vH-XV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,7 +138,15 @@
                 <viewControllerPlaceholder storyboardName="Home" id="RKN-6h-EjD" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2p-QX-jap" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1721" y="762"/>
+            <point key="canvasLocation" x="1710" y="746"/>
+        </scene>
+        <!--IntroJournalingViewController-->
+        <scene sceneID="VDf-t3-cjR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Journaling" referencedIdentifier="IntroJournalingViewController" id="hHf-Zh-y1N" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Lp-lB-SRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="781"/>
         </scene>
     </scenes>
     <resources>
