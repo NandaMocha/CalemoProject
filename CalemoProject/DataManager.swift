@@ -33,15 +33,19 @@ final class DataManager {
     func saveToUserDefaults() {
         defaults.set(isLoadDummyDone, forKey: "isLoadDummyDone")
         defaults.set(isLoggedIn, forKey: "isLoggedIn")
-        defaults.set(nameUser, forKey: "alreadyLogIn")
-        print("New Data has been Saved")
+        defaults.set(nameUser, forKey: "namaUser")
+        print("Save DataManager Done")
     }
     
     func loadFromUserDefaults() {
         isLoadDummyDone = defaults.bool(forKey: "isLoadDummyDone")
-        print("Load Data Dummy is ", isLoadDummyDone)
         isLoggedIn = defaults.bool(forKey: "isLoggedIn")
-        defaults.string(forKey: "alreadyLogIn")
+        guard let nama = defaults.string(forKey: "namaUser") else{ return}
+        if nama != ""{
+            nameUser = nama
+        }
+        
+        print("Load UserDefaults Done ")
     }
     
     //MARK:- Load and Fetch Journal
@@ -156,18 +160,24 @@ final class DataManager {
     }
     
     func filterJurnalTujuHari(dataJurnal: [Journal]){
-        var date = ""
+        let date = ""
+        let dateToday = date.getDate()
         
-        var dateToday = date.getDate()
+        //Remove the content befor it filled
+        dataJurnalTujuHari.removeAll()
         
+        //check is the latest data is today or not
         if dataJurnal[dataJurnal.count-1].dateJournal != dateToday{
+            //give a condition if the data more than 7 days,
             if dataJurnal.count > 7{
                 for i in 0 ..< 7{
-//                    dataJurnalTujuHari.append(dataJurnal[i])
+                    dataJurnalTujuHari.append(dataJurnal[i])
                     print("Contents of Journal -> ",dataJurnal[i])
                 }
             }else{
-                print("Contents of Jurnal Kurang Dari 7 hari\n -> ", dataJurnal)
+                for i in 0 ..< dataJurnal.count - 1{
+                    dataJurnalTujuHari.append(dataJurnal[i])
+                }
             }
         }
     }

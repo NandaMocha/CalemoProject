@@ -13,7 +13,7 @@
         <!--On Boarding View Controller-->
         <scene sceneID="OcA-wf-xGr">
             <objects>
-                <viewController id="dZC-MG-5S1" customClass="OnBoardingViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnBoardingViewController" id="dZC-MG-5S1" customClass="OnBoardingViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ej-D9-txA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

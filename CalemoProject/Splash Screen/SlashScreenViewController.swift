@@ -10,21 +10,37 @@ import UIKit
 
 class SlashScreenViewController: UIViewController {
 
+    var timer = Timer()
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        print("Slash Screen on Progress")
+        
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        
+        indicator.startAnimating()
+        
+        letsExecute()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func letsExecute(){
+        timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: false, block: { (timer) in
+            self.loadData()
+        })
     }
-    */
+    
+    func loadData(){
+        DataManager.shared.loadFromUserDefaults()
+        
+        if  DataManager.shared.isLoggedIn == true{
+            performSegue(withIdentifier: "goToHome", sender: self)
+        }else{
+            performSegue(withIdentifier: "goToOnBoarding", sender: self)
+        }
+        
+        indicator.stopAnimating()
+    }
 
 }

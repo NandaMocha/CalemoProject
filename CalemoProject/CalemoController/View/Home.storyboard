@@ -278,6 +278,7 @@
                     <connections>
                         <outlet property="bgQOTDView" destination="PbR-sg-iji" id="Tuo-yn-E2C"/>
                         <outlet property="collectionView" destination="1q7-Hj-5Eb" id="yeM-za-aDX"/>
+                        <outlet property="greetingName" destination="3qJ-vh-bnq" id="Q4v-xm-1rI"/>
                         <outlet property="navigationBar" destination="j7E-tb-tqb" id="hvI-s0-Wj8"/>
                         <outlet property="qotdView" destination="eNn-d6-R9z" id="oG8-Un-7t2"/>
                         <outlet property="scrollView" destination="GSC-ox-vCw" id="PrI-Ls-8hb"/>
@@ -317,7 +318,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Y58-ID-rXP">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ICO-Sc-Jvr" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="calemoHomePage" automaticallyAdjustsScrollViewInsets="NO" id="ICO-Sc-Jvr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xDs-tz-vKZ">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

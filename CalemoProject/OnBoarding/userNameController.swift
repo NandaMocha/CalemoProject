@@ -27,10 +27,13 @@ class userNameController: UIViewController, UITextFieldDelegate, UIScrollViewDel
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        return true
+    }
+    
+    func saveValue(){
         DataManager.shared.isLoggedIn = true
         DataManager.shared.nameUser = nameField.text!
         DataManager.shared.saveToUserDefaults()
-        return true
     }
     
     @IBAction func createJournalButton(_ sender: Any) {
@@ -39,6 +42,9 @@ class userNameController: UIViewController, UITextFieldDelegate, UIScrollViewDel
                 alert.addAction(UIAlertAction(title: "Click", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         } else{
+            
+            saveValue()
+            
             performSegue(withIdentifier: "toJournaling", sender: nil)
         }
     }
@@ -48,6 +54,9 @@ class userNameController: UIViewController, UITextFieldDelegate, UIScrollViewDel
             alert.addAction(UIAlertAction(title: "Click", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         } else{
+            
+            saveValue()
+            
             performSegue(withIdentifier: "toHome", sender: nil)
         }
     }

@@ -11,6 +11,7 @@ import CoreData
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var greetingName: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var navigationBar: UINavigationItem!
@@ -19,7 +20,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var qotdView: UIView!
     @IBOutlet weak var bgQOTDView: UIImageView!
     
-//    let dataArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+    //Set The Data used
     let dataJournal = DataManager.shared.journalDataLoadDummy
     
     //Variable Declaration
@@ -31,6 +33,10 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if DataManager.shared.nameUser != ""{
+            greetingName.text = "Hello, \n\(DataManager.shared.nameUser)"
+        }
         
         scrollView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false

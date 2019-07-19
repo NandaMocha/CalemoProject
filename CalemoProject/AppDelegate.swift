@@ -16,23 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Thread.sleep(forTimeInterval: 1.0)
         // Override point for customization after application launch.
         
-        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
-
         
-        DataManager.shared.loadFromUserDefaults()
-        if  DataManager.shared.isLoggedIn == true{
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            
-            let storyboard = UIStoryboard(name: "Home", bundle: nil)
-            
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
-            
-            self.window?.rootViewController = initialViewController
-            self.window?.makeKeyAndVisible()
-        }
         
         return true
     }
