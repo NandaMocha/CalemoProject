@@ -150,10 +150,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 //MARK:- Set Life Cycle
 extension HomeViewController{
     override func viewWillAppear(_ animated: Bool) {
+        
         let indexToScrollTo = IndexPath(item: dataJournal.count-1, section: 0)
+       
         self.collectionView.scrollToItem(at: indexToScrollTo, at: .left, animated: false)
 
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        
         self.tabBarController?.tabBar.isHidden = false
         
     }

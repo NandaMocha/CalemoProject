@@ -10,6 +10,8 @@ import UIKit
 
 class MeViewController: UIViewController {
 
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,7 @@ class MeViewController: UIViewController {
 
 extension MeViewController{
     override func viewWillAppear(_ animated: Bool) {
+        
         self.tabBarController?.tabBar.isHidden = false
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }

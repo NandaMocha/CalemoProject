@@ -36,7 +36,9 @@ class SlashScreenViewController: UIViewController {
     func loadData(){
         manager.loadFromUserDefaults()
         
-        manager.saveDummyJournal()
+        if manager.isLoggedIn != true{
+            manager.saveDummyJournal()
+        }
         manager.loadDummyJournal()
         
         if  DataManager.shared.isLoggedIn == true{

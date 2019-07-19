@@ -27,6 +27,9 @@ final class DataManager {
     var isLoggedIn = false
     var nameUser = ""
     
+    //MARK:- Declare Flag Variable to Check status
+    var isLoadDummy = false
+    
     //MARK:- Save and Load User Defaults
     let defaults = UserDefaults.standard
     
@@ -125,9 +128,11 @@ final class DataManager {
                 
             }
             
+            isLoadDummy = true
+            saveToUserDefaults()
+            
             do {
                 try context.save()
-                saveToUserDefaults()
             } catch {
                 print("Error Save Data, ", error)
             }
