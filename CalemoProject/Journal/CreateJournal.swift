@@ -33,29 +33,36 @@ class CreateJournal: UIViewController {
         centeringBorder.backgroundColor = UIColor(patternImage: (UIImage(named: "CCBg")!))
         
     }
-    @IBAction func centeringStart(_ sender: UIButton) {
+    
+    func centeringStart() {
         UIView.animate(withDuration: 4, delay: 0, options: [.autoreverse, .repeat], animations: {
             self.Centering.transform = CGAffineTransform.identity.scaledBy(x: 1.6, y: 1.6)
         }) { (done) in
-            self.Centering.frame = CGRect(x: 45, y: 45, width: 150, height: 150)
+            self.Centering.frame = CGRect(x: 45, y: 45, width: 154, height: 154)
             
             self.progressView.progress = 0.0
-//            self.progress.completedUnitCount = 0
+            //            self.progress.completedUnitCount = 0
         }
-           
-            var  i : Int = 0
-            Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
-                true
-                if i == 5{ self.performSegue(withIdentifier: "centeringEnd", sender: self)
-                }
-                i += 1
-                self.progressView.progress += 1 / 5
-            })
-                
-//                self.progress.completedUnitCount += 1
-                self.progressView.setProgress(Float(self.progress.fractionCompleted), animated: true)
         
-        }
+        var  i : Int = 0
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
+            true
+            if i == 5{ self.performSegue(withIdentifier: "centeringEnd", sender: self)
+            }
+            i += 1
+            self.progressView.progress += 1 / 5
+        })
+        
+        //                self.progress.completedUnitCount += 1
+        self.progressView.setProgress(Float(self.progress.fractionCompleted), animated: true)
+        
     }
+}
+
+extension CreateJournal{
+    override func viewWillAppear(_ animated: Bool) {
+        centeringStart()
+    }
+}
     
 

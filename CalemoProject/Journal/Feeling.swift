@@ -21,7 +21,6 @@ class Feeling: UIViewController {
         
     }
     
-    @IBOutlet weak var EmotionChange: UIImageView!
     @IBAction func EmotionSlide(_ sender: Any) {
         let value = EmotionSlider.value
         
