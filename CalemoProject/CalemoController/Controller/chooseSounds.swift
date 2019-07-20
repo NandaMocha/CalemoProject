@@ -10,6 +10,8 @@ import UIKit
 
 class chooseSounds: UIViewController {
 
+    let arrayOfSounds = ["Light Rain", "Heavy Rain", "Bird Singing", "Ocean Waves"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,11 +21,15 @@ class chooseSounds: UIViewController {
 
 extension chooseSounds: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return arrayOfSounds.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellSounds") as! cellSounds
+        
+        cell.labelCell.text = arrayOfSounds[indexPath.row]
+        
+        return cell
     }
     
     

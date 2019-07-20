@@ -64,6 +64,11 @@ class MeViewController: UIViewController {
         print("This is code for push notifications")
     }
     
+    @IBAction func pickSoundsTapped(_ sender: Any) {
+        performSegue(withIdentifier: "pickSounds", sender: self)
+    }
+    
+    
 }
 
 extension MeViewController{

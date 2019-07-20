@@ -45,6 +45,7 @@
 		0459E04F22E2ED47002FB383 /* birdsinging.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E04E22E2ED47002FB383 /* birdsinging.mp3 */; };
 		0459E05122E2ED59002FB383 /* oceanwaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E05022E2ED59002FB383 /* oceanwaves.mp3 */; };
 		0459E05322E2ED67002FB383 /* heavyrain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E05222E2ED67002FB383 /* heavyrain.mp3 */; };
+		0459E05522E2EFB6002FB383 /* cellSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E05422E2EFB6002FB383 /* cellSounds.swift */; };
 		0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ListJournal.swift */; };
 		0477A80E22CA1114002C4AC5 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 		0459E04E22E2ED47002FB383 /* birdsinging.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birdsinging.mp3; sourceTree = "<group>"; };
 		0459E05022E2ED59002FB383 /* oceanwaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oceanwaves.mp3; sourceTree = "<group>"; };
 		0459E05222E2ED67002FB383 /* heavyrain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heavyrain.mp3; sourceTree = "<group>"; };
+		0459E05422E2EFB6002FB383 /* cellSounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellSounds.swift; sourceTree = "<group>"; };
 		045F3FF222DC3D8C00615168 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		045F3FF422DC3DAC00615168 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		045F3FF722DC6BCE00615168 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				045F3FF422DC3DAC00615168 /* Home.storyboard */,
 				045F3FFD22DC6E8800615168 /* HomeCell.swift */,
 				045F401122DDF70E00615168 /* AddNewCell.swift */,
+				0459E05422E2EFB6002FB383 /* cellSounds.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				0459E03922E1AA5F002FB383 /* EmotionCell.swift in Sources */,
 				0459E03C22E1AA5F002FB383 /* ReasonCell.swift in Sources */,
 				0459E04922E2EB95002FB383 /* chooseSounds.swift in Sources */,
+				0459E05522E2EFB6002FB383 /* cellSounds.swift in Sources */,
 				0444F62D22DEDCFD00C2F845 /* JournalViewController.swift in Sources */,
 				0444F62E22DEDCFD00C2F845 /* DetailJournalViewController.swift in Sources */,
 				0444F62F22DEDCFD00C2F845 /* HomeCell.swift in Sources */,
