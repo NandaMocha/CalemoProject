@@ -14,6 +14,12 @@ class Journaling: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageSwipe: UIPageControl!
     
+    var emotionSave: String?
+    var reasonSave: String?
+    var questionSave: String?
+    
+    
+    
     var index = 0
     
     override func viewDidLoad() {
@@ -85,8 +91,10 @@ extension Journaling: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     }
 }
 extension Journaling: protocolView {
+    
     func emotionProtocol(emotionString: String) {
         print(emotionString)
+        
     }
     
     func reasonProtocol(reasonString: String) {
