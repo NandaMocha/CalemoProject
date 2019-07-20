@@ -73,7 +73,8 @@ class EmotionCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        print(dataEmotion)
+//        print(dataEmotion)
+        emotionSlider.value = 0
         
     }
 }

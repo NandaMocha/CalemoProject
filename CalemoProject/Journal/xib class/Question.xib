@@ -19,29 +19,42 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MDD-nq-dIb">
-                        <rect key="frame" x="20" y="236" width="374" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wow, awesome!  Would you tell me more about what happened?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cst-3A-eZg">
-                        <rect key="frame" x="34" y="91" width="328" height="90"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                        <color key="textColor" red="0.42353469129999999" green="0.40756762029999999" blue="0.42353186009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Oj-UW-Pro">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wow, awesome!  Would you tell me more about what happened?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cst-3A-eZg">
+                                <rect key="frame" x="20" y="76" width="328" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.42353469129999999" green="0.40756762029999999" blue="0.42353186009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MDD-nq-dIb">
+                                <rect key="frame" x="8" y="238" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.94901365041732788" green="0.94116926193237305" blue="0.94116884469985962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3Oj-UW-Pro" secondAttribute="trailing" id="DjN-TX-BTQ"/>
+                <constraint firstItem="3Oj-UW-Pro" firstAttribute="leading" secondItem="dRD-8P-HfS" secondAttribute="leading" id="SG8-G2-vvA"/>
+                <constraint firstAttribute="bottom" secondItem="3Oj-UW-Pro" secondAttribute="bottom" id="ayW-Ud-CBG"/>
+                <constraint firstItem="3Oj-UW-Pro" firstAttribute="top" secondItem="dRD-8P-HfS" secondAttribute="top" id="yka-C3-4qD"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="RFL-PX-Ok9"/>
             <connections>
                 <outlet property="answer1" destination="MDD-nq-dIb" id="112-0U-apH"/>
                 <outlet property="question1" destination="Cst-3A-eZg" id="mT4-UV-u68"/>
+                <outlet property="questionView" destination="3Oj-UW-Pro" id="E5Z-au-Sk0"/>
             </connections>
-            <point key="canvasLocation" x="684" y="135"/>
+            <point key="canvasLocation" x="390" y="103"/>
         </collectionViewCell>
     </objects>
 </document>

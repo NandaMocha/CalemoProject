@@ -36,6 +36,9 @@ class ReasonCell: UICollectionViewCell {
             reason = ""
         }
         
+        DataManager.shared.causeDanger = reason
+        print("Reason Cell Page, causeDanger = ", DataManager.shared.causeDanger)
+        
     }
     override func awakeFromNib() {
         super.awakeFromNib()

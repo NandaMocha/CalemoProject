@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //loadPersistentStore to container
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             //Check if the data not nill they'll be executed
-            if let error = error as? NSError {
+            if let error = error as NSError? {
 //                fatalError("Unresolved error \(error), \(error.userInfo)")
                 print(error)
             }
@@ -55,7 +55,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 
                 let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                    print(nserror)
+                
             }
         }
     }

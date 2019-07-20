@@ -100,5 +100,5 @@ extension String{
 protocol protocolView {
     func emotionProtocol(emotionString: String)
     func reasonProtocol(reasonString: String)
-    func questionProtocol(questionString: String, answerString: String)
+    func questionProtocol(questionString: String, answerString: String, questionNumber: Int)
 }

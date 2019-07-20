@@ -253,6 +253,7 @@
                         <viewLayoutGuide key="safeArea" id="1Wk-fT-DAZ"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="9FG-xc-MyD" id="Gfe-pZ-ekZ"/>
                         <outlet property="nextButton" destination="2Sa-47-sg9" id="fmW-rT-sos"/>
                         <outlet property="pageSwipe" destination="OjA-wL-7Aw" id="L7i-kf-5z3"/>
                         <outlet property="viewJournaling" destination="9FG-xc-MyD" id="isN-3d-XNm"/>

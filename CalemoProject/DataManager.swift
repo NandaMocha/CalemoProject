@@ -35,6 +35,9 @@ final class DataManager {
     var isLoadQuotes = false
     var isLoadEmotion = false
     
+    //MARK:- Dangerous Variable
+    var causeDanger = "Workload"
+    
     //MARK:- Save and Load User Defaults
     let defaults = UserDefaults.standard
     
