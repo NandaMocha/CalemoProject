@@ -532,10 +532,42 @@ Journal</string>
                         <outlet property="navigationBar" destination="qDw-ZW-l4w" id="r0m-mk-kvg"/>
                         <outlet property="switchReminder" destination="cIn-d2-MhZ" id="D65-LO-L0c"/>
                         <outlet property="timePickButton" destination="oYt-AM-Tam" id="XBp-gD-wvM"/>
+                        <segue destination="vnc-6w-HCK" kind="show" id="v6h-Yv-weW"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2711.594202898551" y="-300"/>
+        </scene>
+        <!--Sound-->
+        <scene sceneID="IEl-qr-Box">
+            <objects>
+                <viewController storyboardIdentifier="chooseSounds" title="Sound" id="vnc-6w-HCK" customClass="chooseSounds" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aUK-FW-sRj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zgr-kb-ITA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vnc-6w-HCK" id="XWj-T1-h9b"/>
+                                    <outlet property="delegate" destination="vnc-6w-HCK" id="wyU-ED-8D0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zgr-kb-ITA" firstAttribute="leading" secondItem="6EZ-sI-zUi" secondAttribute="leading" id="NPs-VY-1hE"/>
+                            <constraint firstItem="6EZ-sI-zUi" firstAttribute="bottom" secondItem="zgr-kb-ITA" secondAttribute="bottom" id="fc2-at-b7O"/>
+                            <constraint firstItem="zgr-kb-ITA" firstAttribute="top" secondItem="6EZ-sI-zUi" secondAttribute="top" id="hJ0-Gq-Q3s"/>
+                            <constraint firstItem="6EZ-sI-zUi" firstAttribute="trailing" secondItem="zgr-kb-ITA" secondAttribute="trailing" id="w1I-ch-g6l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6EZ-sI-zUi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQP-vW-ftb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3451" y="-300"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="meb-5B-gcB">

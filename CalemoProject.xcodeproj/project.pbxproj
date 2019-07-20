@@ -40,6 +40,11 @@
 		0459E04522E1EC80002FB383 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0459E04222E1EC7F002FB383 /* quotes.json */; };
 		0459E04622E1EC80002FB383 /* listQuestion.json in Resources */ = {isa = PBXBuildFile; fileRef = 0459E04322E1EC7F002FB383 /* listQuestion.json */; };
 		0459E04722E1EC80002FB383 /* listEmotion.json in Resources */ = {isa = PBXBuildFile; fileRef = 0459E04422E1EC80002FB383 /* listEmotion.json */; };
+		0459E04922E2EB95002FB383 /* chooseSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E04822E2EB95002FB383 /* chooseSounds.swift */; };
+		0459E04D22E2ED36002FB383 /* lightrain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E04C22E2ED36002FB383 /* lightrain.mp3 */; };
+		0459E04F22E2ED47002FB383 /* birdsinging.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E04E22E2ED47002FB383 /* birdsinging.mp3 */; };
+		0459E05122E2ED59002FB383 /* oceanwaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E05022E2ED59002FB383 /* oceanwaves.mp3 */; };
+		0459E05322E2ED67002FB383 /* heavyrain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E05222E2ED67002FB383 /* heavyrain.mp3 */; };
 		0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ListJournal.swift */; };
 		0477A80E22CA1114002C4AC5 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
@@ -86,6 +91,11 @@
 		0459E04222E1EC7F002FB383 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
 		0459E04322E1EC7F002FB383 /* listQuestion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listQuestion.json; sourceTree = "<group>"; };
 		0459E04422E1EC80002FB383 /* listEmotion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listEmotion.json; sourceTree = "<group>"; };
+		0459E04822E2EB95002FB383 /* chooseSounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseSounds.swift; sourceTree = "<group>"; };
+		0459E04C22E2ED36002FB383 /* lightrain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lightrain.mp3; sourceTree = "<group>"; };
+		0459E04E22E2ED47002FB383 /* birdsinging.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birdsinging.mp3; sourceTree = "<group>"; };
+		0459E05022E2ED59002FB383 /* oceanwaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oceanwaves.mp3; sourceTree = "<group>"; };
+		0459E05222E2ED67002FB383 /* heavyrain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heavyrain.mp3; sourceTree = "<group>"; };
 		045F3FF222DC3D8C00615168 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		045F3FF422DC3DAC00615168 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		045F3FF722DC6BCE00615168 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -165,6 +175,7 @@
 			children = (
 				045F3FF222DC3D8C00615168 /* HomeViewController.swift */,
 				045F400222DD854200615168 /* MeViewController.swift */,
+				0459E04822E2EB95002FB383 /* chooseSounds.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 		0459E02922E01D07002FB383 /* RawFile */ = {
 			isa = PBXGroup;
 			children = (
+				0459E04B22E2ED1F002FB383 /* sounds */,
 				0459E04422E1EC80002FB383 /* listEmotion.json */,
 				0459E04322E1EC7F002FB383 /* listQuestion.json */,
 				0459E04222E1EC7F002FB383 /* quotes.json */,
@@ -204,6 +216,17 @@
 				0459E03022E1799F002FB383 /* Splash.storyboard */,
 			);
 			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		0459E04B22E2ED1F002FB383 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0459E05222E2ED67002FB383 /* heavyrain.mp3 */,
+				0459E05022E2ED59002FB383 /* oceanwaves.mp3 */,
+				0459E04E22E2ED47002FB383 /* birdsinging.mp3 */,
+				0459E04C22E2ED36002FB383 /* lightrain.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 		045F3FF622DC47D500615168 /* CalemoController */ = {
@@ -425,14 +448,18 @@
 				0459E03E22E1AA5F002FB383 /* Reason.xib in Resources */,
 				B126183D22DDD2280055D357 /* Button Next.png in Resources */,
 				048757D122DF2051000BC333 /* Journal.storyboard in Resources */,
+				0459E04F22E2ED47002FB383 /* birdsinging.mp3 in Resources */,
 				B126183B22DDCE8F0055D357 /* CJ - Centering (First).png in Resources */,
 				0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */,
 				0477A80E22CA1114002C4AC5 /* (null) in Resources */,
 				0459E04622E1EC80002FB383 /* listQuestion.json in Resources */,
+				0459E04D22E2ED36002FB383 /* lightrain.mp3 in Resources */,
 				B126183522DDC50B0055D357 /* ayam.jpg in Resources */,
 				0459E02B22E01ED4002FB383 /* journalDummy.json in Resources */,
+				0459E05122E2ED59002FB383 /* oceanwaves.mp3 in Resources */,
 				0459E04522E1EC80002FB383 /* quotes.json in Resources */,
 				B126184922DDE3970055D357 /* Rectangle.png in Resources */,
+				0459E05322E2ED67002FB383 /* heavyrain.mp3 in Resources */,
 				0444F62722DEDC1500C2F845 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +523,7 @@
 				0459E03B22E1AA5F002FB383 /* QuestionView.swift in Sources */,
 				0459E03922E1AA5F002FB383 /* EmotionCell.swift in Sources */,
 				0459E03C22E1AA5F002FB383 /* ReasonCell.swift in Sources */,
+				0459E04922E2EB95002FB383 /* chooseSounds.swift in Sources */,
 				0444F62D22DEDCFD00C2F845 /* JournalViewController.swift in Sources */,
 				0444F62E22DEDCFD00C2F845 /* DetailJournalViewController.swift in Sources */,
 				0444F62F22DEDCFD00C2F845 /* HomeCell.swift in Sources */,

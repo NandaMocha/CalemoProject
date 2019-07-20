@@ -88,6 +88,8 @@ final class DataManager {
             try context.save()
         } catch  {
             print("Error appeared")
+            
+            
         }
     }
     
