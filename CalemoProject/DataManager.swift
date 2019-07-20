@@ -97,6 +97,7 @@ final class DataManager {
         
         do {
             dataJournal = try context.fetch(request)
+//            dataJournal[0].answerOneJournal
         } catch  {
             print("Error Appeared When Fetch Journal")
         }

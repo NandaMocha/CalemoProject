@@ -468,16 +468,22 @@ Journal</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYt-AM-Tam">
-                                        <rect key="frame" x="313" y="541" width="67" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYt-AM-Tam">
+                                        <rect key="frame" x="313" y="541" width="59" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="08.00 AM">
+                                        <state key="normal" title="--.-- AM">
                                             <color key="titleColor" red="0.88978332280000005" green="0.69041544200000005" blue="0.61566013100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="timeButtonTapped:" destination="BC9-bH-StU" eventType="touchUpInside" id="IuP-Ge-W0a"/>
+                                        </connections>
                                     </button>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cIn-d2-MhZ">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cIn-d2-MhZ">
                                         <rect key="frame" x="331" y="499" width="49" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="switchChangeState:" destination="BC9-bH-StU" eventType="valueChanged" id="ldd-XM-JRB"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViW-TV-d89">
                                         <rect key="frame" x="20" y="547" width="34" height="18"/>
@@ -522,7 +528,10 @@ Journal</string>
                     </view>
                     <navigationItem key="navigationItem" title="Me" id="qDw-ZW-l4w"/>
                     <connections>
+                        <outlet property="namaUser" destination="Rgg-VH-BMR" id="TTm-SF-8vb"/>
                         <outlet property="navigationBar" destination="qDw-ZW-l4w" id="r0m-mk-kvg"/>
+                        <outlet property="switchReminder" destination="cIn-d2-MhZ" id="D65-LO-L0c"/>
+                        <outlet property="timePickButton" destination="oYt-AM-Tam" id="XBp-gD-wvM"/>
                     </connections>
                 </viewController>
             </objects>
@@ -533,7 +542,7 @@ Journal</string>
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqj-xh-ZLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vXk-sh-UnR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="eDs-8c-6Vb"/>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="nonaktifCup" springLoaded="YES" systemItem="more" id="eDs-8c-6Vb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rCG-Ng-NZO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -553,6 +562,7 @@ Journal</string>
         <image name="Me_Chevron" width="13" height="21"/>
         <image name="Me_EditButton" width="19" height="19"/>
         <image name="bronzeMedal" width="94" height="91"/>
+        <image name="nonaktifCup" width="91" height="89"/>
         <image name="nonaktifMedal" width="94" height="91"/>
         <image name="silverMedal" width="94" height="91"/>
     </resources>
