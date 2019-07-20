@@ -11,6 +11,7 @@ import CoreData
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var greetingName: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var navigationBar: UINavigationItem!
@@ -19,7 +20,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var qotdView: UIView!
     @IBOutlet weak var bgQOTDView: UIImageView!
     
-//    let dataArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+    //Set The Data used
     let dataJournal = DataManager.shared.journalDataLoadDummy
     
     //Variable Declaration
@@ -31,6 +33,10 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if DataManager.shared.nameUser != ""{
+            greetingName.text = "Hello, \n\(DataManager.shared.nameUser)"
+        }
         
         scrollView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
@@ -79,7 +85,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //Data Jurnal ku 4, Minggu - Rabu
-        if dataJournal[dataJournal.count-1].dateJournal != dateToday{
+        if dataJournal.last!.dateJournal != dateToday{
             totalCard = dataJournal.count+1
             return totalCard
         }else{
@@ -130,6 +136,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             self.tabBarController?.tabBar.isHidden = true
             
             navigationController?.show(detailJournal, sender: self)
+            
         }else{
             let detailJournal = UIStoryboard(name: "Journaling", bundle: nil).instantiateViewController(withIdentifier: "IntroJournalingViewController") as! IntroJournalingViewController
 
@@ -143,10 +150,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 //MARK:- Set Life Cycle
 extension HomeViewController{
     override func viewWillAppear(_ animated: Bool) {
+        
         let indexToScrollTo = IndexPath(item: dataJournal.count-1, section: 0)
+       
         self.collectionView.scrollToItem(at: indexToScrollTo, at: .left, animated: false)
 
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        
         self.tabBarController?.tabBar.isHidden = false
         
     }

@@ -1,0 +1,52 @@
+[
+    {
+        "Number": 1,
+        "Emotion": "Awful",
+        "Description": "You feel chaotic, stressed, and don't know what to do next yet don't want to do anything though. Let short things out together!"
+    },
+    {
+        "Number": 2,
+        "Emotion": "Very Bad",
+        "Description": "Your day was filling with sorrow, rage, annoyance, or anger. It's so hard for you to find some positiveness towards the day."
+    },
+    {
+        "Number": 3,
+        "Emotion": "Bad",
+        "Description": "Your day wasn't so good. It's quite hard for you to make your feeling back to neutral, and in the end you feel you're in a bad mood"
+    },
+    {
+        "Number": 4,
+        "Emotion": "Pretty Bad",
+        "Description": "There's one or two bad things happened that bring you to a bad mood today. Maybe there's still good things happen, but in the end of the day you still feel pretty bad."
+    },
+    {
+        "Number": 5,
+        "Emotion": "Flat cenderung bad",
+        "Description": "You don't feel it awesome enough yet something bad also happened. In the end of the day, you feel confused with your day and still feel tiny bit of negative feelings."
+    },
+    {
+        "Number": 6,
+        "Emotion": "Flat cenderung good",
+        "Description": "You feel quite content and try to make your feeling balanced today. But in the end of the day, you still managed to be positive"
+    },
+    {
+        "Number": 7,
+        "Emotion": "Pretty Good",
+        "Description": "You appreciate you day well enough and look forward for some positiveness. Even maybe you find something bad happened today, overall you feel pretty good."
+    },
+    {
+        "Number": 8,
+        "Emotion": "Good",
+        "Description": "You feel so positive and lots of good things happened . Even maybe there's something bothering, you accept your day as a good day"
+    },
+    {
+        "Number": 9,
+        "Emotion": "Very Good",
+        "Description": "Your day was filling with positiveness, joy, and you appreciate them enough. Even not full of them, in the end of the day you feel really good"
+    },
+    {
+        "Number": 10,
+        "Emotion": "Awesome",
+        "Description": "You feel like jumping today. You had a lot of positive energy and full of awesomeness. Seems like almost be the perfect day of your life."
+    }
+]

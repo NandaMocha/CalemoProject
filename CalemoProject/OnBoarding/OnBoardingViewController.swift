@@ -19,8 +19,6 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    let manager = DataManager.shared
-    
     var Slide:[slide] = []
     
     override func viewDidLoad() {
@@ -34,13 +32,6 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = 0
         
         view.bringSubviewToFront(pageControl)
-        
-        manager.loadFromUserDefaults()
-        
-        if manager.isLoadDummyDone == false{
-            manager.saveDummyJournal()
-        }
-        manager.loadDummyJournal()
         
     }
     

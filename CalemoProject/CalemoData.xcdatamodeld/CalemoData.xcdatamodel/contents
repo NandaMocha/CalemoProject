@@ -6,6 +6,11 @@
         <attribute name="nameAchievement" attributeType="String" syncable="YES"/>
         <attribute name="statusAchievement" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="Emotion" representedClassName=".Emotion" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emotion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <entity name="Journal" representedClassName=".Journal" syncable="YES" codeGenerationType="class">
         <attribute name="answerOneJournal" attributeType="String" syncable="YES"/>
         <attribute name="answerThreeJournal" attributeType="String" syncable="YES"/>
@@ -20,13 +25,20 @@
         <attribute name="reasonJournal" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Question" representedClassName=".Question" syncable="YES" codeGenerationType="class">
-        <attribute name="emotionQuestion" attributeType="String" syncable="YES"/>
-        <attribute name="questionQuestion" attributeType="String" syncable="YES"/>
-        <attribute name="reasonQuestion" attributeType="String" syncable="YES"/>
+        <attribute name="causeQuest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emotionQuest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionQuest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeQuest" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Quotes" representedClassName=".Quotes" syncable="YES" codeGenerationType="class">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quotes" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="Achievement" positionX="-36" positionY="81" width="128" height="105"/>
         <element name="Journal" positionX="-63" positionY="-18" width="128" height="210"/>
-        <element name="Question" positionX="-54" positionY="72" width="128" height="90"/>
+        <element name="Question" positionX="-54" positionY="72" width="128" height="105"/>
+        <element name="Quotes" positionX="-45" positionY="63" width="128" height="75"/>
+        <element name="Emotion" positionX="-36" positionY="72" width="128" height="90"/>
     </elements>
 </model>
