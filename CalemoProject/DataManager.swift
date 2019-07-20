@@ -88,6 +88,8 @@ final class DataManager {
             try context.save()
         } catch  {
             print("Error appeared")
+            
+            
         }
     }
     
@@ -278,8 +280,11 @@ final class DataManager {
             
             saveToUserDefaults()
             
+            
+            
             do {
                 try context.save()
+                
             } catch {
                 print("Error Save Data, ", error)
             }
@@ -299,9 +304,15 @@ final class DataManager {
         dataEmotionAll.removeAll()
         dataQuotesAll.removeAll()
         
+        var dataquestion = [Question]()
+        var dataemotion = [Emotion]()
+        var dataquotes = [Quotes]()
+        
         do {
             dataQuestionAll = try context.fetch(requestQuestion)
             dataEmotionAll = try context.fetch(requestEmotion)
+            dataemotion = dataEmotionAll.sorted(by: {$0.number < $1.number})
+            dataEmotionAll = dataemotion
             dataQuotesAll = try context.fetch(requestQuotes)
             
         } catch  {

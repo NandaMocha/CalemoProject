@@ -49,9 +49,7 @@ class MeViewController: UIViewController {
         
         timePicker.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
-        
-        view.addSubview(timePicker)
-        
+//        timePickButton.titleLabel?.inputView = timePicker
     }
     @objc func doneDatePicker(){
         
@@ -65,6 +63,11 @@ class MeViewController: UIViewController {
     func setNotification(){
         print("This is code for push notifications")
     }
+    
+    @IBAction func pickSoundsTapped(_ sender: Any) {
+        performSegue(withIdentifier: "pickSounds", sender: self)
+    }
+    
     
 }
 
