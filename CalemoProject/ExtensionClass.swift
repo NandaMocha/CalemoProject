@@ -96,3 +96,9 @@ extension String{
         self.layer.shadowRadius = 0.0
     }
 }
+
+protocol protocolView {
+    func emotionProtocol(emotionString: String)
+    func reasonProtocol(reasonString: String)
+    func questionProtocol(questionString: String, answerString: String)
+}

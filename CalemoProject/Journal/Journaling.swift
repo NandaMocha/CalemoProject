@@ -18,6 +18,8 @@ class Journaling: UIViewController {
     
     override func viewDidLoad() {
         
+        
+        
         viewJournaling.register(UINib(nibName: "Emotion", bundle: nil), forCellWithReuseIdentifier: "emotionCell")
         viewJournaling.register(UINib(nibName: "Reason", bundle: nil), forCellWithReuseIdentifier: "reasonCell")
         viewJournaling.register(UINib(nibName: "Question", bundle: nil), forCellWithReuseIdentifier: "questionCell")
@@ -44,31 +46,36 @@ extension Journaling: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         if indexPath.row == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "emotionCell", for: indexPath) as! EmotionCell
             
+            cell.emotionProtocol = self
+            
             return cell
         }
         else if indexPath.row == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reasonCell", for: indexPath) as! ReasonCell
+            
+            cell.reasonProtocol = self
             
             return cell
             
         }
         else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "questionCell", for: indexPath) as! QuestionCell
-            if indexPath.row == 2 {
-                cell.setContent(numberQuestion: 1)
-            }
-            else if indexPath.row == 3 {
-                cell.setContent(numberQuestion: 2)
-
-            }
-            else if indexPath.row == 4 {
-                cell.setContent(numberQuestion: 3)
-
-            }
-            else  {
-                cell.setContent(numberQuestion: 4)
-
-            }
+//            if indexPath.row == 2 {
+                cell.setContent(numberQuestion: indexPath.row)
+            cell.questionProtocol = self
+//            }
+//            else if indexPath.row == 3 {
+//                cell.setContent(numberQuestion: 2)
+//
+//            }
+//            else if indexPath.row == 4 {
+//                cell.setContent(numberQuestion: 3)
+//
+//            }
+//            else  {
+//                cell.setContent(numberQuestion: 4)
+//
+//            }
             return cell
         }
     }
@@ -76,4 +83,18 @@ extension Journaling: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: view.frame.height)
     }
+}
+extension Journaling: protocolView {
+    func emotionProtocol(emotionString: String) {
+        print(emotionString)
+    }
+    
+    func reasonProtocol(reasonString: String) {
+        print(reasonString)
+    }
+    
+    func questionProtocol(questionString: String, answerString: String) {
+        print(questionString)
+    }
+    
 }

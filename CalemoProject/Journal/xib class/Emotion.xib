@@ -37,8 +37,8 @@
                             <action selector="emotionSlide:" destination="FAQ-b9-GQm" eventType="valueChanged" id="OAh-zF-MLo"/>
                         </connections>
                     </slider>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your day was filling with positiveness, joy, and awesomeness. Even not full of them, in the end of the day you feel really good" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHu-dJ-csc">
-                        <rect key="frame" x="42" y="550" width="333" height="60"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your day was filling with positiveness, joy, and awesomeness. Even not full of them, in the end of the day you feel really good" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHu-dJ-csc">
+                        <rect key="frame" x="42" y="550" width="333" height="152"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.46667242050000002" green="0.4507043362" blue="0.46666908260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -74,7 +74,7 @@
                 <outlet property="emotionSlider" destination="8YT-oP-lKZ" id="kYy-sd-Tna"/>
                 <outlet property="emotionText" destination="bHu-dJ-csc" id="FwL-sf-ni8"/>
             </connections>
-            <point key="canvasLocation" x="490" y="29"/>
+            <point key="canvasLocation" x="489.85507246376818" y="28.794642857142854"/>
         </collectionViewCell>
     </objects>
 </document>
