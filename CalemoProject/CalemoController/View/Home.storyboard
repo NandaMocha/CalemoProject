@@ -309,11 +309,11 @@
             </objects>
             <point key="canvasLocation" x="2020" y="-1735"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Journaling-->
         <scene sceneID="dTs-GF-Qio">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nk4-Lf-ejo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="vbo-zd-bUv"/>
+                    <tabBarItem key="tabBarItem" title="Journaling" image="journalLogoOn32" springLoaded="YES" id="vbo-zd-bUv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lNC-SM-t8s">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -331,7 +331,6 @@
         <!--Me-->
         <scene sceneID="5gP-bx-wLO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r1F-C0-nCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="BC9-bH-StU" customClass="MeViewController" customModule="CalemoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jj7-Bk-wMd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -538,6 +537,7 @@ Journal</string>
                         <segue destination="vnc-6w-HCK" kind="show" identifier="pickSounds" id="v6h-Yv-weW"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1F-C0-nCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2711.594202898551" y="-300"/>
         </scene>
@@ -594,12 +594,11 @@ Journal</string>
             </objects>
             <point key="canvasLocation" x="3450.7246376811595" y="-300"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Me-->
         <scene sceneID="meb-5B-gcB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nqj-xh-ZLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vXk-sh-UnR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" selectedImage="nonaktifCup" springLoaded="YES" systemItem="more" id="eDs-8c-6Vb"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="meLogoOn32" springLoaded="YES" id="eDs-8c-6Vb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rCG-Ng-NZO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -610,6 +609,7 @@ Journal</string>
                         <segue destination="BC9-bH-StU" kind="relationship" relationship="rootViewController" id="Nwa-fT-9xO"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqj-xh-ZLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2713" y="-1008"/>
         </scene>
@@ -619,7 +619,8 @@ Journal</string>
         <image name="Me_Chevron" width="13" height="21"/>
         <image name="Me_EditButton" width="19" height="19"/>
         <image name="bronzeMedal" width="94" height="91"/>
-        <image name="nonaktifCup" width="91" height="89"/>
+        <image name="journalLogoOn32" width="31" height="30"/>
+        <image name="meLogoOn32" width="22" height="31"/>
         <image name="nonaktifMedal" width="94" height="91"/>
         <image name="silverMedal" width="94" height="91"/>
     </resources>
