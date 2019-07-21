@@ -45,6 +45,12 @@
 		0459E05122E2ED59002FB383 /* oceanwaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E05022E2ED59002FB383 /* oceanwaves.mp3 */; };
 		0459E05322E2ED67002FB383 /* heavyrain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E05222E2ED67002FB383 /* heavyrain.mp3 */; };
 		0459E05522E2EFB6002FB383 /* cellSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E05422E2EFB6002FB383 /* cellSounds.swift */; };
+<<<<<<< HEAD
+=======
+		0459E05722E45508002FB383 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E05622E45508002FB383 /* QuestionCell.swift */; };
+		0459E05B22E45556002FB383 /* CalemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E05922E45555002FB383 /* CalemoCollectionViewCell.swift */; };
+		0459E05C22E45556002FB383 /* ListJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E05A22E45555002FB383 /* ListJournal.swift */; };
+>>>>>>> 736f8c16928674db12117899e0750277f0dab5de
 		0477A80E22CA1114002C4AC5 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
 		0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */; };
@@ -89,6 +95,9 @@
 		0459E05022E2ED59002FB383 /* oceanwaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oceanwaves.mp3; sourceTree = "<group>"; };
 		0459E05222E2ED67002FB383 /* heavyrain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heavyrain.mp3; sourceTree = "<group>"; };
 		0459E05422E2EFB6002FB383 /* cellSounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellSounds.swift; sourceTree = "<group>"; };
+		0459E05622E45508002FB383 /* QuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		0459E05922E45555002FB383 /* CalemoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		0459E05A22E45555002FB383 /* ListJournal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListJournal.swift; sourceTree = "<group>"; };
 		045F3FF222DC3D8C00615168 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		045F3FF422DC3DAC00615168 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		045F3FF722DC6BCE00615168 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -208,6 +217,15 @@
 			path = sounds;
 			sourceTree = "<group>";
 		};
+		0459E05822E45555002FB383 /* ListJournal */ = {
+			isa = PBXGroup;
+			children = (
+				0459E05922E45555002FB383 /* CalemoCollectionViewCell.swift */,
+				0459E05A22E45555002FB383 /* ListJournal.swift */,
+			);
+			path = ListJournal;
+			sourceTree = "<group>";
+		};
 		045F3FF622DC47D500615168 /* CalemoController */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +295,7 @@
 				045F401722DE0ABF00615168 /* OnBoarding */,
 				045F3FF622DC47D500615168 /* CalemoController */,
 				0444F63222DEDF8500C2F845 /* Journal */,
+				0459E05822E45555002FB383 /* ListJournal */,
 				045F400822DD8AE300615168 /* DetailJournalController */,
 				045F400122DD852500615168 /* MeController */,
 				04E3A1A822D8370D008D99FF /* GraphController */,
@@ -334,7 +353,11 @@
 		B1DACCC822E07CD7002DF203 /* xib class */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				29E1F9D522E479220013ABF6 /* QuestionCell.swift */,
+=======
+				0459E05622E45508002FB383 /* QuestionCell.swift */,
+>>>>>>> 736f8c16928674db12117899e0750277f0dab5de
 				0459E03622E1AA5F002FB383 /* Emotion.xib */,
 				0459E03222E1AA5F002FB383 /* EmotionCell.swift */,
 				0459E03322E1AA5F002FB383 /* emotions.xib */,
@@ -508,6 +531,7 @@
 				0444F62E22DEDCFD00C2F845 /* DetailJournalViewController.swift in Sources */,
 				0444F62F22DEDCFD00C2F845 /* HomeCell.swift in Sources */,
 				0444F63022DEDCFD00C2F845 /* AddNewCell.swift in Sources */,
+				0459E05B22E45556002FB383 /* CalemoCollectionViewCell.swift in Sources */,
 				0444F62C22DEDCD400C2F845 /* HomeViewController.swift in Sources */,
 				0444F62B22DEDC9100C2F845 /* OnBoardingViewController.swift in Sources */,
 				04EDAEB722DE18E000C17387 /* ExtensionClass.swift in Sources */,
@@ -517,6 +541,8 @@
 				0459E02F22E17993002FB383 /* SlashScreenViewController.swift in Sources */,
 				048757CD22DF055F000BC333 /* CalemoData.xcdatamodeld in Sources */,
 				0444F62322DEDBD100C2F845 /* userNameController.swift in Sources */,
+				0459E05C22E45556002FB383 /* ListJournal.swift in Sources */,
+				0459E05722E45508002FB383 /* QuestionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,7 +690,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = FD5938VCTY;
+=======
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+>>>>>>> 736f8c16928674db12117899e0750277f0dab5de
 				INFOPLIST_FILE = CalemoProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -683,7 +713,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = FD5938VCTY;
+=======
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+>>>>>>> 736f8c16928674db12117899e0750277f0dab5de
 				INFOPLIST_FILE = CalemoProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

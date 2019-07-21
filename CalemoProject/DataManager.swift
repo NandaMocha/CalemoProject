@@ -38,6 +38,9 @@ final class DataManager {
     //MARK:- Dangerous Variable
     var causeDanger = "Workload"
     
+    //MARK:- Variable to save favorites Sounds
+    var favoriteSounds = "lightrain"
+    
     //MARK:- Save and Load User Defaults
     let defaults = UserDefaults.standard
     
@@ -47,6 +50,8 @@ final class DataManager {
         defaults.set(isLoadQuestion, forKey: "isLoadQuestion")
         defaults.set(isLoadQuotes, forKey: "isLoadQuotes")
         defaults.set(isLoadEmotion, forKey: "isLoadEmotion")
+        
+        defaults.set(favoriteSounds, forKey: "favoriteSounds")
         
         defaults.set(nameUser, forKey: "namaUser")
         
@@ -59,6 +64,9 @@ final class DataManager {
         isLoadQuestion = defaults.bool(forKey: "isLoadQuestion")
         isLoadQuotes = defaults.bool(forKey: "isLoadQuotes")
         isLoadEmotion = defaults.bool(forKey: "isLoadEmotion")
+        
+        guard let sound = defaults.string(forKey: "favoriteSounds") else{ return}
+        favoriteSounds = sound
         
         guard let nama = defaults.string(forKey: "namaUser") else{ return}
         if nama != ""{nameUser = nama}
