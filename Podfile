@@ -7,4 +7,5 @@ target 'CalemoProject' do
 
   # Pods for CalemoProject
 	pod 'Charts'
+
 end

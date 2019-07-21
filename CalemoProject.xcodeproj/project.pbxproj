@@ -31,7 +31,6 @@
 		0459E03122E1799F002FB383 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03022E1799F002FB383 /* Splash.storyboard */; };
 		0459E03922E1AA5F002FB383 /* EmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E03222E1AA5F002FB383 /* EmotionCell.swift */; };
 		0459E03A22E1AA5F002FB383 /* emotions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03322E1AA5F002FB383 /* emotions.xib */; };
-		0459E03B22E1AA5F002FB383 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E03422E1AA5F002FB383 /* QuestionView.swift */; };
 		0459E03C22E1AA5F002FB383 /* ReasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E03522E1AA5F002FB383 /* ReasonCell.swift */; };
 		0459E03D22E1AA5F002FB383 /* Emotion.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03622E1AA5F002FB383 /* Emotion.xib */; };
 		0459E03E22E1AA5F002FB383 /* Reason.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0459E03722E1AA5F002FB383 /* Reason.xib */; };
@@ -46,25 +45,18 @@
 		0459E05122E2ED59002FB383 /* oceanwaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E05022E2ED59002FB383 /* oceanwaves.mp3 */; };
 		0459E05322E2ED67002FB383 /* heavyrain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0459E05222E2ED67002FB383 /* heavyrain.mp3 */; };
 		0459E05522E2EFB6002FB383 /* cellSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E05422E2EFB6002FB383 /* cellSounds.swift */; };
-		0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477A80A22CA1114002C4AC5 /* ListJournal.swift */; };
 		0477A80E22CA1114002C4AC5 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0477A81022CA1117002C4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0477A80F22CA1117002C4AC5 /* Assets.xcassets */; };
 		0477A81322CA1117002C4AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477A81122CA1117002C4AC5 /* LaunchScreen.storyboard */; };
 		048757CD22DF055F000BC333 /* CalemoData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043DD51822D89B51003EF0D2 /* CalemoData.xcdatamodeld */; };
 		048757D122DF2051000BC333 /* Journal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048757D022DF2051000BC333 /* Journal.storyboard */; };
 		04EDAEB722DE18E000C17387 /* ExtensionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDAEB622DE18E000C17387 /* ExtensionClass.swift */; };
+		29E1F9D622E479220013ABF6 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E1F9D522E479220013ABF6 /* QuestionCell.swift */; };
 		2CBFE4D3C5A4F11DEEB51639 /* Pods_CalemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606E10EC295B1BC8C653DA86 /* Pods_CalemoProject.framework */; };
-		B126180D22DB76270055D357 /* CalemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126180C22DB76270055D357 /* CalemoCollectionViewCell.swift */; };
 		B126182F22DC856E0055D357 /* CreateJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126182E22DC856E0055D357 /* CreateJournal.swift */; };
-		B126183122DCB8B30055D357 /* Feeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126183022DCB8B30055D357 /* Feeling.swift */; };
 		B126183522DDC50B0055D357 /* ayam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B126183422DDC50B0055D357 /* ayam.jpg */; };
 		B126183B22DDCE8F0055D357 /* CJ - Centering (First).png in Resources */ = {isa = PBXBuildFile; fileRef = B126183A22DDCE8F0055D357 /* CJ - Centering (First).png */; };
 		B126183D22DDD2280055D357 /* Button Next.png in Resources */ = {isa = PBXBuildFile; fileRef = B126183C22DDD2280055D357 /* Button Next.png */; };
-		B126183F22DDDFD40055D357 /* Cause.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126183E22DDDFD40055D357 /* Cause.swift */; };
-		B126184122DDE0C40055D357 /* WhatDid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184022DDE0C40055D357 /* WhatDid.swift */; };
-		B126184322DDE10B0055D357 /* WhatMistake.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184222DDE10B0055D357 /* WhatMistake.swift */; };
-		B126184522DDE1300055D357 /* WhatImprove.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184422DDE1300055D357 /* WhatImprove.swift */; };
-		B126184722DDE1610055D357 /* FutureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126184622DDE1610055D357 /* FutureNote.swift */; };
 		B126184922DDE3970055D357 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B126184822DDE3970055D357 /* Rectangle.png */; };
 		D5BACF9722E0A9FA00F6FDE5 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BACF9622E0A9F900F6FDE5 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
@@ -83,7 +75,6 @@
 		0459E03022E1799F002FB383 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		0459E03222E1AA5F002FB383 /* EmotionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionCell.swift; sourceTree = "<group>"; };
 		0459E03322E1AA5F002FB383 /* emotions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = emotions.xib; sourceTree = "<group>"; };
-		0459E03422E1AA5F002FB383 /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		0459E03522E1AA5F002FB383 /* ReasonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReasonCell.swift; sourceTree = "<group>"; };
 		0459E03622E1AA5F002FB383 /* Emotion.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Emotion.xib; sourceTree = "<group>"; };
 		0459E03722E1AA5F002FB383 /* Reason.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Reason.xib; sourceTree = "<group>"; };
@@ -110,26 +101,19 @@
 		045F401522DE0A5B00615168 /* DetailJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailJournalViewController.swift; sourceTree = "<group>"; };
 		0477A80522CA1114002C4AC5 /* CalemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0477A80822CA1114002C4AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0477A80A22CA1114002C4AC5 /* ListJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJournal.swift; sourceTree = "<group>"; };
 		0477A80F22CA1117002C4AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0477A81222CA1117002C4AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0477A81422CA1117002C4AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048757CB22DF04AE000BC333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CalemoProject/Base.lproj/Journaling.storyboard; sourceTree = SOURCE_ROOT; };
 		048757D022DF2051000BC333 /* Journal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Journal.storyboard; sourceTree = "<group>"; };
 		04EDAEB622DE18E000C17387 /* ExtensionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionClass.swift; sourceTree = "<group>"; };
+		29E1F9D522E479220013ABF6 /* QuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 		606E10EC295B1BC8C653DA86 /* Pods_CalemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8234BACDD4F52FE862BD90D /* Pods-CalemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalemoProject.release.xcconfig"; path = "Target Support Files/Pods-CalemoProject/Pods-CalemoProject.release.xcconfig"; sourceTree = "<group>"; };
-		B126180C22DB76270055D357 /* CalemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalemoCollectionViewCell.swift; sourceTree = "<group>"; };
 		B126182E22DC856E0055D357 /* CreateJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJournal.swift; sourceTree = "<group>"; };
-		B126183022DCB8B30055D357 /* Feeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeling.swift; sourceTree = "<group>"; };
 		B126183422DDC50B0055D357 /* ayam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ayam.jpg; sourceTree = "<group>"; };
 		B126183A22DDCE8F0055D357 /* CJ - Centering (First).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CJ - Centering (First).png"; sourceTree = "<group>"; };
 		B126183C22DDD2280055D357 /* Button Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button Next.png"; sourceTree = "<group>"; };
-		B126183E22DDDFD40055D357 /* Cause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cause.swift; sourceTree = "<group>"; };
-		B126184022DDE0C40055D357 /* WhatDid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatDid.swift; sourceTree = "<group>"; };
-		B126184222DDE10B0055D357 /* WhatMistake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatMistake.swift; sourceTree = "<group>"; };
-		B126184422DDE1300055D357 /* WhatImprove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatImprove.swift; sourceTree = "<group>"; };
-		B126184622DDE1610055D357 /* FutureNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureNote.swift; sourceTree = "<group>"; };
 		B126184822DDE3970055D357 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
 		B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroJournalingViewController.swift; sourceTree = "<group>"; };
 		D5BACF9622E0A9F900F6FDE5 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
@@ -152,15 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B1DACCC822E07CD7002DF203 /* xib class */,
-				0477A80A22CA1114002C4AC5 /* ListJournal.swift */,
 				B1DACCC622DF1860002DF203 /* IntroJournalingViewController.swift */,
-				B126180C22DB76270055D357 /* CalemoCollectionViewCell.swift */,
-				B126183E22DDDFD40055D357 /* Cause.swift */,
-				B126184022DDE0C40055D357 /* WhatDid.swift */,
-				B126184222DDE10B0055D357 /* WhatMistake.swift */,
-				B126184422DDE1300055D357 /* WhatImprove.swift */,
-				B126184622DDE1610055D357 /* FutureNote.swift */,
-				B126183022DCB8B30055D357 /* Feeling.swift */,
 				B126182E22DC856E0055D357 /* CreateJournal.swift */,
 				B126184822DDE3970055D357 /* Rectangle.png */,
 				B126183C22DDD2280055D357 /* Button Next.png */,
@@ -358,11 +334,11 @@
 		B1DACCC822E07CD7002DF203 /* xib class */ = {
 			isa = PBXGroup;
 			children = (
+				29E1F9D522E479220013ABF6 /* QuestionCell.swift */,
 				0459E03622E1AA5F002FB383 /* Emotion.xib */,
 				0459E03222E1AA5F002FB383 /* EmotionCell.swift */,
 				0459E03322E1AA5F002FB383 /* emotions.xib */,
 				0459E03822E1AA5F002FB383 /* Question.xib */,
-				0459E03422E1AA5F002FB383 /* QuestionView.swift */,
 				0459E03722E1AA5F002FB383 /* Reason.xib */,
 				0459E03522E1AA5F002FB383 /* ReasonCell.swift */,
 			);
@@ -522,8 +498,8 @@
 				0459E02422DF510F002FB383 /* DataManager.swift in Sources */,
 				0459E04122E1AA7A002FB383 /* Journaling.swift in Sources */,
 				0459E02322DF4504002FB383 /* IntroJournalingViewController.swift in Sources */,
+				29E1F9D622E479220013ABF6 /* QuestionCell.swift in Sources */,
 				0444F63322DEFA5F00C2F845 /* BarChartViewController.swift in Sources */,
-				0459E03B22E1AA5F002FB383 /* QuestionView.swift in Sources */,
 				0459E03922E1AA5F002FB383 /* EmotionCell.swift in Sources */,
 				0459E03C22E1AA5F002FB383 /* ReasonCell.swift in Sources */,
 				0459E04922E2EB95002FB383 /* chooseSounds.swift in Sources */,
@@ -534,18 +510,10 @@
 				0444F63022DEDCFD00C2F845 /* AddNewCell.swift in Sources */,
 				0444F62C22DEDCD400C2F845 /* HomeViewController.swift in Sources */,
 				0444F62B22DEDC9100C2F845 /* OnBoardingViewController.swift in Sources */,
-				B126184522DDE1300055D357 /* WhatImprove.swift in Sources */,
 				04EDAEB722DE18E000C17387 /* ExtensionClass.swift in Sources */,
-				B126180D22DB76270055D357 /* CalemoCollectionViewCell.swift in Sources */,
 				0444F62422DEDBD100C2F845 /* homeViewController.swift in Sources */,
 				B126182F22DC856E0055D357 /* CreateJournal.swift in Sources */,
-				0477A80B22CA1114002C4AC5 /* ListJournal.swift in Sources */,
-				B126184122DDE0C40055D357 /* WhatDid.swift in Sources */,
-				B126183122DCB8B30055D357 /* Feeling.swift in Sources */,
 				0444F62522DEDBD100C2F845 /* slide.swift in Sources */,
-				B126184322DDE10B0055D357 /* WhatMistake.swift in Sources */,
-				B126184722DDE1610055D357 /* FutureNote.swift in Sources */,
-				B126183F22DDDFD40055D357 /* Cause.swift in Sources */,
 				0459E02F22E17993002FB383 /* SlashScreenViewController.swift in Sources */,
 				048757CD22DF055F000BC333 /* CalemoData.xcdatamodeld in Sources */,
 				0444F62322DEDBD100C2F845 /* userNameController.swift in Sources */,
@@ -696,7 +664,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AV7M3BP3VT;
+				DEVELOPMENT_TEAM = FD5938VCTY;
 				INFOPLIST_FILE = CalemoProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -715,7 +683,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AV7M3BP3VT;
+				DEVELOPMENT_TEAM = FD5938VCTY;
 				INFOPLIST_FILE = CalemoProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
