@@ -68,7 +68,7 @@
 		043DD51422D8688C003EF0D2 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		043DD51922D89B51003EF0D2 /* CalemoData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalemoData.xcdatamodel; sourceTree = "<group>"; };
 		0444F61E22DEDBD100C2F845 /* slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = slide.xib; sourceTree = "<group>"; };
-		0444F61F22DEDBD100C2F845 /* userNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userNameController.swift; sourceTree = "<group>"; };
+		0444F61F22DEDBD100C2F845 /* userNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = userNameController.swift; sourceTree = "<group>"; };
 		0444F62022DEDBD100C2F845 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		0444F62122DEDBD100C2F845 /* slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slide.swift; sourceTree = "<group>"; };
 		0444F62622DEDC1500C2F845 /* OnBoarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };

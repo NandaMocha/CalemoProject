@@ -39,12 +39,12 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
         
         let slide1:slide = Bundle.main.loadNibNamed("slide", owner: self, options: nil)?.first as! slide
         slide1.onboardingImage.image = UIImage(named: "image onBoard1")
-        slide1.headline.text = "Guided Journal"
+        slide1.headline.text = "Guided Journaling"
         slide1.caption.text = "I’m here to help you have a better and easier way in journaling"
         
         let slide2:slide = Bundle.main.loadNibNamed("slide", owner: self, options: nil)?.first as! slide
-       slide2.onboardingImage.image = UIImage(named: "image inBoard2")
-        slide2.headline.text = "Track Your Emotion"
+       slide2.onboardingImage.image = UIImage(named: "image onBoard2")
+        slide2.headline.text = "Track Your Emotions"
         slide2.caption.text = "Understand yourself better by tracking your daily emotion"
         
         let slide3:slide = Bundle.main.loadNibNamed("slide", owner: self, options: nil)?.first as! slide
@@ -53,8 +53,13 @@ class OnBoardingViewController: UIViewController, UIScrollViewDelegate {
         slide3.caption.text = "Do you know that journaling could improve your self awareness?"
         
         let button = UIButton()
-        button.backgroundColor = UIColor(patternImage: (UIImage(named: "letsStartedButton")!))
-        button.frame = CGRect(x: 48, y: 761, width: 318, height: 44)
+        button.layer.cornerRadius = 12
+        button.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner]
+        button.backgroundColor = #colorLiteral(red: 0.8941176471, green: 0.7215686275, blue: 0.4862745098, alpha: 1)
+        button.setTitle("Let's Started", for: .normal)
+        button.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
+        
+        button.frame = CGRect(x: 48, y: 730, width: 318, height: 44)
        slide3.addSubview(button)
         
         
