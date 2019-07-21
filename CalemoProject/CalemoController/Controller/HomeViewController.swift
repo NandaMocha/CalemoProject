@@ -11,6 +11,7 @@ import CoreData
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var greetingName: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -51,12 +52,15 @@ class HomeViewController: UIViewController {
     
     func setQuotes(){
         bgQOTDView.image = UIImage(named: "BGQuotes_sample")
+        authorLabel.text = authorLabel.text?.uppercased()
+        authorLabel.addCharacterSpacing(kernValue: 6)
     }
     
     func setWeeklySummary(){
-        wsImageView.image = UIImage(named: "smile")
+        wsImageView.image = UIImage(named: "09")
     }
     
+
     @IBAction func buttonTapped(_ sender: UIButton) {
         switch sender.tag {
         case 0:
@@ -101,11 +105,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
             let seledtedDate:String = dataJournal[indexPath.row].dateJournal!
             
-            cell.dateJournal.text = seledtedDate
-            cell.dayJournal.text = day.getDay(date: seledtedDate)
-            cell.feelsJournal.image = UIImage(named: "0\(indexPath.row+1)")
-            cell.layer.cornerRadius = 20
-            cell.backgroundColor = #colorLiteral(red: 0.7337953448, green: 0.8345138431, blue: 0.7939261794, alpha: 1)
+            cell.setContent(date: dataJournal[indexPath.row].dateJournal!, day: day.getDay(date: day.getDate()), feels: UIImage(named: "0\(indexPath.row+1)")!, emotion: "0\(indexPath.row+1)")
             
             return cell
         }else {
@@ -116,11 +116,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             }else{
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
                 
-                cell.dateJournal.text = dataJournal[indexPath.row].dateJournal
-                cell.dayJournal.text = day.getDay(date: day.getDate())
-                cell.feelsJournal.image = UIImage(named: "0\(indexPath.row+1)")
-                cell.layer.cornerRadius = 20
-                cell.backgroundColor = #colorLiteral(red: 0.7337953448, green: 0.8345138431, blue: 0.7939261794, alpha: 1)
+//                cell.dateJournal.text = dataJournal[indexPath.row].dateJournal
+//                cell.dayJournal.text = day.getDay(date: day.getDate())
+//                cell.feelsJournal.image = UIImage(named: "0\(indexPath.row+1)")
+//                cell.layer.cornerRadius = 20
+//                cell.backgroundColor = #colorLiteral(red: 0.7337953448, green: 0.8345138431, blue: 0.7939261794, alpha: 1)
+                
+                cell.setContent(date: dataJournal[indexPath.row].dateJournal!, day: day.getDay(date: day.getDate()), feels: UIImage(named: "0\(indexPath.row+2)")!, emotion: "0\(indexPath.row+2)")
                 
                 return cell
             }
@@ -164,5 +166,15 @@ extension HomeViewController{
     override func viewWillDisappear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(false, animated: animated)
         
+    }
+}
+
+extension UILabel {
+    func addCharacterSpacing(kernValue: Double = 1.15) {
+        if let labelText = text, labelText.count > 0 {
+            let attributedString = NSMutableAttributedString(string: labelText)
+            attributedString.addAttribute(NSAttributedString.Key.kern, value: kernValue, range: NSRange(location: 0, length: attributedString.length - 1))
+            attributedText = attributedString
+        }
     }
 }

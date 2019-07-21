@@ -56,6 +56,7 @@ class CreateJournal: UIViewController {
             true
             if i == 5{
                 self.performSegue(withIdentifier: "centeringEnd", sender: self)
+                timer.invalidate()
             }
             i += 1
             UIView.animate(withDuration: 20.0) {
@@ -73,12 +74,12 @@ class CreateJournal: UIViewController {
                 self.inhaleText.text = "Inhale"
             }
             timerBreath += 1
+            if timerBreath == 5 {
+                timer.invalidate()
+            }
             print(timerBreath)
 
         })
-        
-        
-        
     }
 }
 
