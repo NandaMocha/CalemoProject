@@ -101,7 +101,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var day = ""
 //        day = dataJournal[indexPath.row].dateJournal!
-        print("Data Journal CellForItemAt -> ", dataJournal)
+//        print("Data Journal CellForItemAt -> ", dataJournal)
 
         if indexPath.row < totalCard-1{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
