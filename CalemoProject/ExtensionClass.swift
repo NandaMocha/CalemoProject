@@ -11,11 +11,18 @@ import UIKit
 extension UIView{
     func viewShadow(){
         self.layer.masksToBounds = false
-        self.layer.shadowColor = UIColor.gray.cgColor
-        self.layer.shadowOpacity = 0.3
-        self.layer.shadowOffset = CGSize(width: 2, height: 15)
-        self.layer.shadowRadius = 18
+//        self.layer.shadowColor = UIColor.black.cgColor
+//        self.layer.shadowOpacity = 0.2
+//        self.layer.shadowOffset = CGSize(width: 0, height: 20)
+//        self.layer.shadowRadius = 24
         self.layer.shouldRasterize = true
+        self.layer.applySketchShadow(
+            color: .black,
+            alpha: 0.3,
+            x: 1,
+            y: 12,
+            blur: 20,
+            spread: -14)
         
     }
 }
@@ -28,6 +35,29 @@ extension UIButton{
         self.layer.shadowOffset = CGSize(width: 2, height: 10)
         self.layer.shadowRadius = 5
         self.layer.shouldRasterize = true
+    }
+}
+
+extension CALayer {
+    func applySketchShadow(
+        color: UIColor = .black,
+        alpha: Float = 0.5,
+        x: CGFloat = 0,
+        y: CGFloat = 2,
+        blur: CGFloat = 4,
+        spread: CGFloat = 0)
+    {
+        shadowColor = color.cgColor
+        shadowOpacity = alpha
+        shadowOffset = CGSize(width: x, height: y)
+        shadowRadius = blur / 2.0
+        if spread == 0 {
+            shadowPath = nil
+        } else {
+            let dx = -spread
+            let rect = bounds.insetBy(dx: dx, dy: dx)
+            shadowPath = UIBezierPath(rect: rect).cgPath
+        }
     }
 }
 

@@ -108,7 +108,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
             
             cell.setContent(date: dataJournal[indexPath.row].dateJournal!, day: day.getDay(date: dataJournal[indexPath.row].dateJournal!), feels: UIImage(named: "0\(indexPath.row+1)")!, emotion: "0\(indexPath.row+1)")
-
+            cell.viewShadow()
             return cell
         }else {
             //dataJournal[dataJournal.count-1] = dataJournal.last
@@ -119,7 +119,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
 
                 cell.setContent(date: dataJournal[indexPath.row].dateJournal!, day: day.getDay(date: dataJournal[indexPath.row].dateJournal!), feels: UIImage(named: "0\(indexPath.row+1)")!, emotion: "0\(indexPath.row+1)")
-
+                cell.viewShadow()
                 return cell
             }
         }
