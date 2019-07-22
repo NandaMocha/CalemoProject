@@ -43,7 +43,7 @@ class CreateJournal: UIViewController {
         centeringBorder.backgroundColor = #colorLiteral(red: 0.7339008451, green: 0.8349817395, blue: 0.7938916683, alpha: 1)
     }
     func centeringStart() {
-        UIView.animate(withDuration: 1, delay: 0, options: [.autoreverse, .repeat], animations: {//5
+        UIView.animate(withDuration: 5, delay: 0, options: [.autoreverse, .repeat], animations: {//5
             self.Centering.transform = CGAffineTransform.identity.scaledBy(x: 2, y: 2)
         }) { (done)
             in
@@ -52,20 +52,20 @@ class CreateJournal: UIViewController {
        
         
         var  i : Int = 0
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
+        Timer.scheduledTimer(withTimeInterval: 4, repeats: true, block: { (timer) in
             true
             if i == 5{//4
                 self.performSegue(withIdentifier: "centeringEnd", sender: self)
                 timer.invalidate()
             }
             i += 1
-            UIView.animate(withDuration: 1.0) {//20
+            UIView.animate(withDuration: 20.0) {//20
                 self.progressView.setProgress(1.0, animated: true)
             }
             
         })
         var timerBreath : Int = 0
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { (timer) in
             true
             //5
             if (timerBreath == 0 || timerBreath == 2 || timerBreath == 4  ) {
