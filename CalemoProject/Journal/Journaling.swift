@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class Journaling: UIViewController {
 
@@ -14,6 +15,8 @@ class Journaling: UIViewController {
     @IBOutlet weak var viewJournaling: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageSwipe: UIPageControl!
+    
+    var player: AVAudioPlayer?
     
     var emotionSave: String = "0"
     var reasonSave: String = "Workload"
@@ -82,6 +85,8 @@ extension Journaling: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         else {
             print("Journaling -> Page Question")
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "questionCell", for: indexPath) as! QuestionCell
+            
+            playSound(sounds: DataManager.shared.favoriteSounds)
 
             cell.questionProtocol = self
             print(index)
@@ -103,6 +108,24 @@ extension Journaling: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: view.frame.height)
+    }
+    
+    func playSound(sounds: String){
+        print("Play sounds, ", sounds)
+        
+        
+        let url : NSURL = Bundle.main.url(forResource: sounds, withExtension: "mp3")! as NSURL
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url as URL)
+            guard let player = player else { return }
+            
+            player.prepareToPlay()
+            player.play()
+            
+        } catch let error as NSError {
+            print(error.description)
+        }
     }
 }
 extension Journaling: protocolView {
