@@ -90,7 +90,7 @@ extension Journaling: UICollectionViewDelegate, UICollectionViewDataSource, UICo
             }else if indexPath.row == 3{
                 cell.question1.text = "Why about it that makes you exceedingly happy?"
             }else if indexPath.row == 4{
-                cell.question1.text = "What can you to do to further improve your environment?"
+                cell.question1.text = "What can you do to further improve your environment?"
 //                cell.castingQuestion(numberOfQuestion: indexPath.row, emotion: emotionSave, cause: reasonSave)
             }else if indexPath.row == 5{
                 cell.question1.text = "Notes to Future Me?"
