@@ -29,14 +29,14 @@ class QuestionCell: UICollectionViewCell, UITextFieldDelegate {
         super.awakeFromNib()
         answer1.delegate = self
         let notificationCenter = NotificationCenter.default
-        
-        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
-        
-        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+//        
+//        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
+//        
+//        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
         let tapGestures = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
         
-        questionView.addGestureRecognizer(tapGestures)
+//        questionView.addGestureRecognizer(tapGestures)
         
         
     }

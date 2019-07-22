@@ -32,16 +32,16 @@ class Journaling: UIViewController {
     
     @IBAction func nextButtonTapped(_ sender: Any) {
         print("Journaling -> IndexBefore = ", index)
-        if index < 5{
+        if index < 4{
             index += 1
             var indexToScroll = IndexPath(row: index, section: 0)
-            viewJournaling.scrollToItem(at: indexToScroll, at: .left, animated: true)
-            
+//            viewJournaling.scrollToItem(at: indexToScroll, at: .left, animated: true)
+            collectionView.selectItem(at: indexToScroll, animated: true, scrollPosition: .left)
             print("Journaling -> Index After = ", index)
             
-            collectionView.reloadData()
+//            collectionView.reloadData()
         }
-        if index == 5 {
+        if index == 4 {
             nextButton.titleLabel?.text = "done"
         }
     }
@@ -81,7 +81,7 @@ extension Journaling: UICollectionViewDelegate, UICollectionViewDataSource, UICo
             cell.questionProtocol = self
             
             if index != 5{
-                cell.castingQuestion(numberOfQuestion: indexPath.row, emotion: emotionSave, cause: reasonSave)
+//                cell.castingQuestion(numberOfQuestion: indexPath.row, emotion: emotionSave, cause: reasonSave)
             }else{
                 cell.question1.text = "Notes to Future Me?"
             }
