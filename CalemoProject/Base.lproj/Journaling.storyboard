@@ -245,8 +245,14 @@
                                     <outlet property="delegate" destination="T4X-ub-stg" id="EWa-3Q-xwM"/>
                                 </connections>
                             </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="OjA-wL-7Aw">
+                                <rect key="frame" x="188" y="825" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.64312863349914551" green="0.63529044389724731" blue="0.63528871536254883" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Sa-47-sg9">
-                                <rect key="frame" x="140" y="752" width="134" height="44"/>
+                                <rect key="frame" x="128" y="752" width="158" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Next" backgroundImage="EmptyButton">
@@ -256,12 +262,6 @@
                                     <action selector="nextButtonTapped:" destination="T4X-ub-stg" eventType="touchUpInside" id="iiw-Qy-wCD"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="OjA-wL-7Aw">
-                                <rect key="frame" x="188" y="825" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" red="0.64312863349914551" green="0.63529044389724731" blue="0.63528871536254883" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -277,11 +277,13 @@
                         <outlet property="nextButton" destination="2Sa-47-sg9" id="fmW-rT-sos"/>
                         <outlet property="pageSwipe" destination="OjA-wL-7Aw" id="L7i-kf-5z3"/>
                         <outlet property="viewJournaling" destination="9FG-xc-MyD" id="isN-3d-XNm"/>
+                        <segue destination="IgP-N7-aHx" kind="unwind" identifier="unwindToHome" unwindAction="unwindToHomeWithSegue:" id="dJ2-xf-heB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ujo-Yu-Hik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IgP-N7-aHx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1987" y="708"/>
+            <point key="canvasLocation" x="1986.9565217391305" y="707.8125"/>
         </scene>
     </scenes>
     <resources>
