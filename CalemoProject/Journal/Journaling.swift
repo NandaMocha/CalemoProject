@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class Journaling: UIViewController {
 
@@ -14,6 +15,8 @@ class Journaling: UIViewController {
     @IBOutlet weak var viewJournaling: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageSwipe: UIPageControl!
+    
+    var player: AVAudioPlayer?
     
     var emotionSave: String = "0"
     var reasonSave: String = "Workload"
@@ -31,19 +34,24 @@ class Journaling: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
-        print("Journaling -> IndexBefore = ", index)
-        if index < 4{
-            index += 1
+//        print("Journaling -> IndexBefore = ", index)
+        
+        index += 1
+        if index < 6{
             var indexToScroll = IndexPath(row: index, section: 0)
 //            viewJournaling.scrollToItem(at: indexToScroll, at: .left, animated: true)
             collectionView.selectItem(at: indexToScroll, animated: true, scrollPosition: .left)
-            print("Journaling -> Index After = ", index)
+            print("Journaling -> Current Index = ", index)
             
 //            collectionView.reloadData()
         }
-        if index == 4 {
-            nextButton.titleLabel?.text = "done"
+        if index == 6 {
+            print("Journaling -> Current Index = ", index)
+            self.nextButton.setTitle("Done", for: .normal)
         }
+        
+        if nextButton.currentTitle == "Done"{
+            performSegue(withIdentifier: "unwindToHome", sender: self)        }
     }
     
     
@@ -56,7 +64,7 @@ extension Journaling: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        print("Journaling -> Index path = ", indexPath.row)
+//        print("Journaling -> Index path = ", indexPath.row)
         if indexPath.row == 0 {
             print("Journaling -> Page Emotion")
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "emotionCell", for: indexPath) as! EmotionCell
@@ -77,12 +85,19 @@ extension Journaling: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         else {
             print("Journaling -> Page Question")
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "questionCell", for: indexPath) as! QuestionCell
+            
+            playSound(sounds: DataManager.shared.favoriteSounds)
 
             cell.questionProtocol = self
-            
-            if index != 5{
+            print(index)
+            if indexPath.row == 2{
+                cell.question1.text = "What happened that made you be in such a good mood?"
+            }else if indexPath.row == 3{
+                cell.question1.text = "Why about it that makes you exceedingly happy?"
+            }else if indexPath.row == 4{
+                cell.question1.text = "What can you do to further improve your environment?"
 //                cell.castingQuestion(numberOfQuestion: indexPath.row, emotion: emotionSave, cause: reasonSave)
-            }else{
+            }else if indexPath.row == 5{
                 cell.question1.text = "Notes to Future Me?"
             }
             
@@ -93,6 +108,24 @@ extension Journaling: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: view.frame.height)
+    }
+    
+    func playSound(sounds: String){
+        print("Play sounds, ", sounds)
+        
+        
+        let url : NSURL = Bundle.main.url(forResource: sounds, withExtension: "mp3")! as NSURL
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url as URL)
+            guard let player = player else { return }
+            
+            player.prepareToPlay()
+            player.play()
+            
+        } catch let error as NSError {
+            print(error.description)
+        }
     }
 }
 extension Journaling: protocolView {

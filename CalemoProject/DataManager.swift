@@ -39,7 +39,7 @@ final class DataManager {
     var causeDanger = "Workload"
     
     //MARK:- Variable to save favorites Sounds
-    var favoriteSounds = "lightrain"
+    var favoriteSounds = "birdsinging"
     
     //MARK:- Save and Load User Defaults
     let defaults = UserDefaults.standard

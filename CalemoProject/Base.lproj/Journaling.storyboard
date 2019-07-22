@@ -112,9 +112,16 @@
                                 <state key="normal" backgroundImage="I'm Ready"/>
                                 <connections>
                                     <action selector="button:" destination="gkS-aC-RWh" eventType="touchUpInside" id="eyV-8c-FdJ"/>
-                                    <segue destination="Ud4-8D-WR4" kind="show" id="xZx-uJ-2PD"/>
+                                    <segue destination="bsE-HY-1Tt" kind="show" id="yoj-L8-6Zl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inhale through nose and Exhale through mouth" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTd-t8-sNr">
+                                <rect key="frame" x="23" y="434" width="362" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.41961306329999998" green="0.40364605190000002" blue="0.41961020230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7av-6f-C4e"/>
@@ -124,38 +131,6 @@
                 <exit id="gkS-aC-RWh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="11.594202898550726" y="-46.205357142857139"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="sXE-WA-uYB">
-            <objects>
-                <viewController id="Ud4-8D-WR4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="H8n-CH-KaM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxb-3l-NF6">
-                                <rect key="frame" x="116" y="683" width="182" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="I'm Ready"/>
-                                <connections>
-                                    <segue destination="bsE-HY-1Tt" kind="show" id="Xii-9j-M5E"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Before you begin writing, let's start centering" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNu-54-ZId">
-                                <rect key="frame" x="23" y="415" width="369" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.53232270077720201" green="0.53232270077720201" blue="0.53232270077720201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.94898062944412231" green="0.94115787744522095" blue="0.94117766618728638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="TKQ-ij-9fK"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kc7-rp-G84" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1000" y="-46"/>
         </scene>
         <!--Create Journal-->
         <scene sceneID="D6n-aQ-tb5">
@@ -245,8 +220,14 @@
                                     <outlet property="delegate" destination="T4X-ub-stg" id="EWa-3Q-xwM"/>
                                 </connections>
                             </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="OjA-wL-7Aw">
+                                <rect key="frame" x="188" y="825" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.64312863349914551" green="0.63529044389724731" blue="0.63528871536254883" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Sa-47-sg9">
-                                <rect key="frame" x="140" y="752" width="134" height="44"/>
+                                <rect key="frame" x="128" y="752" width="158" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Next" backgroundImage="EmptyButton">
@@ -256,12 +237,6 @@
                                     <action selector="nextButtonTapped:" destination="T4X-ub-stg" eventType="touchUpInside" id="iiw-Qy-wCD"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="OjA-wL-7Aw">
-                                <rect key="frame" x="188" y="825" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" red="0.64312863349914551" green="0.63529044389724731" blue="0.63528871536254883" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -277,11 +252,13 @@
                         <outlet property="nextButton" destination="2Sa-47-sg9" id="fmW-rT-sos"/>
                         <outlet property="pageSwipe" destination="OjA-wL-7Aw" id="L7i-kf-5z3"/>
                         <outlet property="viewJournaling" destination="9FG-xc-MyD" id="isN-3d-XNm"/>
+                        <segue destination="IgP-N7-aHx" kind="unwind" identifier="unwindToHome" unwindAction="unwindToHomeWithSegue:" id="dJ2-xf-heB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ujo-Yu-Hik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IgP-N7-aHx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1987" y="708"/>
+            <point key="canvasLocation" x="1986.9565217391305" y="707.8125"/>
         </scene>
     </scenes>
     <resources>
