@@ -137,7 +137,7 @@ final class DataManager {
             guard let object = json as? [[String: String]] else { print("json invalid"); return}
 
             for data in object{
-                print("Here is Data that Stored",data)
+//                print("Here is Data that Stored",data)
             
                 let journalLoadDummy = Journal(context: self.context)
                 journalLoadDummy.dateJournal = data["date"]
@@ -209,7 +209,7 @@ final class DataManager {
             if dataJurnal.count > 7{
                 for i in 0 ..< 7{
                     dataJurnalTujuHari.append(dataJurnal[i])
-                    print("Contents of Journal -> ",dataJurnal[i])
+//                    print("Contents of Journal -> ",dataJurnal[i])
                 }
             }else{
                 for i in 0 ..< dataJurnal.count - 1{
@@ -237,7 +237,7 @@ final class DataManager {
             guard let question = jsonQuestion as? [[String: String]] else { print("json question invalid"); return}
 
             for dataQuest in question{
-                print("Here is Data Question that Stored",dataQuest)
+//                print("Here is Data Question that Stored",dataQuest)
 
                 let quest = Question(context: self.context)
                 quest.questionQuest = dataQuest["Pertanyaan"]
@@ -252,12 +252,12 @@ final class DataManager {
             //Emotion Fetch Process
             let dataEmotion = try Data(contentsOf: fileEmotion)
             let jsonEmotion = try JSONSerialization.jsonObject(with: dataEmotion, options: [])
-            print("Cek JSON EMotion, ", jsonEmotion)
+//            print("Cek JSON EMotion, ", jsonEmotion)
 
             guard let emotion = jsonEmotion as? [[String: Any]] else { print("json emotion invalid"); return}
 
             for dataEmotion in emotion{
-                print("Here is Data Emotion that Stored",dataEmotion)
+//                print("Here is Data Emotion that Stored",dataEmotion)
 
                 let emo = Emotion(context: self.context)
                 emo.desc = dataEmotion["Description"] as! String
@@ -275,7 +275,7 @@ final class DataManager {
             guard let quotes = jsonQuotes as? [[String: String]] else { print("json quotes invalid"); return}
 
             for dataQuotes in quotes{
-                print("Here is Data Quotes that Stored",dataQuotes)
+//                print("Here is Data Quotes that Stored",dataQuotes)
 
                 let quotes = Quotes(context: self.context)
                 quotes.author = dataQuotes["Author"]

@@ -29,7 +29,7 @@
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YWG-HH-ZAf" kind="show" id="tno-nb-n2t"/>
+                                    <segue destination="hco-0M-GZw" kind="show" id="IRI-t5-vg3"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="R7P-dm-tlF">
@@ -152,4 +152,7 @@
             <point key="canvasLocation" x="1780" y="781"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="IRI-t5-vg3"/>
+    </inferredMetricsTieBreakers>
 </document>
