@@ -216,9 +216,6 @@
                     <navigationItem key="navigationItem" title="[Date]" id="ZU5-F0-PKn">
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="RkO-0C-Ctb">
                             <color key="tintColor" red="0.86914390330000002" green="0.67187082769999995" blue="0.59606361389999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <connections>
-                                <segue destination="wVT-4R-Nah" kind="show" id="a9L-XQ-g1p"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
