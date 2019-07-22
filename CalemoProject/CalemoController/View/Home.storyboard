@@ -598,7 +598,7 @@ Journal</string>
         <scene sceneID="meb-5B-gcB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vXk-sh-UnR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Me" image="meLogoOn32" springLoaded="YES" id="eDs-8c-6Vb"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="meLogoOn32Baru" springLoaded="YES" id="eDs-8c-6Vb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rCG-Ng-NZO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -620,7 +620,7 @@ Journal</string>
         <image name="Me_EditButton" width="19" height="19"/>
         <image name="bronzeMedal" width="94" height="91"/>
         <image name="journalLogoOn32" width="31" height="30"/>
-        <image name="meLogoOn32" width="22" height="31"/>
+        <image name="meLogoOn32Baru" width="27" height="32"/>
         <image name="nonaktifMedal" width="94" height="91"/>
         <image name="silverMedal" width="94" height="91"/>
     </resources>

@@ -23,6 +23,11 @@ class DetailJournalViewController: UIViewController {
     @IBOutlet weak var causeLabel: UILabel!
     @IBOutlet weak var emotionLabel: UILabel!
     @IBOutlet weak var dateLabel: UINavigationItem!
+    
+    func setContent(){
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "July 16, 2019"

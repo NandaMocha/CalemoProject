@@ -99,7 +99,6 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         if indexPath.row < totalCard-1{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
-            let seledtedDate:String = dataJournal[indexPath.row].dateJournal!
             
             cell.setContent(date: dataJournal[indexPath.row].dateJournal!, day: day.getDay(date: day.getDate()), feels: UIImage(named: "0\(indexPath.row+1)")!, emotion: "0\(indexPath.row+1)")
             
@@ -112,18 +111,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             }else{
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
                 
-//                cell.dateJournal.text = dataJournal[indexPath.row].dateJournal
-//                cell.dayJournal.text = day.getDay(date: day.getDate())
-//                cell.feelsJournal.image = UIImage(named: "0\(indexPath.row+1)")
-//                cell.layer.cornerRadius = 20
-//                cell.backgroundColor = #colorLiteral(red: 0.7337953448, green: 0.8345138431, blue: 0.7939261794, alpha: 1)
-                
                 cell.setContent(date: dataJournal[indexPath.row].dateJournal!, day: day.getDay(date: day.getDate()), feels: UIImage(named: "0\(indexPath.row+1)")!, emotion: "0\(indexPath.row+1)")
                 
                 return cell
             }
         }
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
