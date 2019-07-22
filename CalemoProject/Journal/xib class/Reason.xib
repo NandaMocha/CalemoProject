@@ -29,7 +29,7 @@
                     <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4V-1O-tH6">
                         <rect key="frame" x="171" y="334" width="91" height="91"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" backgroundImage="others"/>
+                        <state key="normal" backgroundImage="Other-active"/>
                         <connections>
                             <action selector="buttonTapped:" destination="wJu-u5-o79" eventType="touchUpInside" id="AtK-IS-nrF"/>
                         </connections>
@@ -37,7 +37,7 @@
                     <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSg-d0-Fb6">
                         <rect key="frame" x="52" y="334" width="91" height="91"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" backgroundImage="mates"/>
+                        <state key="normal" backgroundImage="Mates-active"/>
                         <connections>
                             <action selector="buttonTapped:" destination="wJu-u5-o79" eventType="touchUpInside" id="xsD-Dn-d05"/>
                         </connections>
@@ -66,7 +66,7 @@
                     <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8F-nW-Hnw">
                         <rect key="frame" x="290" y="165" width="91" height="91"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" backgroundImage="personalrelationship"/>
+                        <state key="normal" backgroundImage="Personal-active"/>
                         <connections>
                             <action selector="buttonTapped:" destination="wJu-u5-o79" eventType="touchUpInside" id="bcG-c5-4nD"/>
                         </connections>
@@ -74,7 +74,7 @@
                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUo-ZC-OwT">
                         <rect key="frame" x="171" y="165" width="91" height="91"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" backgroundImage="environment"/>
+                        <state key="normal" backgroundImage="Env-active"/>
                         <connections>
                             <action selector="buttonTapped:" destination="wJu-u5-o79" eventType="touchUpInside" id="LmP-sf-Uc9"/>
                         </connections>
@@ -89,7 +89,7 @@
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDW-AC-yMZ">
                         <rect key="frame" x="52" y="165" width="91" height="91"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" backgroundImage="workload"/>
+                        <state key="normal" backgroundImage="Workload-active"/>
                         <connections>
                             <action selector="buttonTapped:" destination="wJu-u5-o79" eventType="touchUpInside" id="RPt-SQ-xUf"/>
                         </connections>
@@ -109,10 +109,10 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="environment" width="91" height="91"/>
-        <image name="mates" width="91" height="91"/>
-        <image name="others" width="91" height="91"/>
-        <image name="personalrelationship" width="91" height="91"/>
-        <image name="workload" width="91" height="91"/>
+        <image name="Env-active" width="91" height="91"/>
+        <image name="Mates-active" width="91" height="91"/>
+        <image name="Other-active" width="91" height="91"/>
+        <image name="Personal-active" width="91" height="91"/>
+        <image name="Workload-active" width="91" height="91"/>
     </resources>
 </document>

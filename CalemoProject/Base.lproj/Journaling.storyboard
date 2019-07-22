@@ -107,9 +107,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29D-Ug-z6P">
-                                <rect key="frame" x="116" y="683" width="182" height="44"/>
+                                <rect key="frame" x="174" y="690" width="67" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="I'm Ready"/>
+                                <state key="normal" title="I'm Ready">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="button:" destination="gkS-aC-RWh" eventType="touchUpInside" id="eyV-8c-FdJ"/>
                                     <segue destination="bsE-HY-1Tt" kind="show" id="yoj-L8-6Zl"/>
@@ -126,6 +128,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7av-6f-C4e"/>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="29D-Ug-z6P" id="HFQ-N3-TkE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOl-6D-2d8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gkS-aC-RWh" userLabel="Exit" sceneMemberID="exit"/>
@@ -230,8 +235,8 @@
                                 <rect key="frame" x="128" y="752" width="158" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Next" backgroundImage="EmptyButton">
-                                    <color key="titleColor" red="0.94898062940000005" green="0.94115787740000001" blue="0.94117766619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="nextButtonTapped:" destination="T4X-ub-stg" eventType="touchUpInside" id="iiw-Qy-wCD"/>
@@ -261,8 +266,4 @@
             <point key="canvasLocation" x="1986.9565217391305" y="707.8125"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="EmptyButton" width="134" height="44"/>
-        <image name="I'm Ready" width="182" height="44"/>
-    </resources>
 </document>

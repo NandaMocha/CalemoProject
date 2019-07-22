@@ -20,18 +20,23 @@ class ReasonCell: UICollectionViewCell {
         case 0:
             reason = "Workload"
             reasonProtocol?.reasonProtocol(reasonString: "Workload")
+            sender.setBackgroundImage(UIImage(named: "Workload-inactive"), for: .normal)
         case 1:
             reason = "Environment"
              reasonProtocol?.reasonProtocol(reasonString: "Environment")
+            sender.setBackgroundImage(UIImage(named: "Env-inactive"), for: .normal)
         case 2:
             reason = "Personal Relationship"
              reasonProtocol?.reasonProtocol(reasonString: "Personal Relationship")
+            sender.setBackgroundImage(UIImage(named: "Personal-inactive"), for: .normal)
         case 3:
             reason = "Mates"
              reasonProtocol?.reasonProtocol(reasonString: "Mates")
+            sender.setBackgroundImage(UIImage(named: "Mates-inactive"), for: .normal)
         case 4:
             reason = "Others"
              reasonProtocol?.reasonProtocol(reasonString: "Others")
+            sender.setBackgroundImage(UIImage(named: "Other-inactive"), for: .normal)
         default:
             reason = ""
         }
@@ -44,4 +49,7 @@ class ReasonCell: UICollectionViewCell {
         super.awakeFromNib()
         
     }
+    
+ 
+    
 }

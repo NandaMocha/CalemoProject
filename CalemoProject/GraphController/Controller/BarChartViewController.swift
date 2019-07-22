@@ -21,7 +21,12 @@ class BarChartViewController: UIViewController {
         
         numbers = [0, 1, 2, 3, 4, 2, 3, 4, 0, 1, 2]
         
-        updateData()
+//        updateData()
+    }
+    @IBAction func segmentedCOntrol(_ sender: Any) {
+        
+//        if sender.
+        
     }
     
     func updateData(){
