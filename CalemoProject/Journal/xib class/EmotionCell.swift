@@ -67,7 +67,7 @@ class EmotionCell: UICollectionViewCell {
             emotionText.text = dataEmotion[9].desc
             emotionProtocol?.emotionProtocol(emotionString: "9")
         default:
-            emotion.image = UIImage(named: "")
+            emotion.image = UIImage(named: "0")
         }
     }
     

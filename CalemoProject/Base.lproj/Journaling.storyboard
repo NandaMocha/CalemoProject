@@ -116,6 +116,7 @@
         <!--View Controller-->
         <scene sceneID="sXE-WA-uYB">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kc7-rp-G84" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ud4-8D-WR4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H8n-CH-KaM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -141,7 +142,6 @@
                         <viewLayoutGuide key="safeArea" id="TKQ-ij-9fK"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kc7-rp-G84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1000" y="-46"/>
         </scene>
@@ -154,14 +154,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6k-lP-Ivl">
-                                <rect key="frame" x="87" y="328" width="235" height="235"/>
+                                <rect key="frame" x="87" y="328" width="256" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m3c-eK-OYP">
-                                        <rect key="frame" x="41" y="43" width="154" height="154"/>
+                                        <rect key="frame" x="64" y="64" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.054421962712290439" green="0.12894919873949803" blue="0.26256881476683935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inhale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYe-yK-Twf">
+                                        <rect key="frame" x="72" y="113" width="111" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -179,12 +186,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.94898062944412231" green="0.94115787744522095" blue="0.94117766618728638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ovY-rF-TBy"/>
                     </view>
                     <connections>
                         <outlet property="Centering" destination="m3c-eK-OYP" id="TCu-7S-FwV"/>
                         <outlet property="centeringBorder" destination="n6k-lP-Ivl" id="VP4-pj-WUx"/>
+                        <outlet property="inhaleText" destination="VYe-yK-Twf" id="RS8-PF-4Eb"/>
                         <outlet property="progressView" destination="mUz-DS-dTm" id="wWt-mE-uhG"/>
                         <segue destination="T4X-ub-stg" kind="show" identifier="centeringEnd" id="oYf-SR-gpS"/>
                     </connections>
@@ -203,7 +211,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9FG-xc-MyD">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" red="0.94898062944412231" green="0.94115787744522095" blue="0.94117766618728638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mqf-f4-n9b">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>

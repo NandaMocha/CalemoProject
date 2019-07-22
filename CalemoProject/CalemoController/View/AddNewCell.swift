@@ -15,7 +15,7 @@ class AddNewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        viewBG.backgroundColor = UIColor(patternImage: UIImage(named: "cardPutus")!)
+        viewBG.backgroundColor = UIColor(patternImage: UIImage(named: "container")!)
         
     }
 }
