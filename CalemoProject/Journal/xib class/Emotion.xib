@@ -58,8 +58,8 @@
                         <color key="textColor" red="0.42352941179999998" green="0.40784313729999999" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So, how’s your feeling today, Khairani?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epx-3G-3dE">
-                        <rect key="frame" x="26" y="62" width="291" height="60"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So, how’s your feeling today, M diaz Darmawan?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epx-3G-3dE">
+                        <rect key="frame" x="26" y="62" width="275" height="60"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <color key="textColor" red="0.4352995455" green="0.41933214660000001" blue="0.43529653550000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -78,6 +78,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="0" width="184" height="184"/>
+        <image name="0" width="92" height="92"/>
     </resources>
 </document>
